@@ -1,0 +1,21 @@
+@import "./../main.scss";
+
+.section {
+  color: #212121;
+  color: #3d56b2;
+  // color: #161d6f;
+
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  // background-image: url(./../../../public/images/bckg-img9.jpg);
+  // background-size: cover;
+  // overflow: hidden;
+  // transform: rotateY(180deg);
+}
+
+h1 {
+  text-align: left;
+  padding: 20rem;
+  font-size: 5rem;
+}
