@@ -1,21 +1,47 @@
 @import "./../main.scss";
 
 .section {
-  color: #212121;
-  color: #3d56b2;
-  // color: #161d6f;
+  // color: #fefefefe;
+  // color: #212121;
+  // color: #3d56b2;
+  // color: #14279b;
 
   position: relative;
   width: 100vw;
   height: 100vh;
-  // background-image: url(./../../../public/images/bckg-img9.jpg);
-  // background-size: cover;
-  // overflow: hidden;
-  // transform: rotateY(180deg);
+  overflow: hidden;
 }
 
-h1 {
+main {
+  margin: 6rem 5rem;
+  padding: 2rem;
   text-align: left;
-  padding: 20rem;
-  font-size: 5rem;
+  animation: home-header 2s ease-in;
+}
+h1,
+h3 {
+  width: 30vw;
+  margin: 2rem;
+  font-size: 6rem;
+  color: #262626;
+  font-family: $font-primary;
+}
+
+h3 {
+  font-size: 4rem;
+  color: #394867;
+  font-family: $font-terciary;
+}
+
+span {
+  color: #262626;
+  text-transform: uppercase;
+}
+.cube {
+  width: 40rem;
+  position: absolute;
+  bottom: 0rem;
+  left: 20vw;
+  opacity: 0.5;
+  animation: home-cube 25s ease-in;
 }

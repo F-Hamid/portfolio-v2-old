@@ -1,2 +1,28 @@
-
-
+@keyframes backgroundZoom {
+  0% {
+    opacity: 0.9;
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+    opacity: 1;
+  }
+}
+@keyframes home-header {
+  0% {
+    opacity: 0;
+    // transform: scale(1.1);
+    transform: translateX(-10rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes home-cube {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
