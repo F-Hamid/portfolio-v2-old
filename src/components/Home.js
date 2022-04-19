@@ -7,17 +7,19 @@ import "./../sass/pages/home.scss";
 
 const Home = () => {
   return (
-    <section className="section">
+    <section className="home">
       <HomeBackground />
-
-      <Navbar />
-      <img src={cube} className="cube" alt="cube" />
-      <main>
-        <h3>
-          A buildiong <span>brick</span> in your big project
+      <nav className="home-nav">
+        <Navbar />
+      </nav>
+      <img src={cube} className="home-cube" alt="cube" />
+      <main className="home-main">
+        <h3 className="home-text">
+          A buildiong <span className="home-span">brick</span> in your big
+          project
         </h3>
-        <h1>Your WEBSITE</h1>
-        <h3>
+        <h1 className="home-header">Your WEBSITE</h1>
+        <h3 className="home-text">
           {" "}
           ...My big <span>project</span>.
         </h3>

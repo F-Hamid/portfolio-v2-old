@@ -1,4 +1,12 @@
 @import "../setup/variables";
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100vw;
+}
+
 .navbar {
   background-color: transparent !important;
   position: relative;
@@ -24,10 +32,10 @@
   color: #ebebeb !important;
 }
 .nav-link.active {
-  background-color: #389393;
+  background-color: $color-primary;
   color: #ebebeb !important;
   border-radius: 0.3rem;
-  //   width: 65%;
+
 }
 .nav-link.active:hover {
   background-color: transparent;

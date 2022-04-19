@@ -1,47 +1,42 @@
 @import "./../main.scss";
 
-.section {
-  // color: #fefefefe;
-  // color: #212121;
-  // color: #3d56b2;
-  // color: #14279b;
-
+.home {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-}
 
-main {
-  margin: 6rem 5rem;
-  padding: 2rem;
-  text-align: left;
-  animation: home-header 2s ease-in;
-}
-h1,
-h3 {
-  width: 30vw;
-  margin: 2rem;
-  font-size: 6rem;
-  color: #262626;
-  font-family: $font-primary;
-}
+  &-main {
+    margin: 12rem 5rem;
+    padding: 2rem;
+    text-align: left;
+    animation: home-header 2s ease-in;
+  }
+  &-header,
+  &-text {
+    width: 30vw;
+    margin: 2rem;
+    font-size: 6rem;
+    color: #262626;
+    font-family: $font-primary;
+  }
 
-h3 {
-  font-size: 4rem;
-  color: #394867;
-  font-family: $font-terciary;
-}
+  &-text {
+    font-size: 4rem;
+    color: #394867;
+    font-family: $font-terciary;
+  }
 
-span {
-  color: #262626;
-  text-transform: uppercase;
-}
-.cube {
-  width: 40rem;
-  position: absolute;
-  bottom: 0rem;
-  left: 20vw;
-  opacity: 0.5;
-  animation: home-cube 25s ease-in;
+  &-span {
+    color: #262626;
+    text-transform: uppercase;
+  }
+  &-cube {
+    width: 40rem;
+    position: absolute;
+    bottom: 0rem;
+    left: 20vw;
+    opacity: 0.5;
+    animation: home-cube 5s ease-in;
+  }
 }
