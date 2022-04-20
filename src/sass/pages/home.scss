@@ -17,7 +17,7 @@
     width: 30vw;
     margin: 2rem;
     font-size: 6rem;
-    color: #262626;
+    color: $color-text;
     font-family: $font-primary;
   }
 
@@ -28,7 +28,7 @@
   }
 
   &-span {
-    color: #262626;
+    color: $color-text;
     text-transform: uppercase;
   }
   &-cube {
