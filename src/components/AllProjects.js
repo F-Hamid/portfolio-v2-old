@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./../sass/pages/all-projects.scss";
 
 const AllProjects = () => {
@@ -109,27 +110,14 @@ const AllProjects = () => {
     },
   ];
 
-  // Animation
-  function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 50;
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
-      }
-    }
-  }
-  window.addEventListener("scroll", reveal);
-
   return (
     <>
       <section className="allProjects">
-        <div className="header reveal">
-          <h1 className="header-heading">allProjects</h1>
+        <Link to="/" className="back-home">
+          <i class="fa-solid fa-house-laptop"></i>
+        </Link>
+        <div className="header ">
+          <h1 className="header-heading">Projects</h1>
           <hr className="header-bar" />
           <p className="header-text">
             A styled and responsive web App for some wisdome and funny jokes on
@@ -142,7 +130,7 @@ const AllProjects = () => {
             return (
               <div
                 key={id}
-                className={`allProjects-box allProjects-box_${id} reveal`}
+                className={`allProjects-box allProjects-box_${id} `}
               >
                 <div className="card-text">
                   <h1 className="card-text_heading">{name} </h1>

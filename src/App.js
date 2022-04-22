@@ -1,16 +1,28 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import "./sass/main.scss";
-import { Home, Projects, About, Contact } from "./components";
-import AllProjects from "./components/AllProjects";
+import { Home, Projects, About, Contact, AllProjects } from "./components";
 
 function App() {
   return (
     <>
-      <AllProjects />
-      {/* <Home /> */}
-      {/* <Projects /> */}
-      {/* <About />
-      <Contact /> */}
+      <BrowserRouter>
+  <Routes>
+<Route path="/" element={<>
+{/* <Home/> */}
+{/* <Projects/> */}
+<About/>
+</>}>
+
+</Route>
+<Route path="/projects" element={<AllProjects/>}>
+
+</Route>
+
+  </Routes>
+  
+      </BrowserRouter>
     </>
   );
 }

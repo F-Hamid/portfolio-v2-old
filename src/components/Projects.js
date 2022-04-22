@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./../sass/pages/projects.scss";
 
 const Projects = () => {
@@ -21,23 +22,7 @@ const Projects = () => {
       description:
         "A styled and responsive web SPA for a Architacture and interior design agency.",
     },
-    // {
-    //   id: 3,
-    //   name: "Weather App ",
-    //   image: require("./../images/weatherApp.png"),
-    //   link: "https://spa-weather.netlify.app",
-    //   github_url: "https://github.com/F-Hamid/Weather-app",
-    //   description: "Live Weather infos based on location: single page App .",
-    // },
-    // {
-    //   id: 4,
-    //   name: "SimoSud Website ",
-    //   image: require("./../images/sumosud.png"),
-    //   link: "https://simosud.netlify.app",
-    //   github_url: "https://github.com/F-Hamid/SimoSud",
-    //   description:
-    //     "A styled and responsive website with services and contact information for fishing and touristic startup.",
-    // },
+
     {
       id: 3,
       name: "Budget App ",
@@ -73,7 +58,7 @@ const Projects = () => {
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 50;
+      var elementVisible = 20;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
@@ -95,14 +80,14 @@ const Projects = () => {
           </p>
         </div>
         <main className="projects-main">
-          <a className="more reveal" href="">
+          <Link className="more reveal" to="/projects">
             <img
               className="more-img"
               src={require("./../images/cube1.png")}
               alt="cube2"
             />
             <h1 className="more-text">Explore More...</h1>
-          </a>
+          </Link>
 
           {store.map(({ description, id, github_url, name, link, image }) => {
             // console.log(image);
