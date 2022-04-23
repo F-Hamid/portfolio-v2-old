@@ -114,10 +114,10 @@ const Projects = () => {
 
                 <div className="projects-box_after">
                   <a href={link} target="_blank" rel="noreferrer">
-                    <i class="fa-brands fa-chrome"></i>
+                    <i className="fa-brands fa-chrome"></i>
                   </a>
                   <a href={github_url} target="_blank" rel="noreferrer">
-                    <i class="fa-brands fa-github-alt"></i>
+                    <i className="fa-brands fa-github-alt"></i>
                   </a>
                 </div>
               </div>

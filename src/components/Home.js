@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./layouts/Navbar";
 import cube from "./../images/cube2.png";
-
 import HomeBackground from "./layouts/Background";
 import "./../sass/pages/home.scss";
 

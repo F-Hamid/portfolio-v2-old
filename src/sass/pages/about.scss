@@ -1,1 +1,82 @@
 @import "./../main.scss";
+
+.about {
+  max-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: $color-secondary;
+  background-image: url(../../images/cardbckg.png);
+  background-size: cover;
+  &-bar {
+    width: 10rem;
+    height: 0.2rem;
+    margin-top: 8rem;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    color: $font-terciary;
+  }
+}
+.about-me {
+  width: 60vw;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 0rem;
+  text-transform: uppercase;
+  // align-items: flex-start;
+}
+.about-text-heading {
+  width: 10vw;
+  margin: 2rem;
+  font-size: 6rem;
+  color: $color-text;
+  font-family: $font-primary;
+}
+.about-text-p {
+  font-size: 2rem;
+  width: 60rem;
+  margin: 2rem;
+  color: $color-text;
+  font-family: $font-terciary;
+}
+
+.me {
+  position: relative;
+  width: 40vw;
+}
+.me-img {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.7;
+}
+
+.realme {
+  position: absolute;
+  width: 65rem;
+  height: 65rem;
+  bottom: -20rem;
+  left: 54rem;
+  filter: hue-rotate(-10deg);
+  transform: rotateY(180deg);
+  // border-radius: 50%;
+}
+
+.tech {
+  width: 85vh;
+  margin: 2rem;
+}
+.tech-img {
+  width: 8rem;
+  height: 10rem;
+  margin: 2rem;
+}
