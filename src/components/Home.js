@@ -14,13 +14,13 @@ const Home = () => {
       <img src={cube} className="home-cube" alt="cube" />
       <main className="home-main">
         <h3 className="home-text">
-          A buildiong <span className="home-span">brick</span> in your big
+          A building <span className="home-span">brick</span> in your big
           project
         </h3>
         <h1 className="home-header">Your WEBSITE</h1>
         <h3 className="home-text">
           {" "}
-          ...My big <span>project</span>.
+          ...My big <span className="home-span">project</span>.
         </h3>
       </main>
     </section>

@@ -13,8 +13,8 @@ function App() {
             path="/"
             element={
               <>
-                {/* <Home />
-                <Projects /> */}
+                <Home />
+                <Projects />
                 <About />
               </>
             }

@@ -15,15 +15,15 @@ const About = () => {
         </div>
         <div className="about-me">
           <div className="about-text">
-            <h1 className="about-text-heading">FATEH Hamid</h1>
+            <h1 className="about-text-heading "> FATEH Hamid</h1>
             <hr className="about-bar"></hr>
-            <p className="about-text-p">
-              I'm an ambitious front-end developer
+            <p className="about-text-p reveal">
+              i am an ambitious <span>front-end developer</span>
               <br />
               my carrier is based on client satisfaction and professionnel
               relationship.
               <br />
-              armed with creativity and perfection.
+              inspired by creativity and <span>perfection.</span>
             </p>
           </div>
           {/* <img
@@ -33,7 +33,7 @@ const About = () => {
           /> */}
 
           <div className="tech">
-            {/* <h1>Tecnologies</h1> */}
+            <h1 className="tech-text reveal">MY ARSENAL :</h1>
             <img
               className="tech-img"
               src={require("./../images/tech1.png")}
