@@ -2,18 +2,6 @@ import React from "react";
 import "./../sass/pages/contact.scss";
 
 const Contact = () => {
-  // const store = [
-  //   {
-  //     id: 2,
-  //     name: "Architacture and interior design ",
-  //     image: require("./../images/architecht.png"),
-  //     link: "https://architect-interior-design.netlify.app/",
-  //     github_url: "https://github.com/F-Hamid/Architecture-Interior-Website",
-  //     description:
-  //       "A styled and responsive web SPA for a Architacture and interior design agency.",
-  //   },
-  // ];
-
   return (
     <>
       <section className="contact">
@@ -23,18 +11,74 @@ const Contact = () => {
         </h1>
         <div className="media">
           <div className="media-1">
-            <i class="fa-solid fa-envelope fa"></i>
-            <i class="fa-solid fa-mobile-screen-button fa"></i>
-            <i class="fa-brands fa-whatsapp fa"></i>
-            <i class="fa-brands fa-github fa"></i>
+            <a
+              className="fa"
+              href="mail-to:f.hamidweb@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fa-solid fa-envelope fa"></i>
+            </a>
+
+            <a
+              className="fa"
+              href="tel: 06 07-877922"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fa-solid fa-mobile-screen-button fa"></i>
+            </a>
+
+            <a
+              className="fa"
+              href="https://wa.me/21261805827"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fa-brands fa-whatsapp fa"></i>
+            </a>
+
+            <a
+              className="fa"
+              href="https://github.com/F-Hamid"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fa-brands fa-github fa"></i>
+            </a>
           </div>
           <div className="media-1">
-            <i class="fa-brands fa-linkedin fa"></i>
-            <i class="fa-brands fa-twitter fa"></i>
-            <i class="fa-brands fa-facebook fa"></i>
-            <i class="fa-solid fa-house-circle-check fa"></i>
+            <a
+              className="fa"
+              href="https://www.linkedin.com/in/hamid-fateh-9206b9238/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fa-brands fa-linkedin fa"></i>
+            </a>
+            <a
+              className="fa"
+              href="https://twitter.com/Hamid7web"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fa-brands fa-twitter fa"></i>
+            </a>
+
+            <a
+              className="fa"
+              href="https://www.facebook.com/hamid.fateh.14/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i class="fa-brands fa-facebook fa"></i>
+            </a>
+            <a className="fa" href="#home">
+              <i class="fa-solid fa-house-circle-check fa"></i>
+            </a>
           </div>
         </div>
+
         <img
           className="tech-img-contact tech-img-contact-8 reverse"
           src={require("./../images/tech1.png")}
@@ -87,6 +131,21 @@ const Contact = () => {
           src={require("./../images/tech15.png")}
           alt="about image"
         />
+        <div className="footer__copyright">
+          <p className="footer__copyright-p">
+            2022@ Created by
+            <a
+              href="https://wa.me/212661805827"
+              className="footer__link"
+              target="_blank"
+              rel="noreferrer"
+              // style="color: greenyellow"
+            >
+              F.Hamid
+            </a>
+            for personnel and professionel use.
+          </p>
+        </div>
       </section>
     </>
   );

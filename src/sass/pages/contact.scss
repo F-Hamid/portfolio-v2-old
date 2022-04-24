@@ -6,7 +6,7 @@
   justify-content: space-between;
   flex-direction: column;
   width: 100vw;
-  height: 85vh;
+  height: 95vh;
   padding: 5rem;
   // background-color: #4b7be5;
   background-image: url(../../images/me0.jpg);
@@ -37,7 +37,9 @@
 }
 
 .fa {
-  padding: 3rem;
+  padding: 2rem;
+  color: #e9d5da;
+  cursor: pointer;
 }
 
 .tech-img-contact {
@@ -112,4 +114,15 @@
 
 .ideas {
   text-shadow: 0.2rem -0.2rem 0.5rem $color-secondary;
+}
+
+.footer__copyright {
+  position: absolute;
+  bottom: 0.5rem;
+  color: $color-primary;
+
+  a {
+    color: $color-secondary;
+    font-size: 1.2rem;
+  }
 }

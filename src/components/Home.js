@@ -6,7 +6,7 @@ import "./../sass/pages/home.scss";
 
 const Home = () => {
   return (
-    <section className="home">
+    <section id="home" className="home">
       <HomeBackground />
       <nav className="home-nav">
         <Navbar />
