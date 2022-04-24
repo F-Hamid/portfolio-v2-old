@@ -79,6 +79,7 @@ const About = () => {
               src={require("./../images/tech5.png")}
               alt="about image"
             />
+            
             <img
               className="tech-img"
               src={require("./../images/tech2.png")}

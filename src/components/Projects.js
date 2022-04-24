@@ -80,15 +80,6 @@ const Projects = () => {
           </p>
         </div>
         <main className="projects-main">
-          <Link className="more reveal" to="/projects">
-            <img
-              className="more-img"
-              src={require("./../images/cube1.png")}
-              alt="cube2"
-            />
-            <h1 className="more-text">Explore More...</h1>
-          </Link>
-
           {store.map(({ description, id, github_url, name, link, image }) => {
             // console.log(image);
             return (
@@ -96,16 +87,6 @@ const Projects = () => {
                 key={id}
                 className={`projects-box projects-box_${id} reveal`}
               >
-                {/* <div className="projects-box_before">
-                    <a
-                      href={link}
-                      className="link"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Netlify
-                    </a>
-                  </div> */}
                 <div className="card-text">
                   <h1 className="card-text_heading">{name} </h1>
                   <p className="card-text_p">{description}</p>
@@ -123,6 +104,17 @@ const Projects = () => {
               </div>
             );
           })}
+          <Link
+            className="projects-box projects-box_${id} reveal more"
+            to="/projects"
+          >
+            <img
+              className="more-img"
+              src={require("./../images/cube1.png")}
+              alt="cube2"
+            />
+            <h1 className="more-text">Explore More...</h1>
+          </Link>
           {/* <div className="projects-box projects-box_8">
             <img
               className="projects-box-cube"

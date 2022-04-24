@@ -16,6 +16,7 @@ function App() {
                 <Home />
                 <Projects />
                 <About />
+                <Contact />
               </>
             }
           ></Route>
