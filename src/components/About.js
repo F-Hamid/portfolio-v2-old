@@ -26,11 +26,6 @@ const About = () => {
               inspired by creativity and <span>perfection.</span>
             </p>
           </div>
-          {/* <img
-            className="realme"
-            src={require("./../images/me3.png")}
-            alt="about image"
-          /> */}
 
           <div className="tech">
             <h1 className="tech-text reveal">MY ARSENAL :</h1>
@@ -51,7 +46,7 @@ const About = () => {
             />
             <img
               className="tech-img"
-              src={require("./../images/tech13.png")}
+              src={require("./../images/tech16.png")}
               alt="about image"
             />
             <img
@@ -79,7 +74,7 @@ const About = () => {
               src={require("./../images/tech5.png")}
               alt="about image"
             />
-            
+
             <img
               className="tech-img"
               src={require("./../images/tech2.png")}
@@ -96,6 +91,9 @@ const About = () => {
               alt="about image"
             />
           </div>
+          <button type="button" class="btn btn-success">
+            Download CV
+          </button>
         </div>
       </section>
     </>

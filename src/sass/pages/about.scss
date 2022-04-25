@@ -34,7 +34,6 @@
   text-transform: uppercase;
   width: 90vh;
 
-
   // align-items: flex-start;
 }
 .about-text-heading {
@@ -52,6 +51,7 @@
   font-family: $font-terciary;
   span {
     color: $color-primary;
+    text-shadow: 0.01rem 0.01rem 2rem $color-primary;
   }
 }
 
@@ -82,4 +82,13 @@
   font-size: 2rem;
   color: $color-text;
   font-family: $font-primary;
+  text-shadow: 0.1rem 0.1rem 1rem $color-text;
+}
+.btn {
+  font-size: 1.2rem;
+  margin-bottom: -5rem;
+  color: $color-text;
+  background-color: $color-primary;
+  box-shadow: 0.2rem 0.2rem 1rem $color-primary;
+  // align-self: flex-end;
 }

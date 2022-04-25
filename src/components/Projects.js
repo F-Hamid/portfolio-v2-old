@@ -75,8 +75,8 @@ const Projects = () => {
           <h1 className="header-heading">Projects</h1>
           <hr className="header-bar" />
           <p className="header-text">
-            A styled and responsive web App for some wisdome and funny jokes on
-            one click.
+            Some of my work: where you can explore my real life projects,skills,
+            and practices. You can explore even more in the link bellow.
           </p>
         </div>
         <main className="projects-main">

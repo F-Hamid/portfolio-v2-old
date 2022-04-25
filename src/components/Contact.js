@@ -5,10 +5,13 @@ const Contact = () => {
   return (
     <>
       <section className="contact">
-        <h1 className="contact-heading reveal">
-          {" "}
-          Time to bring those <span className="ideas">ideas</span> to the light
-        </h1>
+        <div className="contact-heading reveal">
+          <h1 className="contact-me">contact me</h1>
+          <h1 className="contact-heading reveal">
+            Time to bring those <span className="ideas">ideas</span> to the
+            light
+          </h1>
+        </div>
         <div className="media">
           <div className="media-1">
             <a
@@ -96,10 +99,15 @@ const Contact = () => {
         />
         <img
           className="tech-img-contact tech-img-contact-13"
-          src={require("./../images/tech13.png")}
+          src={require("./../images/tech16.png")}
           alt="about image"
         />
 
+        <img
+          className="tech-img-contact tech-img-contact-19 reverse "
+          src={require("./../images/tech19.png")}
+          alt="about image"
+        />
         <img
           className="tech-img-contact tech-img-contact-7 reverse "
           src={require("./../images/tech6.png")}
