@@ -6,11 +6,11 @@ const Contact = () => {
     <>
       <section className="contact">
         <div className="contact-heading reveal">
-          <h1 className="contact-me">contact me</h1>
           <h1 className="contact-heading reveal">
             Time to bring those <span className="ideas">ideas</span> to the
             light
           </h1>
+          <h1 className="contact-me">contact me</h1>
         </div>
         <div className="media">
           <div className="media-1">

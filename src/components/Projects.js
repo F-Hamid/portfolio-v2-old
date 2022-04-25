@@ -75,8 +75,9 @@ const Projects = () => {
           <h1 className="header-heading">Projects</h1>
           <hr className="header-bar" />
           <p className="header-text">
-            Some of my work: where you can explore my real life projects,skills,
-            and practices. You can explore even more in the link bellow.
+            Explore some of my work: Real life projects,skills,
+            and problem solving.
+            <br/> You can explore even more in the link bellow.
           </p>
         </div>
         <main className="projects-main">

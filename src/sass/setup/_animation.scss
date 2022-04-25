@@ -2,12 +2,29 @@
   0% {
     opacity: 0.9;
     background-size: 120%;
+    // transform: scale(1.2);
   }
   100% {
     background-size: 100%;
+    // transform: scale(1);
+
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 1050px) {
+  @keyframes backgroundZoom {
+    0% {
+      opacity: 0.9;
+      background-size: 125%;
+    }
+    100% {
+      background-size: 105%;
+      opacity: 1;
+    }
+  }
+}
+
 @keyframes home-header {
   0% {
     opacity: 0;

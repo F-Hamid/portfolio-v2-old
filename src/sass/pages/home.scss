@@ -6,19 +6,68 @@
   height: 100vh;
   overflow: hidden;
 
+  @media screen and (max-width: 1000px) {
+    height: 90vh;
+  }
+  @media screen and (max-width: 855px) {
+    height: 80vh;
+  }
+  @media screen and (max-width: 755px) {
+    height: 70vh;
+  }
+  @media screen and (max-width: 655px) {
+    height: 60vh;
+  }
+  @media screen and (max-width: 555px) {
+    height: 50vh;
+  }
+  @media screen and (max-width: 460px) {
+    height: 32vh;
+  }
+  @media screen and (max-width: 400px) {
+    height: 28vh;
+  }
+  // @media screen and (max-width: 350px) {
+  //   height: 35vh;
+  // }
+
   &-main {
     margin: 5rem;
+    margin-top: 12vh;
     padding: 2rem;
     text-align: left;
     animation: home-header 2s ease-in;
+    @media screen and (max-width: 850px) {
+      margin-top: 8vh;
+    }
+    @media screen and (max-width: 750px) {
+      margin: 2rem;
+      margin-top: 6vh;
+    }
+    @media screen and (max-width: 460px) {
+      margin: 1rem;
+      margin-top: 2vh;
+    }
+    @media screen and (max-width: 350px) {
+      margin: 1rem;
+      margin-top: 2vh;
+    }
+    // @media screen and (max-width: 350px) {
+    //   margin: 1rem;
+    //   margin-top: 2vh;
+    // }
   }
   &-header,
   &-text {
-    width: 30vw;
+    width: auto;
     margin: 2rem;
     font-size: 6rem;
     color: $color-text;
+    left: 20vw;
     font-family: $font-primary;
+    @media screen and (max-width: 1250px) {
+      width: 50rem;
+    }
   }
 
   &-text {
@@ -38,5 +87,18 @@
     left: 20vw;
     opacity: 0.5;
     animation: home-cube 5s ease-in;
+    @media screen and (max-width: 1050px) {
+      width: 35rem;
+      left: 35vw;
+    }
+    @media screen and (max-width: 500px) {
+      width: 30em;
+      left: 30vw;
+    }
   }
+}
+
+.hide {
+  opacity: 0;
+  visibility: 0;
 }

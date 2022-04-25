@@ -5,14 +5,18 @@
   position: absolute;
   width: 100vw;
   height: 102%;
-  // top: -4%;
   left: -0%;
   z-index: -10;
-  background: url(./../../../src/images/bckg-img9.jpg);
-  background-size: cover;
+  background: url(./../../../src/images/bckg-img19.png);
+  background-size: 100%;
   overflow: hidden;
-  transform: rotateY(180deg);
   animation: backgroundZoom 20s ease-out;
+  @media screen and (max-width: 1050px) {
+    background-size: 105%;
+  }
+  @media screen and (max-width: 850px) {
+    height: 129%;
+  }
 }
 
 .custom-shape-divider-bottom-1650151152 {
@@ -20,6 +24,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
+
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
@@ -29,7 +34,7 @@
   position: relative;
   display: block;
   width: calc(145% + 1.3px);
-  height: 479px;
+  height: 400px;
 }
 
 .custom-shape-divider-bottom-1650151152 .shape-fill {
@@ -39,9 +44,29 @@
 }
 
 /** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .custom-shape-divider-bottom-1650151152 svg {
-    width: calc(145% + 1.3px);
-    height: 407px;
+    width: calc(185% + 1.3px);
+    height: 350px;
+  }
+}
+// @media screen and (max-width: 1000px) {
+//   .custom-shape-divider-bottom-1650151152 svg {
+//     width: calc(185% + 1.3px);
+//     height: 350px;
+//   }
+// }
+
+@media screen and (max-width: 768px) {
+  .custom-shape-divider-bottom-1650151152 svg {
+    width: calc(200% + 1.3px);
+    height: 250px;
+  }
+
+  @media screen and (max-width: 550px) {
+    .custom-shape-divider-bottom-1650151152 svg {
+      width: calc(200% + 1.3px);
+      height: 150px;
+    }
   }
 }

@@ -10,7 +10,7 @@
   background-image: url(../../images/cardbckg.png);
   background-size: cover;
   &-bar {
-    width: 12rem;
+    width: 15em;
     margin-top: 8rem;
     transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -30,9 +30,9 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-top: 0rem;
+
   text-transform: uppercase;
-  width: 90vh;
+  width: 95vh;
 
   // align-items: flex-start;
 }
@@ -45,7 +45,7 @@
 }
 .about-text-p {
   font-size: 2rem;
-  width: 50rem;
+  width: auto;
   margin: 2rem;
   color: $color-text;
   font-family: $font-terciary;

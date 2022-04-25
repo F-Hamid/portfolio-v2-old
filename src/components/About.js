@@ -18,9 +18,9 @@ const About = () => {
             <h1 className="about-text-heading "> FATEH Hamid</h1>
             <hr className="about-bar"></hr>
             <p className="about-text-p reveal">
-              i am an ambitious <span>front-end developer</span>
+              i am an ambitious <span>front-end developer.</span>
               <br />
-              my carrier is based on client satisfaction and professionnel
+              my carrier is based on <span>client satisfaction</span> and professionnel
               relationship.
               <br />
               inspired by creativity and <span>perfection.</span>

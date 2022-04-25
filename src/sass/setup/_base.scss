@@ -14,4 +14,33 @@ body {
 
 html {
   font-size: 62.5%; // 1rem=10px;
+
+  @media screen and (max-width: 1650px) {
+    font-size: 52%;
+  }
+  @media screen and (max-width: 1250px) {
+    font-size: 48%;
+  }
+  @media screen and (max-width: 1050px) {
+    font-size: 45%;
+  }
+
+  @media screen and (max-width: 950px) {
+    font-size: 40%;
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 35%;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 30%;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 25%;
+  }
+  @media screen and (max-width: 460px) {
+    font-size: 20%;
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 15%;
+  }
 }

@@ -15,11 +15,10 @@ const Home = () => {
       <main className="home-main">
         <h3 className="home-text">
           A building <span className="home-span">brick</span> in your big
-          project
+          project:
         </h3>
         <h1 className="home-header">Your WEBSITE</h1>
         <h3 className="home-text">
-          {" "}
           ...My big <span className="home-span">project</span>.
         </h3>
       </main>

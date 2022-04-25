@@ -14,9 +14,9 @@ function App() {
             element={
               <>
                 <Home />
-                <Projects />
+                {/* <Projects />
                 <About />
-                <Contact />
+                <Contact /> */}
               </>
             }
           ></Route>
