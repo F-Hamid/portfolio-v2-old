@@ -85,59 +85,59 @@ const Contact = () => {
         <img
           className="tech-img-contact tech-img-contact-8 reverse"
           src={require("./../images/tech1.png")}
-          alt="about image"
+          alt="html5 "
         />
         <img
           className="tech-img-contact tech-img-contact-9"
           src={require("./../images/tech11.png")}
-          alt="about image"
+          alt="css3 "
         />
         <img
           className="tech-img-contact tech-img-contact-11"
           src={require("./../images/tech10.png")}
-          alt="about image"
+          alt="javascript "
         />
         <img
           className="tech-img-contact tech-img-contact-13"
           src={require("./../images/tech16.png")}
-          alt="about image"
+          alt="react "
         />
 
         <img
           className="tech-img-contact tech-img-contact-19 reverse "
           src={require("./../images/tech19.png")}
-          alt="about image"
+          alt="figma "
         />
         <img
           className="tech-img-contact tech-img-contact-7 reverse "
           src={require("./../images/tech6.png")}
-          alt="about image"
+          alt="redux "
         />
         <img
           className="tech-img-contact tech-img-contact-6 reverse"
           src={require("./../images/tech7.png")}
-          alt="about image"
+          alt="bootstrap "
         />
         <img
           className="tech-img-contact tech-img-contact-5"
           src={require("./../images/tech8.png")}
-          alt="about image"
+          alt="sass "
         />
         <img
           className="tech-img-contact tech-img-contact-4"
           src={require("./../images/tech9.png")}
-          alt="about image"
+          alt="jquery "
         />
         <img
           className="tech-img-contact tech-img-contact-12 reverse"
           src={require("./../images/tech5.png")}
-          alt="about image"
+          alt="git "
         />
 
         <img
           className="tech-img-contact tech-img-contact-14 reverse"
           src={require("./../images/tech15.png")}
-          alt="about image"
+          alt="chrome "
         />
         <div className="footer__copyright">
           <p className="footer__copyright-p">
