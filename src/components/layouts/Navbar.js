@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="mail-to:f.hamidweb@gmail.com">
           <img
             className="logo"
             src={require("./../../images/logo.png")}

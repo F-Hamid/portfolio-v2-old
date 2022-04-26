@@ -1,4 +1,4 @@
-// @import "./../main.scss";
+
 
 .home::before {
   content: "";
@@ -42,7 +42,6 @@
 
 .custom-shape-divider-bottom-1650151152 .shape-fill {
   // fill: #ffffffc2; //transparent
-  // fill: #ffffff;
   fill: #eeeeee;
 }
 
@@ -53,12 +52,7 @@
     height: 350px;
   }
 }
-// @media screen and (max-width: 1000px) {
-//   .custom-shape-divider-bottom-1650151152 svg {
-//     width: calc(185% + 1.3px);
-//     height: 350px;
-//   }
-// }
+
 
 @media screen and (max-width: 768px) {
   .custom-shape-divider-bottom-1650151152 svg {

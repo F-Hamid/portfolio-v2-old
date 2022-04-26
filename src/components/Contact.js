@@ -147,7 +147,6 @@ const Contact = () => {
               className="footer__link"
               target="_blank"
               rel="noreferrer"
-              // style="color: greenyellow"
             >
               F.Hamid
             </a>

@@ -80,7 +80,6 @@
 .fa {
   padding: 2rem;
   color: #30aadd;
-  // color: $color-text;
   cursor: pointer;
   &:hover {
     color: #e9d5da;
@@ -93,7 +92,7 @@
   opacity: 0.5;
 
   animation: contact-rotate 60s infinite running;
-  // animation: 3s linear 1s infinite running slidein;
+
   &-1 {
     top: 5rem;
     right: 10rem;
