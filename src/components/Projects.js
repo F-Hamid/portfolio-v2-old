@@ -70,7 +70,7 @@ const Projects = () => {
 
   return (
     <>
-      <section className="projects">
+      <section className="projects" id="projects">
         <div className="header reveal">
           <h1 className="header-heading">Projects</h1>
           <hr className="header-bar" />
@@ -106,7 +106,7 @@ const Projects = () => {
             );
           })}
           <Link
-            className="projects-box projects-box_${id} reveal more"
+            className="projects-box projects-box reveal more"
             to="/projects"
           >
             <img

@@ -6,7 +6,11 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Logo
+          <img
+            className="logo"
+            src={require("./../../images/logo.png")}
+            alt="hamidweb"
+          />
         </a>
         <button
           className="navbar-toggler"
@@ -22,22 +26,26 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="#">
+              <a className="nav-link " aria-current="page" href="#home">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="#">
+              <a className="nav-link " aria-current="page" href="#projects">
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="#">
+              <a className="nav-link " aria-current="page" href="#about">
                 About me
               </a>
             </li>
             <li className="nav-item ">
-              <a className="nav-link active " aria-current="page" href="#">
+              <a
+                className="nav-link active "
+                aria-current="page"
+                href="#contact"
+              >
                 Contact
               </a>
             </li>

@@ -4,7 +4,7 @@ import "./../sass/pages/contact.scss";
 const Contact = () => {
   return (
     <>
-      <section className="contact">
+      <section className="contact" id="contact">
         <div className="contact-heading reveal">
           <h1 className="contact-heading reveal">
             Time to bring those <span className="ideas">ideas</span> to the

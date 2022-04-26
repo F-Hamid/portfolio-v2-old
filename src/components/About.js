@@ -5,7 +5,7 @@ import "./../sass/pages/about.scss";
 const About = () => {
   return (
     <>
-      <section className="about">
+      <section className="about" id="about">
         <div className="me">
           <img
             className="me-img"
@@ -25,6 +25,11 @@ const About = () => {
               <br />
               inspired by creativity and <span>perfection.</span>
             </p>
+          </div>
+          <div className="btn-container">
+            <button type="button" className="btn btn-info">
+              Download CV
+            </button>
           </div>
 
           <div className="tech">
@@ -53,6 +58,11 @@ const About = () => {
             <img
               className="tech-img"
               src={require("./../images/tech6.png")}
+              alt="about "
+            />
+            <img
+              className="tech-img"
+              src={require("./../images/tech21.png")}
               alt="about "
             />
             <img
@@ -92,9 +102,6 @@ const About = () => {
               alt="about "
             />
           </div>
-          <button type="button" className="btn btn-success">
-            Download CV
-          </button>
         </div>
       </section>
     </>

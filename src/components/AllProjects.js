@@ -112,7 +112,7 @@ const AllProjects = () => {
 
   return (
     <>
-      <section className="allProjects">
+      <section className="allProjects ">
         <Link to="/" className="back-home">
           <i className="fa-solid fa-house-laptop"></i>
         </Link>
@@ -130,7 +130,7 @@ const AllProjects = () => {
             return (
               <div
                 key={id}
-                className={`allProjects-box allProjects-box_${id} `}
+                className={`allProjects-box allProjects-box_${id} reveal`}
               >
                 <div className="card-text">
                   <h1 className="card-text_heading">{name} </h1>
