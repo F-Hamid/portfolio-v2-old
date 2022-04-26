@@ -54,11 +54,11 @@ const Projects = () => {
 
   // Animation
   function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
-    for (var i = 0; i < reveals.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 20;
+    let reveals = document.querySelectorAll(".reveal");
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 0;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
@@ -75,9 +75,9 @@ const Projects = () => {
           <h1 className="header-heading">Projects</h1>
           <hr className="header-bar" />
           <p className="header-text">
-            Explore some of my work: Real life projects,skills,
-            and problem solving.
-            <br/> You can explore even more in the link bellow.
+            Explore some of my work: Real life projects,skills, and problem
+            solving.
+            <br /> You can explore even more in the link bellow.
           </p>
         </div>
         <main className="projects-main">

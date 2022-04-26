@@ -20,7 +20,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-solid fa-envelope fa"></i>
+              <i className="fa-solid fa-envelope fa"></i>
             </a>
 
             <a
@@ -29,7 +29,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-solid fa-mobile-screen-button fa"></i>
+              <i className="fa-solid fa-mobile-screen-button fa"></i>
             </a>
 
             <a
@@ -38,7 +38,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-whatsapp fa"></i>
+              <i className="fa-brands fa-whatsapp fa"></i>
             </a>
 
             <a
@@ -47,7 +47,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-github fa"></i>
+              <i className="fa-brands fa-github fa"></i>
             </a>
           </div>
           <div className="media-1">
@@ -57,7 +57,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-linkedin fa"></i>
+              <i className="fa-brands fa-linkedin fa"></i>
             </a>
             <a
               className="fa"
@@ -65,7 +65,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-twitter fa"></i>
+              <i className="fa-brands fa-twitter fa"></i>
             </a>
 
             <a
@@ -74,10 +74,10 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa-brands fa-facebook fa"></i>
+              <i className="fa-brands fa-facebook fa"></i>
             </a>
             <a className="fa" href="#home">
-              <i class="fa-solid fa-house-circle-check fa"></i>
+              <i className="fa-solid fa-house-circle-check fa"></i>
             </a>
           </div>
         </div>

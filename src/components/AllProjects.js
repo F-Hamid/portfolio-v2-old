@@ -114,7 +114,7 @@ const AllProjects = () => {
     <>
       <section className="allProjects">
         <Link to="/" className="back-home">
-          <i class="fa-solid fa-house-laptop"></i>
+          <i className="fa-solid fa-house-laptop"></i>
         </Link>
         <div className="header ">
           <h1 className="header-heading">Projects</h1>

@@ -79,20 +79,20 @@ const About = () => {
             <img
               className="tech-img"
               src={require("./../images/tech20.png")}
-              alt="about image"
+              alt="about "
             />
             <img
               className="tech-img"
               src={require("./../images/tech3.png")}
-              alt="about image"
+              alt="about "
             />
             <img
               className="tech-img"
               src={require("./../images/tech4.png")}
-              alt="about image"
+              alt="about "
             />
           </div>
-          <button type="button" class="btn btn-success">
+          <button type="button" className="btn btn-success">
             Download CV
           </button>
         </div>
