@@ -15,7 +15,7 @@ const AllProjects = () => {
     },
     {
       id: 2,
-      name: "Architacture and interior design ",
+      name: "Architecture and interior design ",
       image: require("./../images/architecht.png"),
       link: "https://architect-interior-design.netlify.app/",
       github_url: "https://github.com/F-Hamid/Architecture-Interior-Website",

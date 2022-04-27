@@ -14,8 +14,8 @@ const Home = () => {
       <img src={cube} className="home-cube" alt="cube" />
       <main className="home-main">
         <h3 className="home-text">
-          A building <span className="home-span">brick</span> in your big
-          project:
+          A <span className="home-span">building</span> brick in your big
+          project
         </h3>
         <h1 className="home-header">Your WEBSITE</h1>
         <h3 className="home-text">

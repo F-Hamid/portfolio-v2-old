@@ -36,6 +36,7 @@
     margin-top: 12vh;
     padding: 2rem;
     text-align: left;
+    z-index: 5;
     animation: home-header 2s ease-in;
     @media screen and (max-width: 850px) {
       margin-top: 8vh;
@@ -65,6 +66,7 @@
     color: $color-text;
     left: 20vw;
     font-family: $font-primary;
+    text-shadow: 0.1rem -0.1rem 1rem $color-text;
     @media screen and (max-width: 1250px) {
       width: 50rem;
     }
@@ -74,6 +76,7 @@
     font-size: 4rem;
     color: #394867;
     font-family: $font-terciary;
+    color: $color-secondary;
   }
 
   &-span {
