@@ -33,7 +33,10 @@
     height: 35vh;
   }
   @media screen and (max-width: 400px) {
-    height: 30vh;
+    height: 25vh;
+  }
+  @media screen and (max-width: 250px) {
+    height: 20vh;
   }
 
   &-heading {
@@ -63,6 +66,10 @@
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 2rem;
+    &-link {
+      cursor: pointer;
+      text-decoration: none;
+    }
   }
 }
 

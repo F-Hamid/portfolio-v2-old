@@ -114,7 +114,7 @@ const AllProjects = () => {
   return (
     <>
       <section className="allProjects ">
-        <Link to="/" className="back-home">
+        <Link href="#about" to="/" className="back-home">
           <i className="fa-solid fa-house-laptop"></i>
         </Link>
         <div className="header ">

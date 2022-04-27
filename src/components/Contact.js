@@ -10,7 +10,9 @@ const Contact = () => {
             Time to bring those <span className="ideas">ideas</span> to the
             light
           </h1>
-          <h1 className="contact-me">contact me</h1>
+          <a className="contact-me-link" href="mail-to:f.hamidweb@gmail.com">
+            <h1 className="contact-me">contact me</h1>
+          </a>
         </div>
         <div className="media">
           <div className="media-1">

@@ -58,7 +58,7 @@ const Projects = () => {
     for (let i = 0; i < reveals.length; i++) {
       let windowHeight = window.innerHeight;
       let elementTop = reveals[i].getBoundingClientRect().top;
-      let elementVisible = 0;
+      let elementVisible = -150;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
@@ -82,7 +82,6 @@ const Projects = () => {
         </div>
         <main className="projects-main">
           {store.map(({ description, id, github_url, name, link, image }) => {
-      
             return (
               <div
                 key={id}
@@ -116,7 +115,6 @@ const Projects = () => {
             />
             <h1 className="more-text">Explore More...</h1>
           </Link>
-        
         </main>
       </section>
     </>
