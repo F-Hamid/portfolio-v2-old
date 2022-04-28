@@ -28,7 +28,12 @@ const About = () => {
           </div>
           <div className="btn-container">
             <button type="button" className="btn btn-info">
-              Download CV
+              <a
+                href={require("./../images/resume/My-Resume.pdf")}
+                download="My-Resume"
+              >
+                Download CV
+              </a>
             </button>
           </div>
 
@@ -103,7 +108,6 @@ const About = () => {
             />
           </div>
         </div>
-      
       </section>
     </>
   );

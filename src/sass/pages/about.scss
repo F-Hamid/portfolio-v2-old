@@ -150,6 +150,11 @@
   border-radius: $bord-rad;
   box-shadow: 0.2rem 0.2rem 1rem $color-primary;
   text-align: center;
+  a {
+    text-decoration: none;
+    color: $color-secondary;
+    &:hover {
+      color: $color-text;
+    }
+  }
 }
-
-

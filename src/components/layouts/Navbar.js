@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../sass/layouts/navbar.scss";
 
 export default function Navbar() {
