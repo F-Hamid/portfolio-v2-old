@@ -19,7 +19,7 @@ const Home = () => {
         </h3>
         <h1 className="home-header">Your WEBSITE</h1>
         <h3 className="home-text">
-          ...My big <span className="home-span">project</span>.
+          ...My big <span className="home-span">project</span>
         </h3>
       </main>
     </section>
