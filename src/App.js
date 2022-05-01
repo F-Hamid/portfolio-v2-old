@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,7 +12,7 @@ function App() {
     for (let i = 0; i < reveals.length; i++) {
       let windowHeight = window.innerHeight;
       let elementTop = reveals[i].getBoundingClientRect().top;
-      let elementVisible = 10;
+      let elementVisible = -10;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
@@ -24,12 +24,13 @@ function App() {
   // LOADING
   const [load, setLoad] = useState(false);
 
-  window.addEventListener("load", (event) => {
-    if (event.target.readyState === "complete") {
+  useEffect(() => {
+    window.addEventListener("load", (event) => {
       setLoad(true);
-      console.log(event.target.readyState);
-    }
-  });
+      console.log("event.target.readyState");
+    });
+  }, [load]);
+
   return load ? (
     <>
       <BrowserRouter>
