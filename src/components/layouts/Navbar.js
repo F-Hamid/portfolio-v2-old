@@ -12,6 +12,7 @@ export default function Navbar() {
             src={require("./../../images/logo.png")}
             alt="hamidweb"
           />
+          <h2 className="hamidweb">hamidweb</h2>
         </a>
         <button
           className="navbar-toggler"

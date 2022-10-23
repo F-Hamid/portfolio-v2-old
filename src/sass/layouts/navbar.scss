@@ -21,6 +21,16 @@ nav {
   font-size: 2rem;
   color: #262626 !important;
   margin-left: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hamidweb {
+  color: rgba($color-text, $alpha: 0.3);
+  // color: #73daab;
+  text-align: center;
+  margin: 0.3rem 0 0 0.2rem;
+  font-family: $font-secondary;
 }
 .nav-link {
   color: #262626 !important;
