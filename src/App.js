@@ -19,7 +19,7 @@ function App() {
     for (let i = 0; i < reveals.length; i++) {
       let windowHeight = window.innerHeight;
       let elementTop = reveals[i].getBoundingClientRect().top;
-      let elementVisible = -10;
+      let elementVisible = 30;
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {

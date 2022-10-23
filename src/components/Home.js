@@ -15,7 +15,7 @@ const Home = () => {
       <main className="home-main">
         <h3 className="home-text">
           A <span className="home-span">building</span> brick in your big
-          project:
+          project
         </h3>
         <h1 className="home-header">Your WEBSITE</h1>
         <h3 className="home-text">
