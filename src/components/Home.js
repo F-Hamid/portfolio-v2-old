@@ -21,7 +21,7 @@ const Home = () => {
         <h3 className="home-text">
           ...My big <span className="home-span">project</span>
         </h3>
-        <a href="/" className="cta   typewriter ">
+        <a href="#about" className="cta   typewriter ">
           <h1>your Professional Web Developer</h1>
           <div class="arrows"></div>
         </a>

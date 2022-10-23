@@ -14,6 +14,15 @@ const Projects = () => {
       description:
         "A styled and responsive website with services and contact information for a photographer startup.",
     },
+    {
+      id: 1,
+      name: "Tattoo Artist",
+      image: require("./../images/mexihenna.png"),
+      link: "https://mexihenna.netlify.app/",
+      github_url: "https://github.com/F-Hamid/",
+      description:
+        "Modern and styled website for the best Henna Tattoo Artists in Denver Co.",
+    },
 
     {
       id: 0,
@@ -22,7 +31,7 @@ const Projects = () => {
       link: "https://skill-up-webapp.herokuapp.com/",
       github_url: "https://github.com/F-Hamid/SKILLUP",
       description:
-        "A big scale project that manage and track the learning path and skills added by the user and help store the data of each skill.",
+        "A big scale project that manage and track the learning path and skills added by the user and store the data of each skill.",
     },
 
     {
@@ -45,15 +54,6 @@ const Projects = () => {
         "Single page application for managing and keeping truck of your budget.",
     },
 
-    {
-      id: 1,
-      name: "Github Users Search",
-      image: require("./../images/githubSearch2.png"),
-      link: "https://gitsearch-hub.netlify.app",
-      github_url: "https://github.com/F-Hamid/GitHub-Users-Search",
-      description:
-        "A single page app for searching users and their stats on github : Repos, Followers, Languages,... .",
-    },
     {
       id: 4,
       name: "Quote or joke",
@@ -102,10 +102,7 @@ const Projects = () => {
               </div>
             );
           })}
-          <Link
-            className="projects-box projects-box reveal more"
-            to="/projects"
-          >
+          <Link className=" reveal more" to="/projects">
             <img
               className="more-img"
               src={require("./../images/cube1.png")}

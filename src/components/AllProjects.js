@@ -5,6 +5,15 @@ import "./../sass/pages/all-projects.scss";
 const AllProjects = () => {
   const store = [
     {
+      id: 1,
+      name: "Tattoo Artist",
+      image: require("./../images/mexihenna.png"),
+      link: "https://mexihenna.netlify.app/",
+      github_url: "https://github.com/F-Hamid/",
+      description:
+        "Modern and styled website for the best Henna Tattoo Artists in Denver Co.",
+    },
+    {
       id: 0,
       name: "Skill Up",
       image: require("./../images/skillup-chart.png"),
@@ -58,8 +67,17 @@ const AllProjects = () => {
       link: "https://tallouanas.netlify.app/",
       github_url: "",
       description:
-        "I provided my client with this pixel perfect website with 4 pages that gathers all the information, work, and history of my client.with a matching design and the right colors and shapes, my client is 100% satisfied.",
+        "I provided my client with this pixel perfect website with 4 pages that gathers all his information, work, and history. ",
     },
+    {
+      id: 13,
+      name: "QR-Code Generator",
+      image: require("./../images/qrcode.png"),
+      link: "  https://qr-gnerator.netlify.app/",
+      github_url: "https://github.com/F-Hamid/QR-Generator",
+      description: "Simple modern design QR code generator",
+    },
+
     {
       id: 4,
       name: "SimoSud Website ",
@@ -78,6 +96,15 @@ const AllProjects = () => {
       github_url: "https://github.com/F-Hamid/GitHub-Users-Search",
       description:
         "A single page app for searching users and their stats on github : Repos, Followers, Languages,... .",
+    },
+    {
+      id: 12,
+      name: "Cabinet Dentiste Al Jazeera ",
+      image: require("./../images/jazeera.png"),
+      link: "https://cabinetaljazeera.netlify.app/",
+      github_url: "https://github.com/F-Hamid/Cabinet-Aljazeera",
+      description:
+        "Beautiful glass styled website with services and contact information.",
     },
     {
       id: 7,
@@ -121,15 +148,6 @@ const AllProjects = () => {
       description:
         "A styled and responsive web App for managing and keeping truck of your work.",
     },
-    {
-      id: 12,
-      name: "Cabinet Dentiste Al Jazeera ",
-      image: require("./../images/jazeera.png"),
-      link: "https://cabinetaljazeera.netlify.app/",
-      github_url: "https://github.com/F-Hamid/Cabinet-Aljazeera",
-      description:
-        "Beautiful glass styled website with services and contact information.",
-    },
   ];
 
   return (
@@ -142,7 +160,7 @@ const AllProjects = () => {
           <h1 className="header-heading">Projects</h1>
           <hr className="header-bar" />
           <p className="header-text">
-            Explore some of my work: Real life projects,skills, and problem
+            Explore some of my work: Real world projects,skills, and problem
             solving.
           </p>
         </div>
