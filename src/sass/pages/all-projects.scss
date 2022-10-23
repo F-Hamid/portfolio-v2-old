@@ -42,8 +42,8 @@
       -webkit-transform: rotate(90deg);
     }
     &-text {
-      width: 20rem;
-      font-size: 1.5rem;
+      width: 30rem;
+      font-size: 1.8rem;
       font-family: $font-secondary;
     }
   }
@@ -76,6 +76,7 @@
     z-index: 20;
     text-align: center;
     background-size: cover;
+    border-radius: $bord-rad;
     &:hover :not(:last-child) {
       opacity: 0.7;
       transform: scale(0.99);
@@ -109,7 +110,11 @@
       flex-direction: column;
       justify-content: space-around;
     }
-
+    &_0 {
+      grid-column: 3 / span 1;
+      grid-row: 5 / span;
+      background-image: url("./../../images/cardbckg6.png");
+    }
     &_1 {
       grid-column: 1 / span 1;
       grid-row: 1 / span;
@@ -124,7 +129,8 @@
     &_3 {
       grid-column: 1 / span 1;
       grid-row: 2 / span;
-      background-image: url("./../../images/cardbckg2.png");
+      // background-image: url("./../../images/cardbckg2.png");
+      background-image: url("./../../images/cardbckg3.png");
     }
     &_4 {
       grid-column: 3 / span 1;
@@ -170,6 +176,11 @@
       grid-column: 3 / span 1;
       grid-row: 6 / span;
       background-image: url("./../../images/cardbckg.png");
+    }
+    &_13 {
+      grid-column: 3 / span 1;
+      grid-row: 6 / span;
+      background-image: url("./../../images/cardbckg6.png");
     }
 
     &-img {

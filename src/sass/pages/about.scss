@@ -139,16 +139,14 @@
   width: 80%;
   display: flex;
   justify-content: flex-end;
-  // justify-content: center;
   align-self: flex-start;
 }
 .btn {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: $color-text;
-  background-color: #32c1cd;
+  background-color: $color-primary;
   border: none;
-  border-radius: $bord-rad;
-  box-shadow: 0.2rem 0.2rem 1rem $color-primary;
+  border-radius: 0.2rem;
   text-align: center;
   a {
     text-decoration: none;
@@ -157,4 +155,13 @@
       color: $color-text;
     }
   }
+  &:hover {
+    box-shadow: 0.2rem 0.2rem 1rem $color-primary;
+    transition: all 0.5s;
+  }
+}
+.fa-angles-right {
+  font-size: 1.6rem;
+  align-self: center;
+  margin: 0.3rem;
 }

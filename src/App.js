@@ -1,9 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./sass/main.scss";
-import { Home, Projects, About, Contact, AllProjects } from "./components";
+import {
+  Home,
+  Projects,
+  About,
+  Contact,
+  AllProjects,
+  Resume,
+} from "./components";
 
 function App() {
   // Animation
@@ -24,14 +31,31 @@ function App() {
   // LOADING
   const [load, setLoad] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("load", (event) => {
-      setLoad(true);
-      console.log("event.target.readyState");
-    });
-  }, [load]);
+  setTimeout(() => {
+    setLoad(false);
+  }, 2000);
+
+  // useEffect(() => {
+  //   window.addEventListener("load", (event) => {
+  //     setLoad(false);
+  //     console.log("Ready!");
+  //   });
+  // }, [load]);
 
   return load ? (
+    <div className="spinner">
+      <div className="spinner-border text-primary" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
+
+      <div className="spinner-border text-danger" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
+      <div className="spinner-border text-info" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  ) : (
     <>
       <BrowserRouter>
         <Routes>
@@ -47,22 +71,10 @@ function App() {
             }
           ></Route>
           <Route path="/projects" element={<AllProjects />}></Route>
+          <Route path="/resume" element={<Resume />}></Route>
         </Routes>
       </BrowserRouter>
     </>
-  ) : (
-    <div className="spinner">
-      <div className="spinner-border text-primary" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
-
-      <div className="spinner-border text-danger" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
-      <div className="spinner-border text-info" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
-    </div>
   );
 }
 

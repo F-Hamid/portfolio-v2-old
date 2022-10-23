@@ -32,8 +32,8 @@
   // }
 
   &-main {
-    margin: 5rem;
-    margin-top: 12vh;
+    margin: 4rem;
+    margin-top: 4vh;
     padding: 2rem;
     text-align: left;
     z-index: 5;
@@ -101,4 +101,69 @@
 .hide {
   opacity: 0;
   visibility: 0;
+}
+
+.cta {
+  width: 60rem;
+  height: 4rem;
+  padding: 2rem;
+  display: block;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: $color-secondary;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: $font-terciary;
+  animation: cta-text 8s ease-in-out;
+  text-shadow: 0.2rem 0.2rem 1rem $color-secondary;
+}
+
+.cta:hover {
+  color: $color-primary;
+  text-shadow: none;
+}
+
+@keyframes cta-text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// text effect
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s 1.5s steps(40, end),
+    blink-caret 0.95s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    border-right: 0.05em solid $color-text;
+    width: 0;
+  }
+  to {
+    width: 100%;
+    border-right: 0.01 solid;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $color-secondary;
+  }
 }

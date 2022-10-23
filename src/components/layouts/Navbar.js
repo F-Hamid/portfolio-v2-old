@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../sass/layouts/navbar.scss";
 
 export default function Navbar() {
@@ -26,8 +27,8 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="#home">
-                home
+              <a className="nav-link " aria-current="page" href="#about">
+                About me
               </a>
             </li>
             <li className="nav-item">
@@ -36,9 +37,12 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="#about">
-                About me
-              </a>
+              {/* <a className="nav-link " aria-current="page" href="#home">
+                resume
+              </a> */}
+              <Link className="nav-link " to="/resume">
+                Resume
+              </Link>
             </li>
             <li className="nav-item ">
               <a

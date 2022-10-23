@@ -48,7 +48,7 @@
   }
 
   &-main {
-    width: 80vw;
+    width: 95vw;
     min-height: 95vh;
     display: flex;
     flex-direction: column;
@@ -58,10 +58,10 @@
   }
 
   &-box {
-    width: 45vw;
+    width: 50vw;
     height: 30vh;
     margin: 2rem auto;
-    padding: 1rem 0;
+    padding: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -69,7 +69,9 @@
     position: relative;
     z-index: 20;
     text-align: center;
-    background-size: cover;
+    border-radius: 9px;
+    background: #ededed;
+    box-shadow: 10px 10px 31px #c9c9c9, -10px -10px 31px #ffffff;
     &:hover :not(:last-child) {
       opacity: 0.8;
       transform: scale(0.99);
@@ -102,22 +104,22 @@
       justify-content: space-around;
     }
 
-    &_1 {
-      background-image: url("./../../images/cardbckg.png");
-    }
+    // &_1 {
+    //   background: rgba(#fff, 0.7);
+    // }
 
-    &_2 {
-      background-image: url("./../../images/cardbckg4.png");
-    }
-    &_3 {
-      background-image: url("./../../images/cardbckg2.png");
-    }
-    &_4 {
-      background-image: url("./../../images/cardbckg5.png");
-    }
-    &_5 {
-      background-image: url("./../../images/cardbckg6.png");
-    }
+    // &_2 {
+    //   background-image: url("./../../images/cardbckg4.png");
+    // }
+    // &_3 {
+    //   background-image: url("./../../images/cardbckg2.png");
+    // }
+    // &_4 {
+    //   background-image: url("./../../images/cardbckg5.png");
+    // }
+    // &_5 {
+    //   background-image: url("./../../images/cardbckg6.png");
+    // }
 
     &-img {
       width: 30%;
@@ -131,10 +133,10 @@
       }
     }
     .card-text {
-      max-width: 50%;
+      max-width: 70%;
       max-height: 80%;
       text-align: start;
-      margin: 1rem;
+      margin: 2rem;
       overflow: hidden;
       &_heading {
         font-size: 3rem;

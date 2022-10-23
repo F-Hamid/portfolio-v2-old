@@ -1,5 +1,6 @@
 import React from "react";
 import "./../sass/pages/contact.scss";
+import { SiUpwork } from "react-icons/si";
 
 const Contact = () => {
   return (
@@ -10,7 +11,12 @@ const Contact = () => {
             Time to bring those <span className="ideas">ideas</span> to the
             light
           </h1>
-          <a className="contact-me-link" href="mail-to:f.hamidweb@gmail.com">
+          <a
+            className="contact-me-link"
+            href="mail-to:f.hamidweb@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <h1 className="contact-me">contact me</h1>
           </a>
         </div>
@@ -27,7 +33,7 @@ const Contact = () => {
 
             <a
               className="fa"
-              href="tel: 06 07-877922"
+              href="tel: +212 661805827"
               target="_blank"
               rel="noreferrer"
             >
@@ -63,11 +69,11 @@ const Contact = () => {
             </a>
             <a
               className="fa"
-              href="https://twitter.com/Hamid7web"
+              href="https://www.upwork.com/freelancers/~01e7abd7e3523da42a"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa-brands fa-twitter fa"></i>
+              <SiUpwork />
             </a>
 
             <a
@@ -141,6 +147,26 @@ const Contact = () => {
           src={require("./../images/tech15.png")}
           alt="chrome "
         />
+        <img
+          className="tech-img-contact tech-img-contact-15 "
+          src={require("./../images/tech22.png")}
+          alt="chrome "
+        />
+        <img
+          className="tech-img-contact tech-img-contact-16 reverse"
+          src={require("./../images/tech25.png")}
+          alt="chrome "
+        />
+        <img
+          className="tech-img-contact tech-img-contact-17 "
+          src={require("./../images/tech23.png")}
+          alt="chrome "
+        />
+        <img
+          className="tech-img-contact tech-img-contact-18 reverse"
+          src={require("./../images/tech24.png")}
+          alt="chrome "
+        />
         <div className="footer__copyright">
           <p className="footer__copyright-p">
             2022@ Created by
@@ -152,7 +178,7 @@ const Contact = () => {
             >
               F.Hamid
             </a>
-            for personnel and professionel use.
+            for personnel and professional use.
           </p>
         </div>
       </section>
