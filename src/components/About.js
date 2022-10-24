@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./../sass/pages/about.scss";
 
-const techImg = [1, 11, 10, 16, 6, 21, 23, 22, 25, 24, 7, 8, 5, 3, 20, 4];
+const techImg = [1, 11, 10, 16, 6, 21, 23, 22, 25, 24, 7, 8, 5, 3, 19, 4, 26];
 
 const About = () => {
   return (
@@ -32,7 +32,6 @@ const About = () => {
             <button type="button" className="btn btn-info">
               <Link to="/resume">Resume</Link>
             </button>
-            {/* <i className="fa-solid fa-angles-right"></i> */}
             <div class="container">
               <div class="chevron"></div>
               <div class="chevron"></div>

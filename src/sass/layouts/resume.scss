@@ -18,7 +18,7 @@
   &-img {
     width: 80%;
     min-height: 80vh;
-    box-shadow: 0.5rem 0.5rem 2rem #393636;
+    box-shadow: 0.5rem 0.5rem 2rem $color-text;
     margin: 5rem;
     @media screen and (max-width: 850px) {
       margin: 15rem 5rem;
@@ -29,17 +29,17 @@
 .resume-btn {
   position: fixed;
   top: 50%;
-  color: #393636;
 }
 .resume-back-home {
   font-size: 6rem;
   right: 3rem;
+
   color: $color-primary;
   &:hover {
     color: $color-text;
   }
   @media screen and (max-width: 850px) {
-    top: 2%;
+    top: 10%;
     right: 2%;
   }
 }

@@ -8,6 +8,7 @@ const Projects = () => {
       id: 5,
       name: "Pedromedia",
       image: require("./../images/pedromedia.png"),
+      reveal: "",
       link: "https://pedromedia.netlify.app",
       github_url: "https://github.com/F-Hamid/Pedromedia",
       description:
@@ -17,6 +18,7 @@ const Projects = () => {
       id: 1,
       name: "Tattoo Artist",
       image: require("./../images/mexihenna.png"),
+      reveal: "reveal",
       link: "https://mexihenna.netlify.app/",
       github_url: "https://github.com/F-Hamid/",
       description:
@@ -27,6 +29,7 @@ const Projects = () => {
       id: 0,
       name: "Skill Up",
       image: require("./../images/skillup-chart.png"),
+      reveal: "reveal",
       link: "https://skill-up-webapp.herokuapp.com/",
       github_url: "https://github.com/F-Hamid/SKILLUP",
       description:
@@ -37,6 +40,7 @@ const Projects = () => {
       id: 2,
       name: "Architecture and interior design ",
       image: require("./../images/architecht.png"),
+      reveal: "reveal",
       link: "https://architect-interior-design.netlify.app/",
       github_url: "https://github.com/F-Hamid/Architecture-Interior-Website",
       description:
@@ -47,6 +51,7 @@ const Projects = () => {
       id: 3,
       name: "Budget App ",
       image: require("./../images/budgetapp.png"),
+      reveal: "reveal",
       link: "https://budgetspa.netlify.app",
       github_url: "https://github.com/F-Hamid/Budget-App",
       description:
@@ -57,6 +62,7 @@ const Projects = () => {
       id: 4,
       name: "Quote or joke",
       image: require("./../images/quoteorjoke.png"),
+      reveal: "reveal",
       link: "https://quote-jocke.netlify.app/",
       github_url: "https://github.com/F-Hamid/Quote-or-Joke",
       description:
@@ -78,37 +84,40 @@ const Projects = () => {
           </p>
         </div>
         <main className="projects-main">
-          {store.map(({ description, id, github_url, name, link, image }) => {
-            return (
-              <div
-                key={id}
-                className={`projects-box projects-box_${id} reveal`}
-              >
-                <div className="card-text">
-                  <h1 className="card-text_heading">{name} </h1>
-                  <p className="card-text_p">{description}</p>
-                </div>
-                <img className="projects-box-img" src={image} alt="Github" />
+          {store.map(
+            ({ description, id, github_url, name, link, image, reveal }) => {
+              return (
+                <div
+                  key={id}
+                  className={`projects-box projects-box_${id} 
+                  ${reveal}`}
+                >
+                  <div className="card-text">
+                    <h1 className="card-text_heading">{name} </h1>
+                    <p className="card-text_p">{description}</p>
+                  </div>
+                  <img className="projects-box-img" src={image} alt="Github" />
 
-                <div className="projects-box_after">
-                  <a href={link} target="_blank" rel="noreferrer">
-                    <i className="fa-brands fa-chrome"></i>
-                  </a>
-                  <a href={github_url} target="_blank" rel="noreferrer">
-                    <i className="fa-brands fa-github-alt"></i>
-                  </a>
+                  <div className="projects-box_after">
+                    <a href={link} target="_blank" rel="noreferrer">
+                      <i className="fa-brands fa-chrome"></i>
+                    </a>
+                    <a href={github_url} target="_blank" rel="noreferrer">
+                      <i className="fa-brands fa-github-alt"></i>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-          <Link className=" reveal more" to="/projects">
+              );
+            }
+          )}
+          <a className=" reveal more" href="/projects">
             <img
               className="more-img"
               src={require("./../images/cube1.png")}
               alt="cube2"
             />
             <h1 className="more-text">Explore More...</h1>
-          </Link>
+          </a>
         </main>
       </section>
     </>

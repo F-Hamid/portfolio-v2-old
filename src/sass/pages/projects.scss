@@ -47,6 +47,17 @@
     }
   }
 
+  .project-cube {
+    width: 35rem;
+    position: absolute;
+    bottom: -10rem;
+    right: 12vw;
+    opacity: 0.9;
+    animation: home-cube 5s ease-in;
+    @media screen and (max-width: 1050px) {
+      width: 25rem;
+    }
+  }
   &-main {
     width: 95vw;
     min-height: 95vh;

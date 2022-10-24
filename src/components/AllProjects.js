@@ -8,6 +8,7 @@ const AllProjects = () => {
       id: 1,
       name: "Tattoo Artist",
       image: require("./../images/mexihenna.png"),
+      reveal: "",
       link: "https://mexihenna.netlify.app/",
       github_url: "https://github.com/F-Hamid/",
       description:
@@ -17,6 +18,7 @@ const AllProjects = () => {
       id: 0,
       name: "Skill Up",
       image: require("./../images/skillup-chart.png"),
+      reveal: "",
       link: "https://skill-up-webapp.herokuapp.com/",
       github_url: "https://github.com/F-Hamid/SKILLUP",
       description:
@@ -27,6 +29,7 @@ const AllProjects = () => {
       id: 2,
       name: "Architecture and interior design ",
       image: require("./../images/architecht.png"),
+      reveal: "",
       link: "https://architect-interior-design.netlify.app/",
       github_url: "https://github.com/F-Hamid/Architecture-Interior-Website",
       description:
@@ -36,6 +39,7 @@ const AllProjects = () => {
       id: 3,
       name: "Weather App ",
       image: require("./../images/weatherApp.png"),
+      reveal: "",
       link: "https://spa-weather.netlify.app",
       github_url: "https://github.com/F-Hamid/Weather-app",
       description:
@@ -45,6 +49,7 @@ const AllProjects = () => {
       id: 6,
       name: "Pedromedia",
       image: require("./../images/pedromedia.png"),
+      reveal: "reveal",
       link: "https://pedromedia.netlify.app",
       github_url: "https://github.com/F-Hamid/Pedromedia",
       description:
@@ -55,6 +60,7 @@ const AllProjects = () => {
       id: 5,
       name: "Budget App ",
       image: require("./../images/budgetapp.png"),
+      reveal: "reveal",
       link: "https://budgetspa.netlify.app",
       github_url: "https://github.com/F-Hamid/Budget-App",
       description:
@@ -64,6 +70,7 @@ const AllProjects = () => {
       id: 13,
       name: "Scientist Portfolio",
       image: require("./../images/heroSection.png"),
+      reveal: "reveal",
       link: "https://tallouanas.netlify.app/",
       github_url: "",
       description:
@@ -73,6 +80,7 @@ const AllProjects = () => {
       id: 13,
       name: "QR-Code Generator",
       image: require("./../images/qrcode.png"),
+      reveal: "reveal",
       link: "  https://qr-gnerator.netlify.app/",
       github_url: "https://github.com/F-Hamid/QR-Generator",
       description: "Simple modern design QR code generator",
@@ -82,6 +90,7 @@ const AllProjects = () => {
       id: 4,
       name: "SimoSud Website ",
       image: require("./../images/sumosud.png"),
+      reveal: "reveal",
       link: "https://simosud.netlify.app",
       github_url: "https://github.com/F-Hamid/SimoSud",
       description:
@@ -92,6 +101,7 @@ const AllProjects = () => {
       id: 1,
       name: "Github Users Search",
       image: require("./../images/githubSearch2.png"),
+      reveal: "reveal",
       link: "https://gitsearch-hub.netlify.app",
       github_url: "https://github.com/F-Hamid/GitHub-Users-Search",
       description:
@@ -101,6 +111,7 @@ const AllProjects = () => {
       id: 12,
       name: "Cabinet Dentiste Al Jazeera ",
       image: require("./../images/jazeera.png"),
+      reveal: "reveal",
       link: "https://cabinetaljazeera.netlify.app/",
       github_url: "https://github.com/F-Hamid/Cabinet-Aljazeera",
       description:
@@ -110,6 +121,7 @@ const AllProjects = () => {
       id: 7,
       name: "Quote or joke",
       image: require("./../images/quoteorjoke.png"),
+      reveal: "reveal",
       link: "https://quote-jocke.netlify.app/",
       github_url: "https://github.com/F-Hamid/Quote-or-Joke",
       description:
@@ -119,6 +131,7 @@ const AllProjects = () => {
       id: 8,
       name: "Counter",
       image: require("./../images/counter.png"),
+      reveal: "reveal",
       link: "https://counter-spa.netlify.app",
       github_url: "https://github.com/F-Hamid/React-counter",
       description: "Counter: SPA logic/JS/React practice.",
@@ -127,6 +140,7 @@ const AllProjects = () => {
       id: 9,
       name: "Coin Toss ",
       image: require("./../images/cointoss.png"),
+      reveal: "reveal",
       link: "https://cointoss-app.netlify.app",
       github_url: "https://github.com/F-Hamid/coin-toss",
       description: "Coin Toss game : SPA logic/JS practice.",
@@ -135,6 +149,7 @@ const AllProjects = () => {
       id: 10,
       name: "Calculator ",
       image: require("./../images/calculator.png"),
+      reveal: "reveal",
       link: "https://spacalculator.netlify.app",
       github_url: "https://github.com/F-Hamid/Caclulator",
       description: "Efficient calculator using minium code.",
@@ -143,6 +158,7 @@ const AllProjects = () => {
       id: 11,
       name: "ToDo App ",
       image: require("./../images/todo.png"),
+      reveal: "reveal",
       link: "https://spatodo.netlify.app",
       github_url: "https://github.com/F-Hamid/React-Todo-App",
       description:
@@ -153,9 +169,9 @@ const AllProjects = () => {
   return (
     <>
       <section className="allProjects ">
-        <Link href="#about" to="/" className="back-home">
+        <a href="/" className="back-home">
           <i className="fa-solid fa-house-laptop"></i>
-        </Link>
+        </a>
         <div className="header ">
           <h1 className="header-heading">Projects</h1>
           <hr className="header-bar" />
@@ -165,29 +181,35 @@ const AllProjects = () => {
           </p>
         </div>
         <main className="allProjects-main">
-          {store.map(({ description, id, github_url, name, link, image }) => {
-            return (
-              <div
-                key={id}
-                className={`allProjects-box allProjects-box_${id} reveal`}
-              >
-                <div className="card-text">
-                  <h1 className="card-text_heading">{name} </h1>
-                  <p className="card-text_p">{description}</p>
-                </div>
-                <img className="allProjects-box-img" src={image} alt="Github" />
+          {store.map(
+            ({ description, id, github_url, name, link, image, reveal }) => {
+              return (
+                <div
+                  key={id}
+                  className={`allProjects-box allProjects-box_${id} ${reveal}`}
+                >
+                  <div className="card-text">
+                    <h1 className="card-text_heading">{name} </h1>
+                    <p className="card-text_p">{description}</p>
+                  </div>
+                  <img
+                    className="allProjects-box-img"
+                    src={image}
+                    alt="Github"
+                  />
 
-                <div className="allProjects-box_after">
-                  <a href={link} target="_blank" rel="noreferrer">
-                    <i className="fa-brands fa-chrome"></i>
-                  </a>
-                  <a href={github_url} target="_blank" rel="noreferrer">
-                    <i className="fa-brands fa-github-alt"></i>
-                  </a>
+                  <div className="allProjects-box_after">
+                    <a href={link} target="_blank" rel="noreferrer">
+                      <i className="fa-brands fa-chrome"></i>
+                    </a>
+                    <a href={github_url} target="_blank" rel="noreferrer">
+                      <i className="fa-brands fa-github-alt"></i>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            }
+          )}
         </main>
       </section>
     </>

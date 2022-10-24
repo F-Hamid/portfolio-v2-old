@@ -1,9 +1,12 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
-
+@import "../setup/variables";
 .testim {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
   max-width: 100vw;
   height: 75vh;
   background-image: linear-gradient(
@@ -15,21 +18,16 @@
     #000000
   );
   z-index: 0;
-  //   padding: 5rem;
 }
-// .header {
-//   width: 39.2vw;
-//   height: 5%;
-//   backgroun7d-image: linear-gradient(
-//     to bottom,
-//     #4dd4de,
-//     #5096b8,
-//     #535c79,
-//     #362c38,
-//     #000000
-//   );
-// }
+.testim-heading {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  font-size: 6rem;
+  color: $color-primary;
+  font-family: $font-primary;
+}
 
+// Cards
 .cards {
   width: 100%;
   height: 90%;
@@ -37,7 +35,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 figure.snip1197 {
