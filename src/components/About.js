@@ -32,7 +32,12 @@ const About = () => {
             <button type="button" className="btn btn-info">
               <Link to="/resume">Resume</Link>
             </button>
-            <i className="fa-solid fa-angles-right"></i>
+            {/* <i className="fa-solid fa-angles-right"></i> */}
+            <div class="container">
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+            </div>
           </div>
 
           <div className="tech">

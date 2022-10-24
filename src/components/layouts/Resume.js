@@ -5,7 +5,7 @@ import "./../../sass/layouts/resume.scss";
 //
 export default function Resume() {
   return (
-    <div className="resume container">
+    <div className="resume ">
       <Link href="#about" to="/" className="resume-back-home reveal">
         <i className="fa-solid fa-house-laptop"></i>
       </Link>
@@ -19,7 +19,7 @@ export default function Resume() {
           href={require("./../../images/resume/resume-pdf.pdf")}
           download="Hamidweb-Resume"
         >
-          Download .Pdf
+          <i class="fa-solid fa-file-pdf"></i>
         </a>
       </button>
     </div>

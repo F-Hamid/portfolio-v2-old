@@ -10,6 +10,7 @@ import {
   Contact,
   AllProjects,
   Resume,
+  Testimonials,
 } from "./components";
 
 function App() {
@@ -66,6 +67,7 @@ function App() {
                 <Home />
                 <Projects />
                 <About />
+                <Testimonials />
                 <Contact />
               </>
             }
