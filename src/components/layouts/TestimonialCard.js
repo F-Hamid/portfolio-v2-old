@@ -78,17 +78,14 @@ const TestimonialCard = () => {
               <blockquote>
                 Hamid est un perfectionniste et ses suggestions et observation
                 sont remarquables. Je suis ravi d'avoir' mon site Web conçu et
-                créé par ce professionnel!
+                créé par un professionnel!
               </blockquote>
               <div class="arrow"></div>
             </figcaption>
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample10.jpg"
-              alt="sq-sample10"
-            />
+            <img src={require("../../images/simosud.png")} alt="sq-sample10" />
             <div class="author">
               <h5>
-                Pelican Steve <span>- LittleSnippets</span>
+                SimoSUd <span>- Rental Agency </span>
               </h5>
             </div>
           </figure>

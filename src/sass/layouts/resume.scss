@@ -46,9 +46,9 @@
 
 .resume-btn {
   font-size: 5rem;
-  max-width: 12rem;
+  max-width: 8rem;
   text-align: center;
-  left: 3rem;
+  left: 4rem;
   width: 16rem;
   background-color: $color-primary-light !important;
   box-shadow: -0.1rem 0.1rem 1rem #393636;
@@ -60,11 +60,11 @@
 }
 
 .fa-file-pdf {
-  color: $color-text;
+  color: $color-secondary;
   opacity: 0.5;
   transition: all 0.5s;
 }
 .fa-file-pdf:hover {
-  color: $color-secondary;
+  color: $color-text;
   opacity: 1;
 }
