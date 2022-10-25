@@ -11,7 +11,7 @@ const Testimonials = () => {
       </div>
       <a href="#contact" className="testim-arrows">
         <h1 className="arrow-heading">contact me</h1>
-        <div class="arrows arrow-testim"></div>
+        <div className="arrows arrow-testim"></div>
       </a>
     </section>
   );

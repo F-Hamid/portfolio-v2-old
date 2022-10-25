@@ -73,14 +73,12 @@ const Projects = () => {
   return (
     <>
       <section className="projects" id="projects">
-        <div className="header reveal">
+        <div className="header ">
           <h1 className="header-heading">Projects</h1>
           <hr className="header-bar" />
           <p className="header-text">
             My work involves real life websites, various skills and problem
-            solving.
-            <br />
-            To explore even more, check out the links below.
+            solving. To explore even more, check out the links below.
           </p>
         </div>
         <main className="projects-main">

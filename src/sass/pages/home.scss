@@ -46,13 +46,13 @@
       margin: 2rem;
       margin-top: 6vh;
     }
-    @media screen and (max-width: 460px) {
+    @media screen and (max-width: 450px) {
       margin: 1rem;
-      margin-top: 2vh;
+      margin-top: -1vh;
     }
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 380px) {
       margin: 1rem;
-      margin-top: 2vh;
+      margin-top: 0vh;
     }
   }
   &-header,
@@ -138,12 +138,20 @@
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   padding-bottom: 6rem;
+
   /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s 1.5s steps(40, end),
     blink-caret 0.95s step-end infinite;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 2.5rem;
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 1.5rem;
+  }
 }
 
 /* The typing effect */

@@ -23,7 +23,7 @@ const Home = () => {
         </h3>
         <a href="#about" className="cta   typewriter ">
           <h1>your Professional Web Developer</h1>
-          <div class="arrows"></div>
+          <div className="arrows"></div>
         </a>
       </main>
     </section>

@@ -10,7 +10,7 @@
   background-image: url(../../images/cardbckg.png);
   background-size: cover;
   @media screen and (max-width: 650px) {
-    height: 70vh;
+    height: 72vh;
   }
   @media screen and (max-width: 400px) {
     height: 50vh;
@@ -112,9 +112,9 @@
     margin: 3rem;
   }
   @media screen and (max-width: 850px) {
-    width: 5rem;
-    height: 6rem;
-    margin: 3rem;
+    // width: 5rem;
+    // height: 6rem;
+    // margin: 3rem;
   }
   @media screen and (max-width: 550px) {
     width: 7rem;

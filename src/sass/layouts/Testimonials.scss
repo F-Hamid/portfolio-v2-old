@@ -18,7 +18,13 @@
     #362d37,
     #000000
   );
-  z-index: 0;
+
+  @media screen and (max-width: 850px) {
+    height: 70vh;
+  }
+  @media screen and (max-width: 450px) {
+    height: 55vh;
+  }
 }
 .testim-heading {
   margin-top: 2rem;
@@ -26,6 +32,11 @@
   font-size: 6rem;
   color: $color-primary;
   font-family: $font-primary;
+  @media screen and (max-width: 650px) {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    color: $color-text;
+  }
 }
 
 .testim-arrows {
@@ -35,6 +46,14 @@
   bottom: 11rem;
   text-decoration: none;
   padding: 2rem;
+  @media screen and (max-width: 750px) {
+    right: -6rem;
+    bottom: 2rem;
+  }
+  @media screen and (max-width: 450px) {
+    right: -6rem;
+    bottom: 10rem;
+  }
 }
 .arrow-heading {
   width: 100%;
@@ -61,6 +80,12 @@
   flex-direction: row;
   margin-bottom: 4rem;
   padding-bottom: 2rem;
+  @media screen and (max-width: 750px) {
+    height: 70%;
+  }
+  @media screen and (max-width: 450px) {
+    height: 50%;
+  }
 }
 
 figure.snip1197 {
