@@ -9,19 +9,17 @@ const TestimonialCard = () => {
           <figure class="snip1197">
             <figcaption>
               <blockquote>
-                Sometimes I think the surest sign that intelligent life exists
-                elsewhere in the universe is that none of it has tried to
-                contact us.
+                Hamid is full of ideas, he is a perfectionist and his attention
+                to detail is immaculate. The complexity of my website is beyond
+                my expectations. I am excited to share my website with all my
+                new customers!
               </blockquote>
               <div class="arrow"></div>
             </figcaption>
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample10.jpg"
-              alt="sq-sample10"
-            />
+            <img src={require("../../images/anel.png")} alt="sq-sample10" />
             <div class="author">
               <h5>
-                Pelican Steve <span>- LittleSnippets</span>
+                Anel Anaya <span>- Tattoo Artist</span>
               </h5>
             </div>
           </figure>
@@ -33,19 +31,18 @@ const TestimonialCard = () => {
           <figure class="snip1197">
             <figcaption>
               <blockquote>
-                Sometimes I think the surest sign that intelligent life exists
-                elsewhere in the universe is that none of it has tried to
-                contact us.
+                As scientific researcher, I was looking for a creative and
+                professional website that resume my career and present my
+                previous scientific contributions in a special and innovative
+                way. Hamid made me what I was looking for in short time, high
+                quality work and total disposability.
               </blockquote>
               <div class="arrow"></div>
             </figcaption>
-            <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample10.jpg"
-              alt="sq-sample10"
-            />
+            <img src={require("../../images/anas.png")} alt="sq-sample10" />
             <div class="author">
               <h5>
-                Pelican Steve <span>- LittleSnippets</span>
+                Anas Tallou <span>- PhD. Chemistry</span>
               </h5>
             </div>
           </figure>
@@ -57,19 +54,18 @@ const TestimonialCard = () => {
           <figure class="snip1197">
             <figcaption>
               <blockquote>
-                Sometimes I think the surest sign that intelligent life exists
-                elsewhere in the universe is that none of it has tried to
-                contact us.
+                Exactly what and who i needed: a programmer with artistic
+                skills.On top of that professional communication.
               </blockquote>
               <div class="arrow"></div>
             </figcaption>
             <img
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample10.jpg"
+              src={require("../../images/pedroMedia.jpg")}
               alt="sq-sample10"
             />
             <div class="author">
               <h5>
-                Pelican Steve <span>- LittleSnippets</span>
+                Pedro Zouhir <span>- Photographer</span>
               </h5>
             </div>
           </figure>
@@ -80,9 +76,9 @@ const TestimonialCard = () => {
           <figure class="snip1197">
             <figcaption>
               <blockquote>
-                Sometimes I think the surest sign that intelligent life exists
-                elsewhere in the universe is that none of it has tried to
-                contact us.
+                Hamid est un perfectionniste et ses suggestions et observation
+                sont remarquables. Je suis ravi d'avoir' mon site Web conçu et
+                créé par ce professionnel!
               </blockquote>
               <div class="arrow"></div>
             </figcaption>
