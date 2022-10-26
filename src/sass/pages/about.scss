@@ -10,10 +10,11 @@
   background-image: url(../../images/cardbckg.png);
   background-size: cover;
   @media screen and (max-width: 850px) {
-    height: 72vh;
+    height: 90vh;
   }
+
   @media screen and (max-width: 650px) {
-    height: 62vh;
+    height: 65vh;
   }
   @media screen and (max-width: 450px) {
     height: 47vh;
@@ -148,6 +149,10 @@
     height: 9rem;
     margin: 3rem;
   }
+}
+.tech21 {
+  width: 12rem;
+  height: 10rem;
 }
 .tech-text {
   width: 20vw;

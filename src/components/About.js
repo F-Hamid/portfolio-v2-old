@@ -46,7 +46,7 @@ const About = () => {
               return (
                 <img
                   key={img}
-                  className="tech-img"
+                  className={` tech-img tech${img}`}
                   src={require(`./../images/tech${img}.png`)}
                   alt="about "
                 />
