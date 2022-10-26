@@ -9,11 +9,17 @@
   background-color: $color-secondary;
   background-image: url(../../images/cardbckg.png);
   background-size: cover;
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 850px) {
     height: 72vh;
   }
-  @media screen and (max-width: 400px) {
-    height: 50vh;
+  @media screen and (max-width: 650px) {
+    height: 62vh;
+  }
+  @media screen and (max-width: 450px) {
+    height: 47vh;
+  }
+  @media screen and (max-width: 350px) {
+    height: 40vh;
   }
   &-bar {
     width: 15em;
@@ -25,7 +31,7 @@
     @media screen and (max-width: 1000px) {
       margin-left: 4rem;
     }
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 750px) {
       // margin: 5rem;
       width: 35em;
       margin: 2rem 5rem;
@@ -49,7 +55,7 @@
   justify-content: flex-start;
   text-transform: uppercase;
   max-width: 100%;
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 750px) {
     flex-direction: column;
     padding: -5rem;
   }
@@ -65,10 +71,24 @@
 }
 .about-text-p {
   font-size: 2rem;
-  width: 70%;
+  min-width: 40%;
+  max-width: 55%;
   margin: 2rem;
   color: $color-text;
   font-family: $font-terciary;
+  @media screen and (max-width: 850px) {
+    margin-left: -4rem;
+    max-width: 50%;
+  }
+  @media screen and (max-width: 750px) {
+    padding-left: 8rem;
+    max-width: 90%;
+  }
+  @media screen and (max-width: 650px) {
+    padding-left: 0rem;
+    max-width: 90%;
+  }
+
   span {
     color: $color-primary;
     text-shadow: 0.01rem 0.01rem 2rem $color-primary;
@@ -78,13 +98,15 @@
     margin-left: -4rem;
   }
 
-  @media screen and (max-width: 750px) {
-    font-size: 1.7rem;
-    margin-top: 4rem;
+  @media screen and (max-width: 800px) {
+    font-size: 2rem;
+    width: 80%;
+    // margin-top: 4rem;
   }
   @media screen and (max-width: 650px) {
-    font-size: 2rem;
     margin: 0 5rem;
+    width: 70%;
+    font-size: 2.5rem;
   }
 }
 
@@ -128,13 +150,17 @@
   }
 }
 .tech-text {
-  width: 10vw;
-  margin: 3rem;
+  width: 20vw;
+  margin: 3rem 5rem;
   font-size: 2rem;
   color: $color-text;
   font-family: $font-primary;
   text-shadow: 0.1rem 0.1rem 1rem $color-text;
   position: relative;
+  @media screen and (max-width: 650px) {
+    font-size: 2.5rem;
+    margin: 3rem 5rem 1rem;
+  }
 }
 
 .btn-container {
@@ -154,6 +180,9 @@
   border: none;
   border-radius: 0.2rem;
   text-align: center;
+  @media screen and (max-width: 6500px) {
+    margin-top: 2rem;
+  }
   a {
     text-decoration: none;
     color: $color-secondary;
@@ -166,11 +195,6 @@
     transition: all 0.5s;
   }
 }
-.fa-angles-right {
-  font-size: 1.6rem;
-  align-self: center;
-  margin: 0.3rem;
-}
 
 // Arrow
 $base: 0.6rem;
@@ -181,6 +205,9 @@ $base: 0.6rem;
   align-items: center;
   transform: rotate(-90deg);
   margin-left: -3rem;
+  @media screen and (max-width: 6500px) {
+    margin-top: 2rem;
+  }
 }
 
 .chevron {

@@ -107,6 +107,9 @@
       width: 75vw;
       height: 20vh;
     }
+    @media screen and (max-width: 350px) {
+      height: 12vh;
+    }
 
     &_after {
       position: absolute;
@@ -168,22 +171,22 @@
         color: $color-primary;
         margin-bottom: 0.7em;
         @media screen and (max-width: 550px) {
-          // padding-left: 5rem;
-          text-align: center;
+          padding-left: 8rem;
+          // text-align: center;
           margin: auto;
-        }
-
-        @media screen and (max-width: 600px) {
-          font-size: 5rem;
-          margin: auto 2rem;
+          font-size: 6rem;
         }
       }
       &_p {
-        font-size: 2rem;
+        font-size: 3rem;
         font-family: $font-secondary;
         color: $color-text;
         text-indent: 1rem;
         @media screen and (max-width: 600px) {
+          width: 80%;
+          margin: auto;
+        }
+        @media screen and (max-width: 350px) {
           opacity: 0;
           visibility: none;
         }

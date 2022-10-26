@@ -70,10 +70,12 @@
   }
 
   &-text {
-    font-size: 4rem;
     color: #394867;
     font-family: $font-terciary;
     color: $color-secondary;
+    @media screen and (max-width: 550px) {
+      font-size: 5rem;
+    }
   }
 
   &-span {

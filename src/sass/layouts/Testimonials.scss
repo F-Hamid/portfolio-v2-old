@@ -25,6 +25,9 @@
   @media screen and (max-width: 450px) {
     height: 55vh;
   }
+  @media screen and (max-width: 350px) {
+    height: 45vh;
+  }
 }
 .testim-heading {
   margin-top: 2rem;
@@ -47,12 +50,12 @@
   text-decoration: none;
   padding: 2rem;
   @media screen and (max-width: 750px) {
-    right: -6rem;
+    right: 4rem;
     bottom: 2rem;
+    width: 20rem;
   }
   @media screen and (max-width: 450px) {
     right: -6rem;
-    bottom: 10rem;
   }
 }
 .arrow-heading {
@@ -68,7 +71,7 @@
   text-decoration: none;
 }
 .arrow-testim {
-  transform: translateX(-3rem) !important;
+  // transform: translateX(-3rem) !important;
 }
 // Cards
 .cards {

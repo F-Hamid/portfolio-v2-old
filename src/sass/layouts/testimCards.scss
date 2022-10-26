@@ -15,8 +15,7 @@
   //   right: 5%;
   z-index: 0;
   @media screen and (max-width: 750px) {
-    font-size: 4rem;
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -108,7 +107,7 @@ figure.snip1197 {
   text-align: left;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   margin-bottom: 7rem;
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 750px) {
     min-width: 40rem;
     max-width: 90rem;
   }
@@ -123,6 +122,10 @@ figure.snip1197 img {
   height: 34rem;
   vertical-align: middle;
   border-radius: 0 8px 8px 0;
+  @media screen and (max-width: 750px) {
+    max-width: 52%;
+    height: 40rem;
+  }
 }
 figure.snip1197 figcaption {
   top: 0;
@@ -136,6 +139,9 @@ figure.snip1197 figcaption {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  @media screen and (max-width: 750px) {
+    font-size: 3rem;
+  }
 }
 figure.snip1197 blockquote {
   position: relative;
