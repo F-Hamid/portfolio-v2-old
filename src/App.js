@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -30,11 +30,11 @@ function App() {
   }
   window.addEventListener("scroll", reveal);
   // LOADING
-  const [load, setLoad] = useState(false);
+  const [load, setLoad] = useState(true);
 
   setTimeout(() => {
     setLoad(false);
-  }, 2000);
+  }, 1500);
 
   // useEffect(() => {
   //   window.addEventListener("load", (event) => {
