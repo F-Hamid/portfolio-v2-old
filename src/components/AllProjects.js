@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./../sass/pages/all-projects.scss";
 
 const AllProjects = () => {

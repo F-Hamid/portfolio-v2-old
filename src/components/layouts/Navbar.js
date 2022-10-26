@@ -43,9 +43,7 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              {/* <a className="nav-link " aria-current="page" href="#home">
-                resume
-              </a> */}
+        
               <Link className="nav-link " to="/resume">
                 Resume
               </Link>

@@ -45,24 +45,30 @@
 .testim-arrows {
   position: absolute;
   width: 25rem;
-  right: 10rem;
-  bottom: 11rem;
+  right: 8rem;
+  bottom: 10rem;
   text-decoration: none;
   padding: 2rem;
+
   @media screen and (max-width: 750px) {
     right: 4rem;
-    bottom: 2rem;
+    bottom: 16rem;
     width: 20rem;
   }
   @media screen and (max-width: 450px) {
-    right: -6rem;
+    right: 4rem;
+    bottom: 10rem;
   }
 }
 .arrow-heading {
   width: 100%;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: $color-primary;
   font-family: $font-primary;
+  @media screen and (max-width: 550px) {
+    font-size: 3rem;
+    width: 120%;
+  }
 }
 .testim-arrows :link,
 .testim-arrows :visited,
@@ -70,8 +76,9 @@
 .testim-arrows :active {
   text-decoration: none;
 }
-.arrow-testim {
-  // transform: translateX(-3rem) !important;
+
+.arrows {
+  padding-left: 3rem;
 }
 // Cards
 .cards {
