@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import "./sass/main.scss";
 import {
@@ -59,6 +60,19 @@ function App() {
   ) : (
     <>
       <BrowserRouter>
+        <Helmet>
+          <title>
+            Professional Web Developer | Make your Business Standout.
+          </title>
+          <meta
+            name="description"
+            content="Full Stuck Web Developer to help you get the perfect creative custom Website."
+          />
+          <meta
+            name="keywords"
+            content="Website, Fateh Hamid,Website Designer, Website Developer, Website ideas, Full stuck web developer, Front end developer , Back end developer, User Interface, User experience"
+          />
+        </Helmet>
         <Routes>
           <Route
             path="/"

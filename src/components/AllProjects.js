@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./../sass/pages/all-projects.scss";
 
 const AllProjects = () => {
@@ -168,6 +169,17 @@ const AllProjects = () => {
   return (
     <>
       <section className="allProjects ">
+        <Helmet>
+          <title> Hamid-Web | My Projects </title>
+          <meta
+            name="description"
+            content="Projects: Professional Web Developer  and Designer."
+          />
+          <meta
+            name="keywords"
+            content="Website, Fateh Hamid,Website Designer, Website Developer, Website ideas, Full stuck web developer, Front end developer , Back end developer, User Interface, User experience"
+          />
+        </Helmet>
         <a href="/" className="back-home">
           <i className="fa-solid fa-house-laptop"></i>
         </a>
