@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import "./../sass/pages/all-projects.scss";
+import Contact from "./Contact";
 
 const AllProjects = () => {
   const store = [
@@ -13,6 +14,16 @@ const AllProjects = () => {
       github_url: "https://github.com/F-Hamid/",
       description:
         "Modern and styled website for the best Henna Tattoo Artists in Denver Co.",
+    },
+    {
+      id: 13,
+      name: "Scientist Portfolio",
+      image: require("./../images/heroSection.png"),
+      reveal: "",
+      link: "https://tallouanas.netlify.app/",
+      github_url: "",
+      description:
+        "I provided my client with this pixel perfect website with 4 pages that gathers all his information, work, and history. ",
     },
     {
       id: 0,
@@ -39,7 +50,7 @@ const AllProjects = () => {
       id: 3,
       name: "Weather App ",
       image: require("./../images/weatherApp.png"),
-      reveal: "",
+      reveal: "reveal",
       link: "https://spa-weather.netlify.app",
       github_url: "https://github.com/F-Hamid/Weather-app",
       description:
@@ -66,16 +77,7 @@ const AllProjects = () => {
       description:
         "Single page application for managing and keeping truck of your budget.",
     },
-    {
-      id: 13,
-      name: "Scientist Portfolio",
-      image: require("./../images/heroSection.png"),
-      reveal: "reveal",
-      link: "https://tallouanas.netlify.app/",
-      github_url: "",
-      description:
-        "I provided my client with this pixel perfect website with 4 pages that gathers all his information, work, and history. ",
-    },
+
     {
       id: 13,
       name: "QR-Code Generator",
@@ -222,6 +224,7 @@ const AllProjects = () => {
             }
           )}
         </main>
+        <Contact />
       </section>
     </>
   );
