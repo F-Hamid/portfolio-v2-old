@@ -18,7 +18,7 @@ const Projects = () => {
       id: 1,
       name: "Tattoo Artist",
       image: require("./../images/mexihenna.png"),
-      reveal: "reveal",
+      reveal: "",
       link: "https://mexihenna.netlify.app/",
       github_url: "https://github.com/F-Hamid/",
       description:
