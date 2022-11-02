@@ -22,7 +22,7 @@
     height: 50vh;
   }
   @media screen and (max-width: 460px) {
-    height: 32vh;
+    height: 34vh;
   }
   @media screen and (max-width: 400px) {
     height: 28vh;
@@ -94,7 +94,7 @@
     position: absolute;
     bottom: 0rem;
     left: 25vw;
-    opacity: 0.7;
+    opacity: 0.85;
     animation: home-cube 5s ease-in;
     @media screen and (max-width: 1050px) {
       width: 35rem;

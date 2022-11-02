@@ -1,3 +1,5 @@
+@import "./../main.scss";
+
 .home::before {
   content: "";
   position: absolute;
@@ -5,7 +7,7 @@
   height: 102%;
   left: -0%;
   z-index: -10;
-  background-color: #eeeeee;
+  background-color: $color-text;
   background: url(./../../../src/images/bckg-img19.png);
   background-repeat: no-repeat;
   background-size: cover;
