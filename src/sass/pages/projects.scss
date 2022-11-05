@@ -4,7 +4,15 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  background-color: $color-secondary;
+  // background-color: $color-secondary;
+  background-image: linear-gradient(
+    to bottom,
+    #eeeeee,
+    #cdd1dc,
+    #a5b7ca,
+    #76a0b4,
+    #418998
+  );
   width: 100vw;
   min-height: 100%;
   padding: 15rem 5rem;
@@ -91,7 +99,10 @@
       #d9d9d9,
       #d2d2d2
     );
-    box-shadow: 10px 10px 31px #c9c9c9, -10px -10px 31px #ffffff;
+    // box-shadow: 10px 10px 31px #c9c9c9, -10px -10px 31px #ffffff;
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: inset 7px 7px 14px #bebebe, inset -7px -7px 14px #ffffff;
     &:hover :not(:last-child) {
       opacity: 0.8;
       transform: scale(0.99);
@@ -154,6 +165,9 @@
       z-index: 500;
       box-shadow: 0.5rem 0.5rem 1rem $color-text;
       border-radius: $bord-rad;
+      border-radius: 4px;
+      background: #e0e0e0;
+      box-shadow: inset 7px 7px 14px #bebebe, inset -7px -7px 14px #ffffff;
       @media screen and (max-width: 450px) {
         height: 70%;
       }

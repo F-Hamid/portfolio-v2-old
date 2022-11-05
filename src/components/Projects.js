@@ -11,7 +11,7 @@ const Projects = () => {
       link: "https://pedromedia.netlify.app",
       github_url: "https://github.com/F-Hamid/Pedromedia",
       description:
-        "A styled and responsive website with services and contact information for a photographer startup.",
+        "A styled and responsive website with services and contact information for a professional photographer.",
     },
     {
       id: 1,
@@ -21,7 +21,7 @@ const Projects = () => {
       link: "https://mexihenna.netlify.app/",
       github_url: "https://github.com/F-Hamid/",
       description:
-        "Modern and styled website for the best Henna Tattoo Artists in Denver Co.",
+        "Modern and styled website for the best Tattoo Artist in Denver Co.",
     },
 
     {
@@ -54,7 +54,7 @@ const Projects = () => {
       link: "https://budgetspa.netlify.app",
       github_url: "https://github.com/F-Hamid/Budget-App",
       description:
-        "Single page application for managing and keeping truck of your budget.",
+        "Single web page application for managing and keeping track of your budget.",
     },
 
     {
