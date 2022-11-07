@@ -2,13 +2,26 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "./../sass/pages/all-projects.scss";
 import Contact from "./Contact";
+import { SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
 
 const AllProjects = () => {
+  const html = <i class="fa-brands fa-html5"></i>;
+  const css = <i class="fa-brands fa-css3-alt"></i>;
+  const js = <i class="fa-brands fa-js"></i>;
+  const react = <i class="fa-brands fa-react"></i>;
+  const sass = <i class="fa-brands fa-sass"></i>;
+  const node = <i class="fa-brands fa-node"></i>;
+  const btsrp = <i class="fa-brands fa-bootstrap"></i>;
+  const tlwnd = <SiTailwindcss />;
+  const express = <SiExpress />;
+  const nongoDb = <SiMongodb />;
+
   const store = [
     {
       id: 1,
       name: "Tattoo Artist",
       image: require("./../images/mexihenna.png"),
+      stack: [html, js, tlwnd, react],
       reveal: "",
       link: "https://mexihenna.netlify.app/",
       github_url: "https://github.com/F-Hamid/",
@@ -19,6 +32,7 @@ const AllProjects = () => {
       id: 13,
       name: "Scientist Portfolio",
       image: require("./../images/heroSection.png"),
+      stack: [html, js, tlwnd, react],
       reveal: "",
       link: "https://tallouanas.netlify.app/",
       github_url: "",
@@ -29,6 +43,7 @@ const AllProjects = () => {
       id: 0,
       name: "Skill Up",
       image: require("./../images/skillup-chart.png"),
+      stack: [html, sass, js, react, node, express, nongoDb],
       reveal: "",
       link: "https://skill-up-webapp.herokuapp.com/",
       github_url: "https://github.com/F-Hamid/SKILLUP",
@@ -40,6 +55,7 @@ const AllProjects = () => {
       id: 2,
       name: "Architecture and interior design ",
       image: require("./../images/architecht.png"),
+      stack: [html, css, sass, js],
       reveal: "",
       link: "https://architect-interior-design.netlify.app/",
       github_url: "https://github.com/F-Hamid/Architecture-Interior-Website",
@@ -79,7 +95,7 @@ const AllProjects = () => {
     },
 
     {
-      id: 13,
+      id: 12,
       name: "QR-Code Generator",
       image: require("./../images/qrcode.png"),
       reveal: "reveal",
@@ -100,7 +116,7 @@ const AllProjects = () => {
     },
 
     {
-      id: 1,
+      id: 19,
       name: "Github Users Search",
       image: require("./../images/githubSearch2.png"),
       reveal: "reveal",
@@ -110,7 +126,7 @@ const AllProjects = () => {
         "Web page application for searching users and their stats on github : Repos, Followers, skills,... .",
     },
     {
-      id: 12,
+      id: 18,
       name: "Cabinet Dentiste Al Jazeera ",
       image: require("./../images/jazeera.png"),
       reveal: "reveal",
@@ -182,6 +198,7 @@ const AllProjects = () => {
             content="Website, Fateh Hamid,Website Designer, Website Developer, Website ideas, Full stuck web developer, Front end developer , Back end developer, User Interface, User experience"
           />
         </Helmet>
+
         <a href="/" className="back-home">
           <i className="fa-solid fa-house-laptop"></i>
         </a>
@@ -195,7 +212,16 @@ const AllProjects = () => {
         </div>
         <main className="allProjects-main">
           {store.map(
-            ({ description, id, github_url, name, link, image, reveal }) => {
+            ({
+              description,
+              id,
+              github_url,
+              name,
+              link,
+              image,
+              reveal,
+              stack,
+            }) => {
               return (
                 <div
                   key={id}
@@ -218,6 +244,9 @@ const AllProjects = () => {
                     <a href={github_url} target="_blank" rel="noreferrer">
                       <i className="fa-brands fa-github-alt"></i>
                     </a>
+                  </div>
+                  <div className="allProjects-box_before">
+                    <div className="stack">{stack}</div>
                   </div>
                 </div>
               );
