@@ -64,7 +64,7 @@
   }
 
   &-box {
-    width: 50rem;
+    width: 60rem;
     height: 32vh;
     margin: 2rem;
     padding: 1rem 0;
@@ -92,14 +92,22 @@
     &:hover .allProjects-box_after {
       @include show-left;
     }
+    @media screen and (max-width: 1350px) {
+      width: 50rem;
+    }
     @media screen and (max-width: 1000px) {
       width: 70rem;
     }
     @media screen and (max-width: 750px) {
-      height: 30vh;
+      height: 25vh;
     }
     @media screen and (max-width: 550px) {
-      height: 25vh;
+      width: 80rem;
+      height: 20vh;
+    }
+    @media screen and (max-width: 400px) {
+      width: 80rem;
+      height: 15vh;
     }
 
     &_after {
@@ -128,6 +136,9 @@
       opacity: 0;
       z-index: -2;
       transition: all 0.4s ease-out;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
 
     &:hover .allProjects-box_before {
@@ -146,7 +157,8 @@
       justify-content: space-around;
       align-items: center;
       font-size: 5rem;
-      color:#e0e0e0
+      color: #e0e0e0;
+      width: 100%;
     }
 
     &_0 {
@@ -237,15 +249,31 @@
       text-align: start;
       margin: 1rem;
       overflow: hidden;
+      @media screen and (max-width: 550px) {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        // padding: 4rem;
+      }
 
       &_heading {
         font-size: 3rem;
         font-family: $font-primary;
         margin-bottom: 0.7em;
+        @media screen and (max-width: 550px) {
+          text-align: center;
+          padding: 2rem;
+          margin-top: 8rem;
+          width: 100%;
+          font-size: 4rem;
+        }
       }
       &_p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-family: $font-terciary;
+        @media screen and (max-width: 750px) {
+          align-items: center;
+        }
         @media screen and (max-width: 550px) {
           opacity: 0;
           visibility: hidden;
@@ -282,7 +310,8 @@
     }
   }
   .fa-brands,
-  .fa-solid {
+  .fa-solid,
+  .github {
     padding: 1rem;
     font-size: 6rem;
     color: $color-secondary;

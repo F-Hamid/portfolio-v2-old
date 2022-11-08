@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
   // background-color: $color-secondary;
   background-image: linear-gradient(
     to bottom,
@@ -104,12 +105,17 @@
     background: #e0e0e0;
     box-shadow: inset 7px 7px 14px #bebebe, inset -7px -7px 14px #ffffff;
     &:hover :not(:last-child) {
-      opacity: 0.8;
+      opacity: 0.9;
       transform: scale(0.99);
       transition: all 0.5s;
     }
     &:hover .projects-box_after {
       @include show-right;
+    }
+    &:hover p {
+      opacity: 0;
+      visibility: none;
+      transition: all 0.3s ease-in-out;
     }
     @media screen and (max-width: 1050px) {
       width: 65vw;
@@ -119,7 +125,7 @@
       height: 20vh;
     }
     @media screen and (max-width: 350px) {
-      height: 12vh;
+      height: 10vh;
     }
 
     &_after {
@@ -138,22 +144,47 @@
       justify-content: space-around;
     }
 
-    // &_1 {
-    //   background: rgba(#fff, 0.7);
-    // }
+    &_before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0%;
+      height: 100%;
+      border-radius: 50%;
+      opacity: 0;
+      z-index: -2;
+      transition: all 0.4s ease-out;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
 
-    // &_2 {
-    //   background-image: url("./../../images/cardbckg4.png");
-    // }
-    // &_3 {
-    //   background-image: url("./../../images/cardbckg2.png");
-    // }
-    // &_4 {
-    //   background-image: url("./../../images/cardbckg5.png");
-    // }
-    // &_5 {
-    //   background-image: url("./../../images/cardbckg6.png");
-    // }
+    &:hover .projects-box_before {
+      width: 100%;
+      height: 40%;
+      top: 30%;
+      background-color: $color-primary;
+      // background-color: $color-text;
+      opacity: 0.7;
+      z-index: 200;
+      border-radius: $bord-rad;
+      @media screen and (max-width: 450px) {
+        top: 60%;
+        border-radius: 0 0 8px 8px;
+      }
+    }
+    .stack-projects {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 5rem;
+      color: $color-secondary;
+      width: 70%;
+      margin-left: 15rem;
+      @media screen and (max-width: 550px) {
+        width: 60%;
+      }
+    }
 
     &-img {
       width: 35%;
@@ -179,6 +210,7 @@
       margin-bottom: 3rem;
       padding-left: 18rem;
       overflow: hidden;
+
       &_heading {
         font-size: 3rem;
         font-family: $font-primary;
@@ -197,9 +229,16 @@
         color: $color-text;
         text-indent: 1rem;
         padding-left: 1rem;
+
         @media screen and (max-width: 600px) {
           width: 80%;
-          margin: auto;
+          // margin: auto;
+          font-size: 2.5rem;
+        }
+        @media screen and (max-width: 550px) {
+          width: 85%;
+          margin-left: 8rem;
+          font-size: 3rem;
         }
         @media screen and (max-width: 350px) {
           opacity: 0;
@@ -263,7 +302,7 @@
   }
   .fa-brands {
     padding: 1rem;
-    font-size: 8rem;
+    font-size: 7rem;
     color: $color-secondary;
     text-shadow: -0.1rem -0.1rem 2rem $color-text;
 

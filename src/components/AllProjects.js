@@ -14,7 +14,7 @@ const AllProjects = () => {
   const btsrp = <i class="fa-brands fa-bootstrap"></i>;
   const tlwnd = <SiTailwindcss />;
   const express = <SiExpress />;
-  const nongoDb = <SiMongodb />;
+  const mongoDb = <SiMongodb />;
 
   const store = [
     {
@@ -43,7 +43,7 @@ const AllProjects = () => {
       id: 0,
       name: "Skill Up",
       image: require("./../images/skillup-chart.png"),
-      stack: [html, sass, js, react, node, express, nongoDb],
+      stack: [html, css, sass, js, react, node, express, mongoDb],
       reveal: "",
       link: "https://skill-up-webapp.herokuapp.com/",
       github_url: "https://github.com/F-Hamid/SKILLUP",
@@ -55,7 +55,7 @@ const AllProjects = () => {
       id: 2,
       name: "Architecture and interior design ",
       image: require("./../images/architecht.png"),
-      stack: [html, css, sass, js],
+      stack: [html, css, sass, btsrp, js],
       reveal: "",
       link: "https://architect-interior-design.netlify.app/",
       github_url: "https://github.com/F-Hamid/Architecture-Interior-Website",
@@ -66,6 +66,7 @@ const AllProjects = () => {
       id: 3,
       name: "Weather App ",
       image: require("./../images/weatherApp.png"),
+      stack: [html, css, sass, btsrp, js, react],
       reveal: "reveal",
       link: "https://spa-weather.netlify.app",
       github_url: "https://github.com/F-Hamid/Weather-app",
@@ -76,6 +77,7 @@ const AllProjects = () => {
       id: 6,
       name: "Pedromedia",
       image: require("./../images/pedromedia.png"),
+      stack: [html, css, sass, btsrp, js],
       reveal: "reveal",
       link: "https://pedromedia.netlify.app",
       github_url: "https://github.com/F-Hamid/Pedromedia",
@@ -87,6 +89,7 @@ const AllProjects = () => {
       id: 5,
       name: "Budget App ",
       image: require("./../images/budgetapp.png"),
+      stack: [html, css, sass, btsrp, js, react],
       reveal: "reveal",
       link: "https://budgetspa.netlify.app",
       github_url: "https://github.com/F-Hamid/Budget-App",
@@ -98,6 +101,7 @@ const AllProjects = () => {
       id: 12,
       name: "QR-Code Generator",
       image: require("./../images/qrcode.png"),
+      stack: [html, css, js],
       reveal: "reveal",
       link: "  https://qr-gnerator.netlify.app/",
       github_url: "https://github.com/F-Hamid/QR-Generator",
@@ -108,6 +112,7 @@ const AllProjects = () => {
       id: 4,
       name: "SimoSud Website ",
       image: require("./../images/sumosud.png"),
+      stack: [html, css, sass, js, react],
       reveal: "reveal",
       link: "https://simosud.netlify.app",
       github_url: "https://github.com/F-Hamid/SimoSud",
@@ -119,6 +124,7 @@ const AllProjects = () => {
       id: 19,
       name: "Github Users Search",
       image: require("./../images/githubSearch2.png"),
+      stack: [html, sass, js, react, node, express, mongoDb],
       reveal: "reveal",
       link: "https://gitsearch-hub.netlify.app",
       github_url: "https://github.com/F-Hamid/GitHub-Users-Search",
@@ -129,6 +135,7 @@ const AllProjects = () => {
       id: 18,
       name: "Cabinet Dentiste Al Jazeera ",
       image: require("./../images/jazeera.png"),
+      stack: [html, css, sass, js],
       reveal: "reveal",
       link: "https://cabinetaljazeera.netlify.app/",
       github_url: "https://github.com/F-Hamid/Cabinet-Aljazeera",
@@ -139,6 +146,7 @@ const AllProjects = () => {
       id: 7,
       name: "Quote or joke",
       image: require("./../images/quoteorjoke.png"),
+      stack: [html, css, js],
       reveal: "reveal",
       link: "https://quote-jocke.netlify.app/",
       github_url: "https://github.com/F-Hamid/Quote-or-Joke",
@@ -149,6 +157,7 @@ const AllProjects = () => {
       id: 8,
       name: "Counter",
       image: require("./../images/counter.png"),
+      stack: [html, css, sass, js, react],
       reveal: "reveal",
       link: "https://counter-spa.netlify.app",
       github_url: "https://github.com/F-Hamid/React-counter",
@@ -158,6 +167,7 @@ const AllProjects = () => {
       id: 9,
       name: "Coin Toss ",
       image: require("./../images/cointoss.png"),
+      stack: [html, css, js],
       reveal: "reveal",
       link: "https://cointoss-app.netlify.app",
       github_url: "https://github.com/F-Hamid/coin-toss",
@@ -167,6 +177,7 @@ const AllProjects = () => {
       id: 10,
       name: "Calculator ",
       image: require("./../images/calculator.png"),
+      stack: [html, css, js],
       reveal: "reveal",
       link: "https://spacalculator.netlify.app",
       github_url: "https://github.com/F-Hamid/Caclulator",
@@ -176,6 +187,7 @@ const AllProjects = () => {
       id: 11,
       name: "ToDo App ",
       image: require("./../images/todo.png"),
+      stack: [html, css, , react, js],
       reveal: "reveal",
       link: "https://spatodo.netlify.app",
       github_url: "https://github.com/F-Hamid/React-Todo-App",
@@ -242,7 +254,7 @@ const AllProjects = () => {
                       <i className="fa-brands fa-chrome"></i>
                     </a>
                     <a href={github_url} target="_blank" rel="noreferrer">
-                      <i className="fa-brands fa-github-alt"></i>
+                      <i class="fa-brands fa-github"></i>
                     </a>
                   </div>
                   <div className="allProjects-box_before">

@@ -1,12 +1,23 @@
-import React from "react";
 import "./../sass/pages/projects.scss";
+import { SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
 
 const Projects = () => {
+  const html = <i class="fa-brands fa-html5"></i>;
+  const css = <i class="fa-brands fa-css3-alt"></i>;
+  const js = <i class="fa-brands fa-js"></i>;
+  const react = <i class="fa-brands fa-react"></i>;
+  const sass = <i class="fa-brands fa-sass"></i>;
+  const node = <i class="fa-brands fa-node"></i>;
+  const btsrp = <i class="fa-brands fa-bootstrap"></i>;
+  const tlwnd = <SiTailwindcss />;
+  const express = <SiExpress />;
+  const mongoDb = <SiMongodb />;
   const store = [
     {
       id: 5,
       name: "Pedromedia",
       image: require("./../images/pedromedia.png"),
+      stack: [html, css, sass, btsrp, js],
       reveal: "",
       link: "https://pedromedia.netlify.app",
       github_url: "https://github.com/F-Hamid/Pedromedia",
@@ -17,6 +28,7 @@ const Projects = () => {
       id: 1,
       name: "Tattoo Artist",
       image: require("./../images/mexihenna.png"),
+      stack: [html, js, tlwnd, react],
       reveal: "",
       link: "https://mexihenna.netlify.app/",
       github_url: "https://github.com/F-Hamid/",
@@ -28,6 +40,7 @@ const Projects = () => {
       id: 0,
       name: "Skill Up",
       image: require("./../images/skillup-chart.png"),
+      stack: [sass, js, react, node, express, mongoDb],
       reveal: "reveal",
       link: "https://skill-up-webapp.herokuapp.com/",
       github_url: "https://github.com/F-Hamid/SKILLUP",
@@ -39,17 +52,30 @@ const Projects = () => {
       id: 2,
       name: "Architecture and interior design ",
       image: require("./../images/architecht.png"),
+      stack: [html, css, sass, btsrp, js],
       reveal: "reveal",
       link: "https://architect-interior-design.netlify.app/",
       github_url: "https://github.com/F-Hamid/Architecture-Interior-Website",
       description:
         "A styled and responsive web SPA for a Architecture and interior design agency.",
     },
+    {
+      id: 13,
+      name: "Scientist Portfolio",
+      image: require("./../images/heroSection.png"),
+      stack: [html, css, js, tlwnd, react],
+      reveal: "",
+      link: "https://tallouanas.netlify.app/",
+      github_url: "",
+      description:
+        "I provided my client with this pixel perfect website that gathers all his information, work, and professional skills. ",
+    },
 
     {
       id: 3,
       name: "Budget App ",
       image: require("./../images/budgetapp.png"),
+      stack: [html, css, sass, btsrp, js, react],
       reveal: "reveal",
       link: "https://budgetspa.netlify.app",
       github_url: "https://github.com/F-Hamid/Budget-App",
@@ -61,6 +87,7 @@ const Projects = () => {
       id: 4,
       name: "Quote or joke",
       image: require("./../images/quoteorjoke.png"),
+      stack: [html, css, js],
       reveal: "reveal",
       link: "https://quote-jocke.netlify.app/",
       github_url: "https://github.com/F-Hamid/Quote-or-Joke",
@@ -82,7 +109,16 @@ const Projects = () => {
         </div>
         <main className="projects-main">
           {store.map(
-            ({ description, id, github_url, name, link, image, reveal }) => {
+            ({
+              description,
+              id,
+              github_url,
+              name,
+              link,
+              image,
+              reveal,
+              stack,
+            }) => {
               return (
                 <div
                   key={id}
@@ -100,8 +136,11 @@ const Projects = () => {
                       <i className="fa-brands fa-chrome"></i>
                     </a>
                     <a href={github_url} target="_blank" rel="noreferrer">
-                      <i className="fa-brands fa-github-alt"></i>
+                      <i class="fa-brands fa-github"></i>
                     </a>
+                  </div>
+                  <div className="projects-box_before">
+                    <div className="stack-projects">{stack}</div>
                   </div>
                 </div>
               );
