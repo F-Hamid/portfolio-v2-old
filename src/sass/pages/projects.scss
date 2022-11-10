@@ -112,6 +112,7 @@
     &:hover .projects-box_after {
       @include show-right;
     }
+
     &:hover p {
       opacity: 0;
       visibility: none;
@@ -147,24 +148,24 @@
     &_before {
       position: absolute;
       top: 0;
-      right: 0;
+      right: 80%;
       width: 0%;
-      height: 100%;
+      height: 0%;
       border-radius: 50%;
       opacity: 0;
-      z-index: -2;
+      z-index: -20;
       transition: all 0.4s ease-out;
-      display: flex;
       justify-content: space-around;
       align-items: center;
     }
 
     &:hover .projects-box_before {
+      display: flex;
       width: 100%;
       height: 40%;
+      right: 0;
       top: 30%;
       background-color: $color-primary;
-      // background-color: $color-text;
       opacity: 0.7;
       z-index: 200;
       border-radius: $bord-rad;

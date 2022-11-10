@@ -20,7 +20,7 @@ const About = () => {
             <h1 className="about-text-heading "> FATEH Hamid</h1>
             <hr className="about-bar"></hr>
             <p className="about-text-p reveal">
-              ambitious <span>Full Stack Web Developer.</span>
+              passionate <span>Full Stack Web Developer.</span>
               <br />
               My work is based on <span>client satisfaction</span> and
               professional relationship.
