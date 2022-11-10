@@ -128,7 +128,7 @@
     &_before {
       position: absolute;
       top: 0;
-      left: 0%;
+      left: 20%;
       width: 0%;
       height: 100%;
       background-color: $color-primary;
@@ -136,14 +136,16 @@
       opacity: 0;
       z-index: -2;
       transition: all 0.4s ease-out;
-      display: flex;
+
       justify-content: space-around;
       align-items: center;
     }
 
     &:hover .allProjects-box_before {
+      display: flex;
       width: 100%;
       height: 40%;
+      left: 0;
       top: 30%;
       background-color: $color-primary;
       // background-color: $color-text;
