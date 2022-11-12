@@ -187,7 +187,7 @@ const AllProjects = () => {
       id: 11,
       name: "ToDo App ",
       image: require("./../images/todo.png"),
-      stack: [html, css, , react, js],
+      stack: [html, css, react, js],
       reveal: "reveal",
       link: "https://spatodo.netlify.app",
       github_url: "https://github.com/F-Hamid/React-Todo-App",

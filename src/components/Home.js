@@ -4,10 +4,12 @@ import cube from "./../images/cube3.png";
 import HomeBackground from "./layouts/Background";
 import "./../sass/pages/home.scss";
 
+
 const Home = () => {
   return (
     <section id="home" className="home">
       <HomeBackground />
+
       <nav className="home-nav">
         <Navbar />
       </nav>

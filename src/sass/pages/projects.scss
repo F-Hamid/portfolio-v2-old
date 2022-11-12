@@ -181,7 +181,7 @@
       font-size: 5rem;
       color: $color-secondary;
       width: 70%;
-      margin-left: 15rem;
+      margin-left: 18rem;
       @media screen and (max-width: 550px) {
         width: 60%;
       }
@@ -209,17 +209,16 @@
       max-height: 80%;
       text-align: start;
       margin-bottom: 3rem;
-      padding-left: 18rem;
+      padding-left: 22rem;
       overflow: hidden;
 
       &_heading {
         font-size: 3rem;
         font-family: $font-primary;
         color: $color-primary;
-        margin-bottom: 0.7em;
+        margin-bottom: 0.3em;
         @media screen and (max-width: 550px) {
           padding-left: 8rem;
-          // text-align: center;
           margin: auto;
           font-size: 6rem;
         }
@@ -229,11 +228,10 @@
         font-family: $font-secondary;
         color: $color-text;
         text-indent: 1rem;
-        padding-left: 1rem;
+        // padding-left: 1rem;
 
         @media screen and (max-width: 600px) {
           width: 80%;
-          // margin: auto;
           font-size: 2.5rem;
         }
         @media screen and (max-width: 550px) {
