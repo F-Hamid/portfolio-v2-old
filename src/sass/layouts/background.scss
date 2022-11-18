@@ -8,12 +8,12 @@
   left: -0%;
   z-index: -10;
   background-color: $color-text;
-  // background: url(./../../../src/images/bckg-img19.png);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-size: 100%;
+  background: url(./../../../src/images/bckg-img19.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
   overflow: hidden;
-  animation: backgroundZoom 20s ease-out;
+  animation: backgroundZoom 12s ease-out;
   @media screen and (max-width: 1050px) {
     background-size: 105%;
   }
