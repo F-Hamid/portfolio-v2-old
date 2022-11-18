@@ -31,7 +31,7 @@ function App() {
   }
   window.addEventListener("scroll", reveal);
   // LOADING
-  const [load, setLoad] = useState(false);
+  const [load, setLoad] = useState(true);
 
   setTimeout(() => {
     setLoad(false);
