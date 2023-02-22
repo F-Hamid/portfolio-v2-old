@@ -11,12 +11,12 @@ export default function Resume() {
       </Link>
       <img
         className="resume-img"
-        src={require("./../../images/resume/resume-img.png")}
+        src={require("./../../images/resume/My-Resume.png")}
         alt="My-resume"
       />
       <button type="button" className="resume-btn btn btn-info ">
         <a
-          href={require("./../../images/resume/resume-pdf.pdf")}
+          href={require("./../../images/resume/My-Resume.pdf")}
           download="Hamidweb-Resume"
         >
           <i class="fa-solid fa-file-pdf"></i>

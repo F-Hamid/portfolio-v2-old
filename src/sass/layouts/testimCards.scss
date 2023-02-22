@@ -2,7 +2,7 @@
 
 .slideshow {
   list-style-type: none;
-  box-shadow: 0.2rem 0.2rem 1rem $color-primary;
+  box-shadow: 0.2rem 0.2rem 0.6rem $color-primary;
 }
 
 /** SLIDESHOW **/
@@ -103,9 +103,12 @@ figure.snip1197 {
   min-width: 40rem;
   max-width: 75rem;
   width: 100%;
-  color: #333;
+  color: $color-third;
   text-align: left;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  background: #1746a2;
+  border-radius: 50px;
+  background: #6ad3dd;
   margin-bottom: 7rem;
   @media screen and (max-width: 750px) {
     min-width: 40rem;
@@ -133,7 +136,7 @@ figure.snip1197 figcaption {
   left: 0;
   width: 60%;
   position: absolute;
-  background-color: $color-secondary;
+  background-color: $color-primary-light;
   border-radius: 8px 0 0 8px;
   display: flex;
   align-items: center;
@@ -181,16 +184,21 @@ figure.snip1197 .arrow {
   height: 0;
   border-left: 0 solid transparent;
   border-right: 25px solid transparent;
-  border-top: 25px solid $color-secondary;
+  border-top: 25px solid $color-primary-light;
   margin: 0;
   position: absolute;
+
+  @media screen and (max-width: 550px) {
+      border-right: 10px solid transparent;
+  border-top: 10px solid $color-primary-light;
+  }
 }
 figure.snip1197 .author {
   position: absolute;
   top: 100%;
   width: 60%;
   padding: 10px 15px;
-  color: $color-secondary;
+  color: $color-third;
   margin: 0;
   text-transform: uppercase;
 }
@@ -198,11 +206,13 @@ figure.snip1197 .author h5 {
   opacity: 0.8;
   margin: 0;
   font-weight: 800;
+  font-size: 1.5rem;
+  
 }
 figure.snip1197 .author h5 span {
   font-weight: 400;
   text-transform: none;
-  color: $color-secondary;
+  color: $color-text;
   font-family: $font-terciary;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }

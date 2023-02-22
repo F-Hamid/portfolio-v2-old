@@ -12,39 +12,46 @@ nav {
   position: relative;
   min-height: 4vw;
   width: 95%;
-  margin: 1rem auto;
+  margin: 1rem 2rem;
 }
 
 .navbar-brand {
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 2rem;
-  color: #262626 !important;
-  margin-left: 3rem;
+  font-size: 2.5rem;
+  color: $color-text;
+  margin-left: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .hamidweb {
-  color: rgba($color-text, $alpha: 0.3);
+  color: $color-secondary;
   // color: #73daab;
   text-align: center;
   margin: 0.3rem 0 0 0.2rem;
   font-family: $font-secondary;
 }
 .nav-link {
-  color: #262626 !important;
-  margin-right: 5rem;
+  color: $color-secondary !important;
+  margin-right: 3rem;
   padding: 0.5rem 0.8rem !important;
   position: relative;
   font-family: $font-terciary;
+  text-shadow: .1rem .1rem .4rem $color-primary;
+
   text-align: center;
+  @media screen and (max-width: 1000px) {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
 }
+
 .nav-link:hover {
   color: #ebebeb !important;
 }
 .nav-link.active {
-  background-color: $color-primary;
+  background-color: $color-primary-light;
   color: #ebebeb !important;
   border-radius: 0.3rem;
 }
@@ -55,7 +62,7 @@ nav {
 .nav-link::before {
   content: "";
   position: absolute;
-  background-color: #373a40;
+  background-color: $color-primary-light;
   width: 10%;
   height: 100%;
   margin-right: 5rem;
@@ -79,10 +86,10 @@ nav {
   text-transform: uppercase;
   font-size: 2rem;
   position: absolute;
-  right: 35rem;
+  right: 21rem;
 
   @media screen and (max-width: 1300px) {
-    right: 20rem;
+    right: 18rem;
   }
   @media screen and (max-width: 1000px) {
     background-color: rgba($color-primary, $alpha: 0.2);
@@ -91,7 +98,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    width: 30%;
+    width: 18%;
     height: 30rem;
   }
 }
@@ -99,8 +106,8 @@ nav {
   width: 8rem;
   height: 5rem;
   margin: 1rem 5rem;
-  font-size: 2.5rem;
-  background-color: $color-primary;
+  font-size: 3rem;
+  background-color: $color-primary-light;
   border: none !important;
   transition: all 1s;
   @media screen and (max-width: 650px) {

@@ -6,7 +6,10 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="mail-to:f.hamidweb@gmail.com">
+        <a
+          className="navbar-brand"
+          href="https://www.upwork.com/freelancers/~01e7abd7e3523da42a"
+        >
           <img
             className="logo"
             src={require("./../../images/logo.png")}
@@ -43,7 +46,6 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-        
               <Link className="nav-link " to="/resume">
                 Resume
               </Link>

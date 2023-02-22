@@ -8,7 +8,7 @@
   left: -0%;
   z-index: -10;
   background-color: $color-text;
-  background: url(./../../../src/images/bckg-img19.png);
+  background: url(./../../../src/images/bckg-img19.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
@@ -47,20 +47,33 @@
 }
 
 /** For tablet devices **/
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1250px) {
   .custom-shape-divider-bottom-1650151152 svg {
-    width: calc(185% + 1.3px);
-    height: 350px;
+    width: calc(195% + 1.3px);
+    height: 650px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .custom-shape-divider-bottom-1650151152 svg {
-    width: calc(200% + 1.3px);
-    height: 250px;
+    width: calc(185% + 1.3px);
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .custom-shape-divider-bottom-1650151152 svg {
+    width: calc(185% + 1.3px);
+    height: 450px;
   }
 
   @media screen and (max-width: 550px) {
+    .custom-shape-divider-bottom-1650151152 svg {
+      width: calc(200% + 1.3px);
+      height: 350px;
+    }
+  }
+  @media screen and (max-width: 450px) {
     .custom-shape-divider-bottom-1650151152 svg {
       width: calc(200% + 1.3px);
       height: 150px;

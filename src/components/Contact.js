@@ -1,28 +1,29 @@
 import React from "react";
 import "./../sass/pages/contact.scss";
 import { SiUpwork } from "react-icons/si";
+import TechImg from "./layouts/TechImg";
 
 const Contact = () => {
   return (
     <>
       <section className="contact" id="contact">
         <div className="contact-heading reveal">
-          <h1 className="contact-heading reveal">
-            Time to bring those <span className="ideas">ideas</span> to the
-            light
-          </h1>
+          <h2 className="contact-heading reveal">
+            Let's bring those <span className="ideas shine-text">ideas</span> to
+            the light
+          </h2>
           <a
             className="contact-me-link"
             href="mail-to:f.hamidweb@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
-            <h1 className="contact-me">contact me</h1>
+            <h1 className="contact-me ">contact me</h1>
           </a>
         </div>
-        <div className="media">
+        <div className="media ">
           <div className="media-1">
-            <a
+            {/* <a
               className="fa"
               href="mail-to:f.hamidweb@gmail.com"
               target="_blank"
@@ -47,26 +48,34 @@ const Contact = () => {
               rel="noreferrer"
             >
               <i className="fa-brands fa-whatsapp fa"></i>
-            </a>
+            </a> */}
 
+            <a
+              className="fa"
+              href="https://twitter.com/Hamid7web"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa-brands fa-github fa"></i>
+            </a>
             <a
               className="fa"
               href="https://github.com/F-Hamid"
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa-brands fa-github fa"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
             </a>
           </div>
           <div className="media-1">
-            <a
+            {/* <a
               className="fa"
               href="https://www.linkedin.com/in/hamid-fateh-9206b9238/"
               target="_blank"
               rel="noreferrer"
             >
               <i className="fa-brands fa-linkedin fa"></i>
-            </a>
+            </a> */}
             <a
               className="fa"
               href="https://www.upwork.com/freelancers/~01e7abd7e3523da42a"
@@ -75,7 +84,7 @@ const Contact = () => {
             >
               <SiUpwork />
             </a>
-
+            {/* 
             <a
               className="fa"
               href="https://www.facebook.com/hamid.fateh.14/"
@@ -83,93 +92,17 @@ const Contact = () => {
               rel="noreferrer"
             >
               <i className="fa-brands fa-facebook fa"></i>
-            </a>
+            </a> */}
             <a className="fa" href="#home">
               <i className="fa-solid fa-house-circle-check fa"></i>
             </a>
           </div>
         </div>
 
-        <img
-          className="tech-img-contact tech-img-contact-8 reverse"
-          src={require("./../images/tech1.png")}
-          alt="html5 "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-9"
-          src={require("./../images/tech11.png")}
-          alt="css3 "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-11"
-          src={require("./../images/tech10.png")}
-          alt="javascript "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-13"
-          src={require("./../images/tech16.png")}
-          alt="react "
-        />
-
-        <img
-          className="tech-img-contact tech-img-contact-19 reverse "
-          src={require("./../images/tech19.png")}
-          alt="figma "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-7 reverse "
-          src={require("./../images/tech6.png")}
-          alt="redux "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-6 reverse"
-          src={require("./../images/tech7.png")}
-          alt="bootstrap "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-5"
-          src={require("./../images/tech8.png")}
-          alt="sass "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-4"
-          src={require("./../images/tech9.png")}
-          alt="jquery "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-12 reverse"
-          src={require("./../images/tech5.png")}
-          alt="git "
-        />
-
-        <img
-          className="tech-img-contact tech-img-contact-14 reverse"
-          src={require("./../images/tech15.png")}
-          alt="chrome "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-15 "
-          src={require("./../images/tech22.png")}
-          alt="chrome "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-16 reverse"
-          src={require("./../images/tech25.png")}
-          alt="chrome "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-17 "
-          src={require("./../images/tech23.png")}
-          alt="chrome "
-        />
-        <img
-          className="tech-img-contact tech-img-contact-18 reverse"
-          src={require("./../images/tech24.png")}
-          alt="chrome "
-        />
+        <TechImg />
         <div className="footer__copyright">
           <p className="footer__copyright-p">
-            2022@ Created by
+            2023@ Created by
             <a
               href="https://wa.me/212661805827"
               className="footer__link"

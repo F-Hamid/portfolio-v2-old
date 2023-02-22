@@ -1,18 +1,28 @@
 // import React, { useEffect } from "react";
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import "./sass/main.scss";
 import {
-  Home,
-  Projects,
-  About,
-  Contact,
-  AllProjects,
+  // Home,
+  // Projects,
+  // About,
+  // Contact,
+  // AllProjects,
+  // Testimonials,
   Resume,
-  Testimonials,
 } from "./components";
+import Loader from "./components/layouts/Loader";
+
+// Lazy Loading
+
+const LazyHome = lazy(() => import("./components/Home.js"));
+const LazyProjects = lazy(() => import("./components/Projects.js"));
+const LazyAbout = lazy(() => import("./components/About.js"));
+const LazyTestim = lazy(() => import("./components/Testimonials.js"));
+const LazyContact = lazy(() => import("./components/Contact.js"));
+const LazyAllProjects = lazy(() => import("./components/AllProjects.js"));
 
 function App() {
   // Animation
@@ -40,23 +50,11 @@ function App() {
   // useEffect(() => {
   //   window.addEventListener("load", (event) => {
   //     setLoad(false);
-  //     console.log("Ready!");
   //   });
   // }, [load]);
 
   return load ? (
-    <div className="spinner">
-      <div className="spinner-border text-primary" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
-
-      <div className="spinner-border text-danger" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
-      <div className="spinner-border text-info" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
-    </div>
+    <Loader />
   ) : (
     <>
       <BrowserRouter>
@@ -78,15 +76,17 @@ function App() {
             path="/"
             element={
               <>
-                <Home />
-                <Projects />
-                <About />
-                <Testimonials />
-                <Contact />
+                <Suspense fallback={<Loader />}>
+                  <LazyHome />
+                  <LazyProjects />
+                  <LazyAbout />
+                  <LazyTestim />
+                  <LazyContact />
+                </Suspense>
               </>
             }
           ></Route>
-          <Route path="/projects" element={<AllProjects />}></Route>
+          <Route path="/projects" element={<LazyAllProjects />}></Route>
           <Route path="/resume" element={<Resume />}></Route>
         </Routes>
       </BrowserRouter>

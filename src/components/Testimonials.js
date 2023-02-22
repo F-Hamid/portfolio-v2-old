@@ -5,6 +5,7 @@ import TestimonialCard from "./layouts/TestimonialCard";
 const Testimonials = () => {
   return (
     <section id="testimonials" className="testim">
+      
       <h1 className="testim-heading reveal">Testimonials</h1>
       <div className="cards">
         <TestimonialCard />

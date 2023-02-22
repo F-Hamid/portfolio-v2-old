@@ -5,13 +5,13 @@ import Contact from "./Contact";
 import { SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
 
 const AllProjects = () => {
-  const html = <i class="fa-brands fa-html5"></i>;
-  const css = <i class="fa-brands fa-css3-alt"></i>;
-  const js = <i class="fa-brands fa-js"></i>;
-  const react = <i class="fa-brands fa-react"></i>;
-  const sass = <i class="fa-brands fa-sass"></i>;
-  const node = <i class="fa-brands fa-node"></i>;
-  const btsrp = <i class="fa-brands fa-bootstrap"></i>;
+  const html = <i className="fa-brands fa-html5"></i>;
+  const css = <i className="fa-brands fa-css3-alt"></i>;
+  const js = <i className="fa-brands fa-js"></i>;
+  const react = <i className="fa-brands fa-react"></i>;
+  const sass = <i className="fa-brands fa-sass"></i>;
+  const node = <i className="fa-brands fa-node"></i>;
+  const btsrp = <i className="fa-brands fa-bootstrap"></i>;
   const tlwnd = <SiTailwindcss />;
   const express = <SiExpress />;
   const mongoDb = <SiMongodb />;
