@@ -6,16 +6,17 @@
   justify-content: space-between;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   padding: 5rem;
-  background-color: #000000;
-  background-image: url(../../images/me0.jpg);
+
+  background-color: $color-secondary;
+  background-image: url(../../images/me0-2.png);
   background-repeat: no-repeat;
   background-size: 100%;
   overflow: hidden;
   position: relative;
 
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 450px) {
     height: 85vh;
   }
   @media screen and (max-width: 950px) {
@@ -24,23 +25,24 @@
 
   @media screen and (max-width: 700px) {
     height: 60vh;
+    padding-top: 2rem;
   }
   @media screen and (max-width: 650px) {
-    height: 50vh;
+    height: 60vh;
   }
   @media screen and (max-width: 550px) {
-    height: 40vh;
+    height: 50vh;
   }
   @media screen and (max-width: 450px) {
-    height: 30vh;
+    height: 40vh;
   }
   @media screen and (max-width: 350px) {
-    height: 25vh;
+    height: 30vh;
   }
 
   &-heading {
-    // color: #30aadd;
-    color: $color-text;
+    text-align: center;
+    color: #6ad3dd;
     font-family: $font-secondary;
     font-size: 5rem;
     font-weight: 700;
@@ -48,8 +50,9 @@
     margin-top: 1rem;
     text-shadow: -0.2rem 0.2rem 0.5rem $color-secondary;
     span {
-      color: $color-secondary;
-      text-shadow: -0.3rem 0.3rem 0.5rem $color-secondary;
+      color: $color-third;
+      font-size: 6rem;
+      text-shadow: -0.3rem 0.3rem 0.5rem $color-third;
       // font-weight: 700;
     }
     @media screen and (max-width: 800px) {
@@ -58,13 +61,15 @@
   }
 
   &-me {
-    color: $color-primary;
-    color: #30aadd;
+    color: $color-primary-light;
     text-shadow: 0.1rem 0.1rem 0.8rem $color-secondary;
     text-align: end;
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 2rem;
+    &:hover {
+      color: $color-primary;
+    }
     &-link {
       cursor: pointer;
       text-decoration: none;
@@ -86,6 +91,7 @@
 .fa {
   padding: 2rem;
   color: #30aadd;
+  font-size: 6rem !important;
   @media screen and (max-width: 750px) {
     padding: 1.5rem;
   }
@@ -183,6 +189,16 @@
     right: 5rem;
     transform: rotate(-50deg);
   }
+  &-27 {
+    top: 30rem;
+    right: 55rem;
+    transform: rotate(-50deg);
+  }
+  &-28 {
+    top: 30rem;
+    left: 55rem;
+    transform: rotate(-50deg);
+  }
 }
 
 .reverse {
@@ -196,10 +212,10 @@
 .footer__copyright {
   position: absolute;
   bottom: 0.5rem;
-  color: #30aadd;
+  color: $color-primary;
 
   a {
-    color: $color-secondary;
+    color: $color-third;
     font-size: 1.2rem;
   }
 }

@@ -3,6 +3,7 @@
 .projects {
   display: flex;
   flex-direction: column;
+  // align-items: center;
   position: relative;
   overflow: hidden;
   // background-color: $color-secondary;
@@ -14,25 +15,50 @@
     #76a0b4,
     #418998
   );
+
   width: 100vw;
   min-height: 100%;
   padding: 15rem 5rem;
   @media screen and (max-width: 550px) {
     padding: 5rem 2rem;
   }
+  .presentation {
+    padding: 3rem;
+    max-width: 70%;
+    font-size: 2rem;
+    margin: 1rem auto;
+    margin-bottom: 5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.3rem;
+    font-family: $font-secondary;
+    color: $color-text;
+    text-indent: 3rem;
+    border-radius: 10px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f0f0f0, rgba(95, 157, 247, 0.3));
+    box-shadow: 20px 20px 60px #f0f0f0, -20px -20px 60px #f0f0f0;
+
+    &::first-letter {
+      color: $color-primary;
+      font-size: 5rem;
+      font-weight: 900;
+    }
+  }
 
   .header {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 5rem 0;
+    margin: 10rem auto;
+    margin-top: 20rem;
     padding: 0 1rem;
     color: $color-text;
 
     &-heading {
       font-family: $font-primary;
-      font-size: 4rem;
+      font-size: 8rem;
     }
+
     &-bar {
       width: 12rem;
       height: 0.2rem;
@@ -43,7 +69,7 @@
     }
     &-text {
       width: 23em;
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       font-family: $font-secondary;
       @media screen and (max-width: 850px) {
         font-size: 3rem;
@@ -78,10 +104,10 @@
   }
 
   &-box {
-    width: 50vw;
-    height: 25vh;
-    margin: 3rem auto;
-    padding: 1rem;
+    width: 48vw;
+    height: 20vh;
+    margin: 5rem auto;
+    padding: 4rem 1rem 0 4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -92,14 +118,7 @@
     border-radius: 5px;
     cursor: pointer;
     // background: rgba($color: #2d3939, $alpha: 0.9);
-    background-image: linear-gradient(
-      to right bottom,
-      #eeeeee,
-      #e7e7e7,
-      #e0e0e0,
-      #d9d9d9,
-      #d2d2d2
-    );
+
     // box-shadow: 10px 10px 31px #c9c9c9, -10px -10px 31px #ffffff;
     border-radius: 8px;
     background: #e0e0e0;
@@ -120,10 +139,14 @@
     }
     @media screen and (max-width: 1050px) {
       width: 65vw;
+      height: 15vh;
+    }
+    @media screen and (max-width: 650px) {
+      height: 12vh;
     }
     @media screen and (max-width: 550px) {
       width: 75vw;
-      height: 20vh;
+      height: 13vh;
     }
     @media screen and (max-width: 350px) {
       height: 10vh;
@@ -162,10 +185,10 @@
     &:hover .projects-box_before {
       display: flex;
       width: 100%;
-      height: 40%;
+      height: 36%;
       right: 0;
-      top: 30%;
-      background-color: $color-primary;
+      top: 65%;
+      background-color: $color-primary-light;
       opacity: 0.7;
       z-index: 200;
       border-radius: $bord-rad;
@@ -179,7 +202,7 @@
       justify-content: space-between;
       align-items: center;
       font-size: 5rem;
-      color: $color-secondary;
+      color: $color-primary;
       width: 70%;
       margin-left: 18rem;
       @media screen and (max-width: 550px) {
@@ -188,7 +211,7 @@
     }
 
     &-img {
-      width: 35%;
+      width: 33%;
       height: 85%;
       margin-right: 1rem;
       position: absolute;
@@ -206,29 +229,41 @@
     }
     .card-text {
       max-width: 92%;
-      max-height: 80%;
+      height: 100%;
       text-align: start;
-      margin-bottom: 3rem;
-      padding-left: 22rem;
+      margin-bottom: 5rem;
+
+      padding-left: 20rem;
       overflow: hidden;
+      @media screen and (max-width: 2000px) {
+        padding-left: 20%;
+      }
+      // @media screen and (max-width: 1700px) {
+      //   padding-left: 12rem;
+      // }
+      // @media screen and (max-width: 1700px) {
+      //   padding-left: 12rem;
+      // }
 
       &_heading {
         font-size: 3rem;
         font-family: $font-primary;
-        color: $color-primary;
+        color: $color-secondary;
         margin-bottom: 0.3em;
+
         @media screen and (max-width: 550px) {
-          padding-left: 8rem;
           margin: auto;
+          font-size: 6rem;
+        }
+        @media screen and (max-width: 350px) {
+          margin: 10rem -1rem;
           font-size: 6rem;
         }
       }
       &_p {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-family: $font-secondary;
         color: $color-text;
-        text-indent: 1rem;
-        // padding-left: 1rem;
 
         @media screen and (max-width: 600px) {
           width: 80%;
@@ -236,7 +271,6 @@
         }
         @media screen and (max-width: 550px) {
           width: 85%;
-          margin-left: 8rem;
           font-size: 3rem;
         }
         @media screen and (max-width: 350px) {
@@ -269,7 +303,6 @@
     box-shadow: none;
     width: 15vw;
     &:hover {
-      text-shadow: $text-shadow;
       transition: all 0.3s;
       color: $color-text;
     }
@@ -292,23 +325,134 @@
     }
     &-text {
       font-family: $font-secondary;
-      color: #adbfc6;
+      color: $color-third;
+      text-shadow: $text-shadow;
+      font-weight: 700;
       text-transform: uppercase;
+      transition: all 0.5s;
       @media screen and (max-width: 550px) {
         transform: translateY(2rem);
+      }
+      &:hover {
+        color: $color-secondary;
+        font-size: 2.8rem;
       }
     }
   }
   .fa-brands {
     padding: 1rem;
     font-size: 7rem;
-    color: $color-secondary;
+    color: $color-primary;
     text-shadow: -0.1rem -0.1rem 2rem $color-text;
 
     &:hover {
       font-size: 8.5rem;
       transition: all 0.3s;
-      color: $color-primary;
+      color: $color-secondary;
     }
   }
+}
+.fa-chrome,
+.fa-github {
+  color: $color-primary;
+}
+
+// PARALLAX EFFECT
+.window-container {
+  width: 40rem;
+  height: 40rem;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window {
+  width: 90%;
+  height: 90%;
+  filter: blur(0.1rem);
+  border-radius: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.window-blur {
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 40;
+  left: 10;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(205, 239, 248, 0.9),
+    rgba(57, 181, 224, 0.75)
+  );
+  border-radius: 50%;
+  filter: blur(3rem);
+}
+
+.window-1 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(58, 176, 255, 0.75),
+      rgba(57, 181, 224, 0.75)
+    ),
+    url("../../images/pedromedia.png");
+}
+.container-1 {
+  top: 45rem;
+  left: 5rem;
+  @media screen and (max-width: 1950px) {
+    top: 35rem;
+    left: 2rem;
+  }
+  @media screen and (max-width: 1350px) {
+    top: 35rem;
+    left: 2rem;
+  }
+}
+.window-2 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(58, 176, 255, 0.75),
+      rgba(57, 181, 224, 0.75)
+    ),
+    url("../../images/jazeera.png");
+}
+.container-2 {
+  top: 120rem;
+  right: 30rem;
+  @media screen and (max-width: 1950px) {
+    top: 145rem;
+    right: 15rem;
+  }
+  @media screen and (max-width: 1350px) {
+    right: 2rem;
+  }
+}
+.window-3 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(58, 176, 255, 0.75),
+      rgba(57, 181, 224, 0.75)
+    ),
+    url("../../images/parallax3.png");
+}
+.container-3 {
+  bottom: 80rem;
+  left: 20rem;
+  @media screen and (max-width: 1350px) {
+    left: -1rem;
+  }
+}
+
+.tech-container {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  z-index: 100;
 }

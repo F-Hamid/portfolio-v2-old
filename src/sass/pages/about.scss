@@ -29,10 +29,17 @@
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     color: $font-terciary;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1500px) {
       margin-left: 4rem;
     }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 1300px) {
+      margin-left: 6rem;
+      width: 25em;
+    }
+    @media screen and (max-width: 1000px) {
+      margin-left: 8rem;
+    }
+    @media screen and (max-width: 950px) {
       // margin: 5rem;
       width: 35em;
       margin: 2rem 5rem;
@@ -46,7 +53,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  // justify-content: flex-start;
   flex-wrap: wrap;
   position: relative;
 }
@@ -56,42 +63,52 @@
   justify-content: flex-start;
   text-transform: uppercase;
   max-width: 100%;
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 950px) {
     flex-direction: column;
-    padding: -5rem;
+    padding-left: 2.5rem;
+  }
+  @media screen and (max-width: 650px) {
+    padding: 0;
   }
 }
 .about-text-heading {
-  width: 10vw;
-  margin: 1rem;
+  width: 20vw;
+
+  margin: 0.5rem;
   margin-left: 5rem;
-  font-size: 6rem;
-  color: $color-primary;
+  font-size: 7rem;
+  color: $color-primary-light;
   font-family: $font-primary;
+  @media screen and (max-width: 950px) {
+    margin-left: 0rem;
+    width: 90%;
+  }
+  @media screen and (max-width: 950px) {
+    margin-left: 1.5rem;
+    
+  }
   // text-shadow: 0.1rem -0.1rem 1rem $color-text;
 }
 .about-text-p {
   font-size: 2rem;
   min-width: 40%;
   max-width: 55%;
-  margin: 2rem;
+  margin: 0.5rem 1rem;
   color: $color-text;
   font-family: $font-terciary;
-  @media screen and (max-width: 850px) {
-    margin-left: -4rem;
-    max-width: 50%;
+  @media screen and (max-width: 950px) {
+    padding-left: 5rem;
+    max-width: 75%;
   }
-  @media screen and (max-width: 750px) {
-    padding-left: 8rem;
-    max-width: 90%;
-  }
+
   @media screen and (max-width: 650px) {
-    padding-left: 0rem;
-    max-width: 90%;
+    transform: translateX(-3rem);
+    max-width: 100%;
+    margin-left: -3rem !important;
   }
 
   span {
-    color: $color-primary;
+    color: $color-secondary;
     text-shadow: 0.01rem 0.01rem 2rem $color-primary;
   }
 
@@ -124,6 +141,9 @@
 .tech {
   min-width: 100%;
   margin: 2rem;
+  @media screen and (max-width: 950px) {
+    margin: 0;
+  }
 }
 .tech-img {
   width: 9rem;
@@ -156,11 +176,11 @@
 }
 .tech-text {
   width: 20vw;
-  margin: 3rem 5rem;
-  font-size: 2rem;
+  margin: 3rem 4rem;
+  font-size: 3.5rem;
   color: $color-text;
   font-family: $font-primary;
-  text-shadow: 0.1rem 0.1rem 1rem $color-text;
+  text-shadow: 0.1rem 0.1rem 0.2rem $color-primary;
   position: relative;
   @media screen and (max-width: 650px) {
     font-size: 2.5rem;
@@ -171,7 +191,7 @@
 .btn-container {
   width: 10%;
   position: absolute;
-  right: 4rem;
+  right: 8.5rem;
   top: 25%;
   display: flex;
   justify-content: center;
@@ -179,21 +199,22 @@
 }
 .btn {
   font-size: 2rem;
-  padding: 0.5rem;
-  color: $color-text;
-  background-color: $color-primary;
+  padding: 1rem;
+
+  background-color: $color-primary-light;
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
   text-align: center;
+  margin-left: 4rem;
+  &:hover {
+    background-color: $color-primary;
+  }
   @media screen and (max-width: 6500px) {
     margin-top: 2rem;
   }
   a {
     text-decoration: none;
-    color: $color-secondary;
-    &:hover {
-      color: $color-text;
-    }
+    color: $color-third;
   }
   &:hover {
     box-shadow: 0.2rem 0.2rem 1rem $color-primary;

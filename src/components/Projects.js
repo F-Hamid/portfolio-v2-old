@@ -1,14 +1,15 @@
 import "./../sass/pages/projects.scss";
 import { SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
+import TechImg from "./layouts/TechImg";
 
 const Projects = () => {
-  const html = <i class="fa-brands fa-html5"></i>;
-  const css = <i class="fa-brands fa-css3-alt"></i>;
-  const js = <i class="fa-brands fa-js"></i>;
-  const react = <i class="fa-brands fa-react"></i>;
-  const sass = <i class="fa-brands fa-sass"></i>;
-  const node = <i class="fa-brands fa-node"></i>;
-  const btsrp = <i class="fa-brands fa-bootstrap"></i>;
+  const html = <i className="fa-brands fa-html5"></i>;
+  const css = <i className="fa-brands fa-css3-alt"></i>;
+  const js = <i className="fa-brands fa-js"></i>;
+  const react = <i className="fa-brands fa-react"></i>;
+  const sass = <i className="fa-brands fa-sass"></i>;
+  const node = <i className="fa-brands fa-node"></i>;
+  const btsrp = <i className="fa-brands fa-bootstrap"></i>;
   const tlwnd = <SiTailwindcss />;
   const express = <SiExpress />;
   const mongoDb = <SiMongodb />;
@@ -99,12 +100,41 @@ const Projects = () => {
   return (
     <>
       <section className="projects" id="projects">
+        <div className="window-container container-1">
+          <div className="window-blur"></div>
+          <div className="window-1 window"></div>
+        </div>
+        <div className="window-container container-2">
+          <div className="window-blur"></div>
+          <div className="window-2 window"></div>
+        </div>
+        <div className="window-container container-3">
+          <div className="window-blur"></div>
+          <div className="window-3 window"></div>
+        </div>
+
+        <p className="presentation ">
+          As a full-stack web developer, I bring a unique combination of
+          technical expertise and creativity to every project I work on. I have
+          a strong foundation in both front-end and back-end development, and
+          have worked with various programming languages, frameworks, and
+          libraries such as HTML, CSS, JavaScript, React, Node.js, Express, and
+          MongoDB... . <br />I am dedicated to creating user-friendly and
+          responsive web applications that deliver a seamless user experience. I
+          thrive on challenges and am always looking for opportunities to learn
+          new technologies and skills to improve my craft. My attention to
+          detail, strong work ethic, and ability to work well within a team make
+          me a valuable addition to any project. If you're looking for a skilled
+          and motivated full-stack web developer to help bring your project to
+          life, I am confident that my expertise and enthusiasm will make me the
+          ideal candidate for the job.
+        </p>
         <div className="header ">
-          <h1 className="header-heading">Projects</h1>
+          <h2 className="header-heading shine-text">Projects</h2>
           <hr className="header-bar" />
           <p className="header-text">
-            My work involves real life websites, various skills and problem
-            solving. To explore even more, check out the links below.
+            My work reflects real life web applications, various skills and
+            problem solving. To explore even more, check out the links below.
           </p>
         </div>
         <main className="projects-main">
@@ -136,7 +166,7 @@ const Projects = () => {
                       <i className="fa-brands fa-chrome"></i>
                     </a>
                     <a href={github_url} target="_blank" rel="noreferrer">
-                      <i class="fa-brands fa-github"></i>
+                      <i className="fa-brands fa-github "></i>
                     </a>
                   </div>
                   <div className="projects-box_before">
@@ -146,83 +176,9 @@ const Projects = () => {
               );
             }
           )}
-          <img
-            className="tech-img-contact tech-img-contact-8 reverse"
-            src={require("./../images/tech1.png")}
-            alt="html5 "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-9"
-            src={require("./../images/tech11.png")}
-            alt="css3 "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-11"
-            src={require("./../images/tech10.png")}
-            alt="javascript "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-13"
-            src={require("./../images/tech16.png")}
-            alt="react "
-          />
-
-          <img
-            className="tech-img-contact tech-img-contact-19 reverse "
-            src={require("./../images/tech19.png")}
-            alt="figma "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-7 reverse "
-            src={require("./../images/tech6.png")}
-            alt="redux "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-6 reverse"
-            src={require("./../images/tech7.png")}
-            alt="bootstrap "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-5"
-            src={require("./../images/tech8.png")}
-            alt="sass "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-4"
-            src={require("./../images/tech9.png")}
-            alt="jquery "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-12 reverse"
-            src={require("./../images/tech5.png")}
-            alt="git "
-          />
-
-          <img
-            className="tech-img-contact tech-img-contact-14 reverse"
-            src={require("./../images/tech15.png")}
-            alt="chrome "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-15 "
-            src={require("./../images/tech22.png")}
-            alt="chrome "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-16 reverse"
-            src={require("./../images/tech25.png")}
-            alt="chrome "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-17 "
-            src={require("./../images/tech23.png")}
-            alt="chrome "
-          />
-          <img
-            className="tech-img-contact tech-img-contact-18 reverse"
-            src={require("./../images/tech24.png")}
-            alt="chrome "
-          />
+          <div className="tech-container">
+            <TechImg />
+          </div>
           <a className=" reveal more" href="/projects">
             <img
               className="more-img"

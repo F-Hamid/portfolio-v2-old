@@ -5,9 +5,6 @@
   max-width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 100%;
 
   @media screen and (max-width: 1000px) {
     height: 90vh;
@@ -62,14 +59,16 @@
   &-header {
     font-size: 5.5rem;
     text-transform: uppercase;
-    // color: $color-primary;
-    text-shadow: -0.1rem -0.1rem 1rem $color-text;
+    text-shadow: -0.01rem -0.01rem 0.15rem $color-text;
+    transform: translateY(1rem);
+    color: $color-third;
   }
 
   &-header,
   &-text {
     width: auto;
     margin: 2.5rem;
+    padding-top: 1rem;
     left: 20vw;
     font-family: $font-primary;
 
@@ -79,18 +78,20 @@
   }
 
   &-text {
-    color: #394867;
+    color: $color-text;
     font-size: 4.5rem;
-    font-family: $font-terciary;
+    font-family: $font-secondary;
     color: $color-secondary;
+
     // @media screen and (max-width: 550px) {
     //   font-size: 5rem;
     // }
   }
 
   &-span {
-    color: $color-text;
+    color: $color-third;
     text-transform: uppercase;
+    font-family: $font-primary;
   }
   &-cube {
     width: 40rem;
@@ -98,7 +99,7 @@
     bottom: 0rem;
     left: 25vw;
     opacity: 0.85;
-    animation: home-cube 5s ease-in;
+
     @media screen and (max-width: 1050px) {
       width: 35rem;
       left: 35vw;
@@ -124,16 +125,16 @@
   border: none;
   text-decoration: none;
   cursor: pointer;
-  color: $color-secondary;
+  color: $color-text;
   font-size: 2rem;
   text-transform: uppercase;
   font-family: $font-terciary;
   animation: cta-text 8s ease-in-out;
-  text-shadow: 0.2rem 0.2rem 1rem $color-secondary;
+  // text-shadow: 0.2rem 0.2rem 1rem $color-secondary;
 }
 
 .cta:hover {
-  color: $color-primary;
+  color: $color-text;
   text-shadow: none;
 }
 
@@ -194,62 +195,61 @@ $size: 30px;
 $speed: 3s;
 $peakopacity: 0.7;
 
-body {
-  .arrows {
-    // position: relative;
-    // /**/
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    /**/
+.arrows {
+  // position: relative;
+  // /**/
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  /**/
 
-    width: $size;
-    height: $size;
-    transform: translate(-50%, -50%);
-    margin-left: 40%;
-    margin-top: 12%;
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-left: $size/3 solid rgba(0, 0, 0, $peakopacity);
-      border-bottom: $size/3 solid rgba(0, 0, 0, $peakopacity);
-      transform: translate($size/3, $size * 4/3) rotate(-45deg);
-      animation: arrows $speed linear infinite;
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-left: $size/3 solid rgba(#389393, $peakopacity);
-      border-bottom: $size/3 solid rgba(#389393, $peakopacity);
-      transform: translate($size * 2/3, 0px) rotate(-45deg);
-      animation: arrows $speed linear infinite $speed/-2;
-    }
+  width: $size;
+  height: $size;
+  transform: translate(-50%, -50%);
+  margin-left: 40%;
+  margin-top: 12%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: calc($size/3) solid rgba(0, 0, 0, $peakopacity);
+    border-bottom: calc($size/3) solid rgba(0, 0, 0, $peakopacity);
+    transform: translate(calc($size/3), $size * 4/3) rotate(-45deg);
+    animation: arrows $speed linear infinite;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-left: calc($size/3) solid rgba(#389393, $peakopacity);
+    border-bottom: calc($size/3) solid rgba(#389393, $peakopacity);
+    transform: translate($size * 2/3, 0px) rotate(-45deg);
+    animation: arrows $speed linear infinite $speed/-2;
   }
 }
 
 @keyframes arrows {
   0% {
-    border-left: $size/3 solid rgba($color-primary, 0);
-    border-bottom: $size/3 solid rgba($color-primary, 0);
+    border-left: calc($size/3) solid rgba($color-primary-light, 0);
+    border-bottom: calc($size/3) solid rgba($color-primary-light, 0);
     transform: translate($size/-6, $size * 4/-6) rotate(-45deg);
   }
   10%,
   90% {
-    border-left: $size/3 solid rgba($color-primary, 0);
-    border-bottom: $size/3 solid rgba($color-primary, 0);
+    border-left: calc($size/3) solid rgba($color-primary-light, 0);
+    border-bottom: calc($size/3) solid rgba($color-primary-light, 0);
   }
   50% {
-    border-left: $size/3 solid rgba($color-primary, $peakopacity);
-    border-bottom: $size/3 solid rgba($color-primary, $peakopacity);
+    border-left: calc($size/3) solid rgba($color-primary-light, $peakopacity);
+    border-bottom: calc($size/3) solid rgba($color-primary-light, $peakopacity);
     transform: translate($size/-6, 0px) rotate(-45deg);
   }
   100% {
-    border-left: $size/3 solid rgba($color-primary, 0);
-    border-bottom: $size/3 solid rgba($color-primary, 0);
+    border-left: calc($size/3) solid rgba($color-primary-light, 0);
+    border-bottom: calc($size/3) solid rgba($color-primary-light, 0);
     transform: translate($size/-6, $size * 4/6) rotate(-45deg);
   }
 }

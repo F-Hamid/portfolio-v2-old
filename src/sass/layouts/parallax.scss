@@ -1,0 +1,17 @@
+@import "../main.scss";
+
+.parallax-1 {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(58, 176, 255, 0.95),
+      rgba(57, 181, 224, 0.9)
+    ),
+    url("../../images/pedroMedia.jpg");
+  min-height: 50rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
