@@ -20,7 +20,7 @@ const About = () => {
         <div className="about-me">
           <div className="about-text">
             <h1 className="about-text-heading shine-text "> FATEH Hamid</h1>
-            <hr className="about-bar"></hr>
+
             <p className="about-text-p reveal">
               inspired by creativity and <span>perfection.</span>
               <br />

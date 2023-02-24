@@ -10,42 +10,46 @@
   background-image: url(../../images/cardbckg.png);
   background-size: cover;
   @media screen and (max-width: 850px) {
-    height: 90vh;
+    height: 80vh;
   }
 
   @media screen and (max-width: 650px) {
-    height: 65vh;
+    height: 55vh;
   }
   @media screen and (max-width: 450px) {
-    height: 50vh;
+    height: 40vh;
   }
   @media screen and (max-width: 350px) {
     height: 40vh;
   }
-  &-bar {
-    width: 15em;
-    margin-top: 8rem;
-    transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    color: $font-terciary;
-    @media screen and (max-width: 1500px) {
-      margin-left: 4rem;
-    }
-    @media screen and (max-width: 1300px) {
-      margin-left: 6rem;
-      width: 25em;
-    }
-    @media screen and (max-width: 1000px) {
-      margin-left: 8rem;
-    }
-    @media screen and (max-width: 950px) {
-      // margin: 5rem;
-      width: 35em;
-      margin: 2rem 5rem;
-      transform: rotate(180deg);
-    }
-  }
+  // &-bar {
+  //   height: 100%;
+  //   width: 100%;
+  //   transform: rotate(90deg);
+  //   -ms-transform: rotate(90deg);
+  //   -webkit-transform: rotate(90deg);
+  //   margin: auto 1rem;
+  //   padding: 0 3rem;
+
+  //   color: $color-secondary;
+  //   @media screen and (max-width: 1500px) {
+  //     // margin-left: 4rem;
+  //     // width: 20rem !important;
+  //     // padding: 0 8rem;
+  //   }
+  //   @media screen and (max-width: 1300px) {
+  //     // margin-left: 6rem;
+  //   }
+  //   @media screen and (max-width: 1000px) {
+  //     margin-left: 8rem;
+  //   }
+  //   @media screen and (max-width: 950px) {
+  //     // margin: 5rem;
+  //     width: 35em;
+  //     margin: 2rem 5rem;
+  //     transform: rotate(180deg);
+  //   }
+  // }
 }
 .about-me {
   max-width: 60vw;
@@ -59,12 +63,17 @@
 }
 .about-text {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   justify-content: flex-start;
   text-transform: uppercase;
   max-width: 100%;
-  @media screen and (max-width: 950px) {
+
+  @media screen and (max-width: 1200px) {
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
     padding-left: 2.5rem;
   }
   @media screen and (max-width: 650px) {
@@ -72,39 +81,50 @@
   }
 }
 .about-text-heading {
-  width: 20vw;
-
-  margin: 0.5rem;
-  margin-left: 5rem;
+  max-width: 30%;
+  margin: 0.5rem 2rem;
   font-size: 7rem;
   color: $color-primary-light;
   font-family: $font-primary;
-  @media screen and (max-width: 950px) {
+  border-right: 1px solid $color-primary;
+  padding-right: 2rem;
+  @media screen and (max-width: 1200px) {
+    border-right: none;
+    border-bottom: 1px solid $color-primary;
+    padding-bottom: 2rem;
     margin-left: 0rem;
-    width: 90%;
+    max-width: 100%;
   }
   @media screen and (max-width: 950px) {
     margin-left: 1.5rem;
-    
   }
   // text-shadow: 0.1rem -0.1rem 1rem $color-text;
 }
 .about-text-p {
   font-size: 2rem;
-  min-width: 40%;
-  max-width: 55%;
   margin: 0.5rem 1rem;
   color: $color-text;
   font-family: $font-terciary;
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1200px) {
+    max-width: 95%;
+    margin-left: 0rem;
+  }
+  @media screen and (max-width: 1000px) {
     padding-left: 5rem;
-    max-width: 75%;
+  }
+  @media screen and (max-width: 750px) {
+    padding-left: 6rem;
+    font-size: 2.5rem !important;
+    width: 100% !important;
   }
 
   @media screen and (max-width: 650px) {
-    transform: translateX(-3rem);
-    max-width: 100%;
+    // transform: translateX(-3rem);
+
     margin-left: -3rem !important;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 3rem !important;
   }
 
   span {
@@ -140,7 +160,7 @@
 }
 .tech {
   min-width: 100%;
-  margin: 2rem;
+  margin: 2rem 0;
   @media screen and (max-width: 950px) {
     margin: 0;
   }
@@ -175,7 +195,7 @@
   height: 10rem;
 }
 .tech-text {
-  width: 20vw;
+  width: 100%;
   margin: 3rem 4rem;
   font-size: 3.5rem;
   color: $color-text;
@@ -184,7 +204,7 @@
   position: relative;
   @media screen and (max-width: 650px) {
     font-size: 2.5rem;
-    margin: 3rem 5rem 1rem;
+    margin: 3rem;
   }
 }
 
@@ -196,7 +216,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 950px) {
+    top: 30%;
+  }
+  @media screen and (max-width: 300px) {
+    top: 35%;
+  }
 }
+
 .btn {
   font-size: 2rem;
   padding: 1rem;
@@ -209,9 +236,9 @@
   &:hover {
     background-color: $color-primary;
   }
-  @media screen and (max-width: 6500px) {
-    margin-top: 2rem;
-  }
+  // @media screen and (max-width: 650px) {
+  //   margin-top: 2rem;
+  // }
   a {
     text-decoration: none;
     color: $color-third;
@@ -231,8 +258,11 @@ $base: 0.6rem;
   align-items: center;
   transform: rotate(-90deg);
   margin-left: -3rem;
-  @media screen and (max-width: 6500px) {
-    margin-top: 2rem;
+  @media screen and (max-width: 950px) {
+    top: 30%;
+  }
+  @media screen and (max-width: 300px) {
+    top: 35%;
   }
 }
 

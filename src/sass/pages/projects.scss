@@ -32,6 +32,8 @@
     letter-spacing: 0.3rem;
     font-family: $font-secondary;
     color: $color-text;
+    font-weight: 700;
+    z-index: 500;
     text-indent: 3rem;
     border-radius: 10px;
     border-radius: 10px;
@@ -70,6 +72,7 @@
     &-text {
       width: 23em;
       font-size: 2.5rem;
+      font-weight: 400;
       font-family: $font-secondary;
       @media screen and (max-width: 850px) {
         font-size: 3rem;
@@ -250,7 +253,7 @@
         font-family: $font-primary;
         color: $color-secondary;
         margin-bottom: 0.3em;
-
+        font-weight: 700;
         @media screen and (max-width: 550px) {
           margin: auto;
           font-size: 6rem;
@@ -264,7 +267,7 @@
         font-size: 2.2rem;
         font-family: $font-secondary;
         color: $color-text;
-
+        font-weight: 700;
         @media screen and (max-width: 600px) {
           width: 80%;
           font-size: 2.5rem;
@@ -366,6 +369,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .window {

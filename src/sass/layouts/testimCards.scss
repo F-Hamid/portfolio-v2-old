@@ -103,7 +103,9 @@ figure.snip1197 {
   min-width: 40rem;
   max-width: 75rem;
   width: 100%;
-  color: $color-third;
+  color: $color-text;
+  font-weight: 700;
+  line-height: 2rem;
   text-align: left;
   border-radius: 50px;
   background: #1746a2;
@@ -189,8 +191,8 @@ figure.snip1197 .arrow {
   position: absolute;
 
   @media screen and (max-width: 550px) {
-      border-right: 10px solid transparent;
-  border-top: 10px solid $color-primary-light;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $color-primary-light;
   }
 }
 figure.snip1197 .author {
@@ -207,7 +209,6 @@ figure.snip1197 .author h5 {
   margin: 0;
   font-weight: 800;
   font-size: 1.5rem;
-  
 }
 figure.snip1197 .author h5 span {
   font-weight: 400;

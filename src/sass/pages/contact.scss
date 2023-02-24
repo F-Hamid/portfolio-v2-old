@@ -16,33 +16,35 @@
   overflow: hidden;
   position: relative;
 
-  @media screen and (max-width: 450px) {
-    height: 85vh;
-  }
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1050px) {
     height: 65vh;
   }
+  // @media screen and (max-width: 950px) {
+  //   height: 65vh;
+  // }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 8500px) {
     height: 60vh;
     padding-top: 2rem;
   }
-  @media screen and (max-width: 650px) {
-    height: 60vh;
-  }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 750px) {
     height: 50vh;
   }
-  @media screen and (max-width: 450px) {
-    height: 40vh;
+
+  @media screen and (max-width: 650px) {
+    height: 35vh;
   }
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 450px) {
     height: 30vh;
+  }
+  @media screen and (max-width: 450px) {
+    height: 25vh;
   }
 
   &-heading {
     text-align: center;
     color: #6ad3dd;
+    color: $color-third;
     font-family: $font-secondary;
     font-size: 5rem;
     font-weight: 700;
