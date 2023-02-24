@@ -23,7 +23,7 @@ const Contact = () => {
         </div>
         <div className="media ">
           <div className="media-1">
-            {/* <a
+            <a
               className="fa"
               href="mail-to:f.hamidweb@gmail.com"
               target="_blank"
@@ -48,7 +48,7 @@ const Contact = () => {
               rel="noreferrer"
             >
               <i className="fa-brands fa-whatsapp fa"></i>
-            </a> */}
+            </a>
 
             <a
               className="fa"
@@ -68,14 +68,14 @@ const Contact = () => {
             </a>
           </div>
           <div className="media-1">
-            {/* <a
+            <a
               className="fa"
               href="https://www.linkedin.com/in/hamid-fateh-9206b9238/"
               target="_blank"
               rel="noreferrer"
             >
               <i className="fa-brands fa-linkedin fa"></i>
-            </a> */}
+            </a>
             <a
               className="fa"
               href="https://www.upwork.com/freelancers/~01e7abd7e3523da42a"
@@ -84,7 +84,7 @@ const Contact = () => {
             >
               <SiUpwork />
             </a>
-            {/* 
+
             <a
               className="fa"
               href="https://www.facebook.com/hamid.fateh.14/"
@@ -92,7 +92,7 @@ const Contact = () => {
               rel="noreferrer"
             >
               <i className="fa-brands fa-facebook fa"></i>
-            </a> */}
+            </a>
             <a className="fa" href="#home">
               <i className="fa-solid fa-house-circle-check fa"></i>
             </a>

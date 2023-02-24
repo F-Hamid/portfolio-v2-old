@@ -19,11 +19,8 @@
   @media screen and (max-width: 1050px) {
     height: 65vh;
   }
-  // @media screen and (max-width: 950px) {
-  //   height: 65vh;
-  // }
 
-  @media screen and (max-width: 8500px) {
+  @media screen and (max-width: 850px) {
     height: 60vh;
     padding-top: 2rem;
   }
@@ -34,11 +31,12 @@
   @media screen and (max-width: 650px) {
     height: 35vh;
   }
-  @media screen and (max-width: 450px) {
-    height: 30vh;
-  }
+
   @media screen and (max-width: 450px) {
     height: 25vh;
+  }
+  @media screen and (max-width: 350px) {
+    height: 20vh;
   }
 
   &-heading {
@@ -94,11 +92,20 @@
   padding: 2rem;
   color: #30aadd;
   font-size: 6rem !important;
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 950px) {
     padding: 1.5rem;
   }
-  @media screen and (max-width: 650px) {
-    padding: 2rem;
+  @media screen and (max-width: 750px) {
+    padding: 1rem;
+  }
+  @media screen and (max-width: 670px) {
+    padding: 0.5rem;
+  }
+  @media screen and (max-width: 550px) {
+    padding: 1.5rem;
+  }
+  @media screen and (max-width: 350px) {
+    padding: 1rem;
   }
   cursor: pointer;
   &:hover {
