@@ -14,6 +14,7 @@ import {
   Resume,
 } from "./components";
 import Loader from "./components/layouts/Loader";
+import gallery from "./components/utils/Gallery";
 
 // Lazy Loading
 
@@ -41,7 +42,7 @@ function App() {
   }
   window.addEventListener("scroll", reveal);
   // LOADING
-  const [load, setLoad] = useState(false);
+  const [load, setLoad] = useState(true);
 
   setTimeout(() => {
     setLoad(false);
@@ -78,7 +79,7 @@ function App() {
               <>
                 <Suspense fallback={<Loader />}>
                   <LazyHome />
-                  <LazyProjects />
+                  <LazyProjects projects={gallery} />
                   <LazyAbout />
                   <LazyTestim />
                   <LazyContact />
@@ -86,7 +87,10 @@ function App() {
               </>
             }
           ></Route>
-          <Route path="/projects" element={<LazyAllProjects />}></Route>
+          <Route
+            path="/projects"
+            element={<LazyAllProjects allProjects={gallery} />}
+          ></Route>
           <Route path="/resume" element={<Resume />}></Route>
         </Routes>
       </BrowserRouter>

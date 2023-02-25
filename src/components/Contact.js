@@ -18,7 +18,7 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <h1 className="contact-me ">contact me</h1>
+            <h1 className="contact-me ">contact me!</h1>
           </a>
         </div>
         <div className="media ">
@@ -64,7 +64,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i className="fa fa-twitter" aria-hidden="true"></i>
             </a>
           </div>
           <div className="media-1">
