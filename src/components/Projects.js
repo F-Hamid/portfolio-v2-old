@@ -27,16 +27,15 @@ const Projects = ({ projects }) => {
           technical expertise and creativity to every project I work on. I have
           a strong foundation in both front-end and back-end development, and
           have worked with various programming languages, frameworks, and
-          libraries such as HTML, CSS, JavaScript, React, Node.js, Express, and
-          MongoDB... . <br />I am dedicated to creating user-friendly and
-          responsive web applications that deliver a seamless user experience. I
-          thrive on challenges and am always looking for opportunities to learn
-          new technologies and skills to improve my craft. My attention to
-          detail, strong work ethic, and ability to work well within a team make
-          me a valuable addition to any project. If you're looking for a skilled
-          and motivated full-stack web developer to help bring your project to
-          life, I am confident that my expertise and enthusiasm will make me the
-          ideal candidate for the job.
+          libraries such as HTML, CSS, JavaScript, React, Node.js,
+          Express,MongoDB... . <br />I am dedicated to creating user-friendly
+          and responsive web applications that deliver a seamless user
+          experience. I thrive on challenges and am always looking for new
+          opportunities. My attention to detail, strong work ethic, and ability
+          to work well within a team make me a valuable addition to any project.{" "}
+          <br /> If you're looking for a skilled and motivated full-stack web
+          developer to help bring your project to life, I am confident that my
+          expertise and enthusiasm will make me the ideal candidate for the job.
         </p>
         <div className="header ">
           <h2 className="header-heading shine-text">Projects</h2>
@@ -65,7 +64,7 @@ const Projects = ({ projects }) => {
                   ${reveal}`}
                 >
                   <div className="card-text">
-                    <h1 className="card-text_heading">{name} </h1>
+                    <h2 className="card-text_heading">{name} </h2>
                     <p className="card-text_p">{description}</p>
                   </div>
                   <img className="projects-box-img" src={image} alt="Github" />
@@ -94,7 +93,7 @@ const Projects = ({ projects }) => {
               src={require("./../images/cube1.png")}
               alt="cube2"
             />
-            <h1 className="more-text">Explore More...</h1>
+            <h2 className="more-text">Explore More...</h2>
           </a>
         </main>
       </section>

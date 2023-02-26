@@ -18,7 +18,7 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <h1 className="contact-me ">contact me!</h1>
+            <h2 className="contact-me ">contact me!</h2>
           </a>
         </div>
         <div className="media ">

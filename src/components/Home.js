@@ -17,7 +17,7 @@ const Home = () => {
           A <span className="home-span">building</span> brick in your big
           project
         </h3>
-        <h1 className="home-header  ">Your WEBSITE</h1>
+        <h2 className="home-header  ">Your WEBSITE</h2>
         <h3 className="home-text">
           ...My big <span className="home-span">project</span>
         </h3>

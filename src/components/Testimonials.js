@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="testim">
       
-      <h1 className="testim-heading reveal">Testimonials</h1>
+      <h2 className="testim-heading reveal">Testimonials</h2>
       <div className="cards">
         <TestimonialCard />
       </div>

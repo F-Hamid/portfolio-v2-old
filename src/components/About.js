@@ -19,7 +19,7 @@ const About = () => {
         </div>
         <div className="about-me">
           <div className="about-text">
-            <h1 className="about-text-heading shine-text "> FATEH Hamid</h1>
+            <h2 className="about-text-heading shine-text "> FATEH Hamid</h2>
 
             <p className="about-text-p reveal">
               inspired by creativity and <span>perfection.</span>
@@ -44,7 +44,7 @@ const About = () => {
           </div>
 
           <div className="tech">
-            <h1 className="tech-text reveal">MY ARSENAL :</h1>
+            <h2 className="tech-text reveal">MY ARSENAL :</h2>
 
             {techImg.map((img) => {
               return (

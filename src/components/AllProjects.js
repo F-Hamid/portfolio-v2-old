@@ -25,7 +25,7 @@ const AllProjects = ({ allProjects }) => {
           <i className="fa-solid fa-house-laptop"></i>
         </a>
         <div className="header ">
-          <h1 className="header-heading">Projects</h1>
+          <h2 className="header-heading">Projects</h2>
           <hr className="header-bar" />
           <p className="header-text">
             Explore some of my work: Real world projects,skills, and problem
@@ -50,7 +50,7 @@ const AllProjects = ({ allProjects }) => {
                   className={`allProjects-box allProjects-box_${id} ${reveal}`}
                 >
                   <div className="card-text">
-                    <h1 className="card-text_heading">{name} </h1>
+                    <h2 className="card-text_heading">{name} </h2>
                     <p className="card-text_p">{description}</p>
                   </div>
                   <img
