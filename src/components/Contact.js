@@ -7,8 +7,14 @@ const Contact = () => {
   return (
     <>
       <section className="contact" id="contact">
-        <div className="contact-heading reveal">
-          <h2 className="contact-heading reveal">
+        <div
+          className="contact-heading "
+          data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
+          <h2 className="contact-heading ">
             Let's bring those <span className="ideas shine-text">ideas</span> to
             the light
           </h2>

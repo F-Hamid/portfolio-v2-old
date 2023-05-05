@@ -19,7 +19,7 @@ const gallery = {
       name: "Tattoo Artist",
       image: require("../../images/mexihenna.png"),
       stack: [html, js, tlwnd, react],
-      reveal: "",
+      reveal: "fade-right",
       link: "https://mexihenna.netlify.app/",
       github_url: "https://github.com/F-Hamid/",
       description:
@@ -31,7 +31,7 @@ const gallery = {
       name: "Architecture and interior design ",
       image: require("../../images/architecht.png"),
       stack: [html, css, sass, btsrp, js],
-      reveal: "",
+      reveal: "fade-left",
       link: "https://architect-interior-design.netlify.app/",
       github_url: "https://github.com/F-Hamid/Architecture-Interior-Website",
       description:
@@ -43,7 +43,7 @@ const gallery = {
       name: "Pedromedia",
       image: require("../../images/pedromedia.png"),
       stack: [html, css, sass, btsrp, js],
-      reveal: "reveal",
+      reveal: "fade-right",
       link: "https://pedromedia.netlify.app",
       github_url: "https://github.com/F-Hamid/Pedromedia",
       description:
@@ -54,7 +54,7 @@ const gallery = {
       name: "QR-Code Generator",
       image: require("../../images/qrcode.png"),
       stack: [html, css, js],
-      reveal: "reveal",
+      reveal: "fade-left",
       link: "  https://qr-gnerator.netlify.app/",
       github_url: "https://github.com/F-Hamid/QR-Generator",
       description: "Simple modern design QR code generator",
@@ -65,7 +65,7 @@ const gallery = {
       name: "Budget App ",
       image: require("../../images/budgetapp.png"),
       stack: [html, css, sass, btsrp, js, react],
-      reveal: "reveal",
+      reveal: "fade-right",
       link: "https://budgetspa.netlify.app",
       github_url: "https://github.com/F-Hamid/Budget-App",
       description:
@@ -77,7 +77,7 @@ const gallery = {
       name: "Github Users Search",
       image: require("../../images/githubSearch2.png"),
       stack: [html, sass, js, react, node, express, mongoDb],
-      reveal: "reveal",
+      reveal: "fade-left",
       link: "https://gitsearch-hub.netlify.app",
       github_url: "https://github.com/F-Hamid/GitHub-Users-Search",
       description:
@@ -89,7 +89,7 @@ const gallery = {
       name: "Quote or joke",
       image: require("../../images/quoteorjoke.png"),
       stack: [html, css, js],
-      reveal: "reveal",
+      reveal: "fade-right",
       link: "https://quote-jocke.netlify.app/",
       github_url: "https://github.com/F-Hamid/Quote-or-Joke",
       description:
@@ -101,7 +101,7 @@ const gallery = {
       name: "Jewelry Store",
       image: require("../../images/beads-2.jpg"),
       stack: [wordpress],
-      reveal: "",
+      reveal: "fade-left",
       link: "http://1948beads.com/",
       github_url: "",
       description:
@@ -114,7 +114,7 @@ const gallery = {
       name: "Coin Toss ",
       image: require("../../images/cointoss.png"),
       stack: [html, css, js],
-      reveal: "reveal",
+      reveal: "fade-right",
       link: "https://cointoss-app.netlify.app",
       github_url: "https://github.com/F-Hamid/coin-toss",
       description: "Coin Toss game : SPA logic/js practice.",
@@ -124,7 +124,7 @@ const gallery = {
       name: "Weather App ",
       image: require("../../images/weatherApp.png"),
       stack: [html, css, sass, btsrp, js, react],
-      reveal: "reveal",
+      reveal: "fade-left",
       link: "https://spa-weather.netlify.app",
       github_url: "https://github.com/F-Hamid/Weather-app",
       description:
@@ -135,7 +135,7 @@ const gallery = {
       name: "Cabinet Dentiste Al Jazeera ",
       image: require("../../images/jazeera.png"),
       stack: [html, css, sass, js],
-      reveal: "reveal",
+      reveal: "fade-right",
       link: "https://cabinetaljazeera.netlify.app/",
       github_url: "https://github.com/F-Hamid/Cabinet-Aljazeera",
       description:
@@ -147,7 +147,7 @@ const gallery = {
       name: "SimoSud Website ",
       image: require("../../images/sumosud.png"),
       stack: [html, css, sass, js, react],
-      reveal: "reveal",
+      reveal: "fade-left",
       link: "https://simosud.netlify.app",
       github_url: "https://github.com/F-Hamid/SimoSud",
       description:
@@ -158,7 +158,7 @@ const gallery = {
       name: "Scientist Portfolio",
       image: require("../../images/heroSection.png"),
       stack: [html, js, tlwnd, react],
-      reveal: "",
+      reveal: "fade-right",
       link: "https://tallouanas.netlify.app/",
       github_url: "",
       description:
@@ -169,7 +169,7 @@ const gallery = {
       name: "Skill Up",
       image: require("../../images/skillup-chart.png"),
       stack: [html, css, sass, js, react, node, express, mongoDb],
-      reveal: "",
+      reveal: "fade-left",
       link: "https://skill-up-webapp.herokuapp.com/",
       github_url: "https://github.com/F-Hamid/SKILLUP",
       description:
@@ -180,7 +180,7 @@ const gallery = {
       name: "ToDo App ",
       image: require("../../images/todo.png"),
       stack: [html, css, react, js],
-      reveal: "reveal",
+      reveal: "fade-right",
       link: "https://spatodo.netlify.app",
       github_url: "https://github.com/F-Hamid/react-Todo-App",
       description:
@@ -191,7 +191,7 @@ const gallery = {
       name: "Calculator ",
       image: require("../../images/calculator.png"),
       stack: [html, css, js],
-      reveal: "reveal",
+      reveal: "fade-left",
       link: "https://spacalculator.netlify.app",
       github_url: "https://github.com/F-Hamid/Caclulator",
       description: "Efficient calculator using minium code.",
@@ -201,7 +201,7 @@ const gallery = {
       name: "Counter",
       image: require("../../images/counter.png"),
       stack: [html, css, sass, js, react],
-      reveal: "reveal",
+      reveal: "fade-right",
       link: "https://counter-spa.netlify.app",
       github_url: "https://github.com/F-Hamid/react-counter",
       description: "Counter: SPA logic/js/react practice.",

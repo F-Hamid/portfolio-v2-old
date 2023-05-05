@@ -22,7 +22,13 @@ const Projects = ({ projects }) => {
           <div className="window-3 window"></div>
         </div>
 
-        <p className="presentation ">
+        <p
+          className="presentation "
+          data-aos="zoom-in"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1500"
+          data-aos-delay="200"
+        >
           As a full-stack web developer, I bring a unique combination of
           technical expertise and creativity to every project I work on. I have
           a strong foundation in both front-end and back-end development, and
@@ -61,7 +67,11 @@ const Projects = ({ projects }) => {
                 <div
                   key={uuidv4()}
                   className={`projects-box projects-box_${id} 
-                  ${reveal}`}
+                  `}
+                  data-aos={reveal}
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1500"
+                  data-aos-delay="200"
                 >
                   <div className="card-text">
                     <h2 className="card-text_heading">{name} </h2>
@@ -87,7 +97,14 @@ const Projects = ({ projects }) => {
           <div className="tech-container">
             <TechImg />
           </div>
-          <a className=" reveal more" href="/projects">
+          <a
+            className=" more"
+            href="/projects"
+            data-aos="fade-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+          >
             <img
               className="more-img"
               src={require("./../images/cube1.png")}

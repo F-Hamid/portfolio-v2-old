@@ -1,18 +1,10 @@
 // import React, { useEffect } from "react";
-import { useState, lazy, Suspense } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import AOS from "aos";
 import "./sass/main.scss";
-import {
-  // Home,
-  // Projects,
-  // About,
-  // Contact,
-  // AllProjects,
-  // Testimonials,
-  Resume,
-} from "./components";
+import { Resume } from "./components";
 import Loader from "./components/layouts/Loader";
 import gallery from "./components/utils/Gallery";
 
@@ -26,7 +18,13 @@ const LazyTestim2 = lazy(() => import("./components/Testimonials.js"));
 const LazyContact = lazy(() => import("./components/Contact.js"));
 const LazyAllProjects = lazy(() => import("./components/AllProjects.js"));
 
+// App
+
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   // Animation
   function reveal() {
     let reveals = document.querySelectorAll(".reveal");
@@ -82,7 +80,7 @@ function App() {
                   <LazyHome />
                   <LazyProjects projects={gallery} />
                   <LazyAbout />
-                  <LazyTestim2 />
+                  {/* <LazyTestim2 /> */}
                   <LazyTestim />
                   <LazyContact />
                 </Suspense>

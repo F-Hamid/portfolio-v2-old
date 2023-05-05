@@ -89,7 +89,7 @@
   }
 
   &-span {
-    color: $color-third;
+    color: $color-text;
     text-transform: uppercase;
     font-family: $font-primary;
   }
@@ -263,7 +263,6 @@ $peakopacity: 0.7;
   align-items: center;
   padding: auto;
   text-align: center;
- 
 }
 
 .welcome {

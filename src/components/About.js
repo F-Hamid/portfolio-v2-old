@@ -21,7 +21,13 @@ const About = () => {
           <div className="about-text">
             <h2 className="about-text-heading shine-text "> FATEH Hamid</h2>
 
-            <p className="about-text-p reveal">
+            <p
+              className="about-text-p"
+              data-aos="flip-down"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              data-aos-delay="300"
+            >
               inspired by creativity and <span>perfection.</span>
               <br />
               passionate <span>Full Stack Web Developer.</span>
@@ -44,7 +50,15 @@ const About = () => {
           </div>
 
           <div className="tech">
-            <h2 className="tech-text reveal">MY ARSENAL :</h2>
+            <h2
+              className="tech-text"
+              data-aos="flip-down"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1500"
+              data-aos-delay="100"
+            >
+              MY ARSENAL :
+            </h2>
 
             {techImg.map((img) => {
               return (

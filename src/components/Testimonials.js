@@ -5,8 +5,15 @@ import TestimonialCard from "./layouts/TestimonialCard";
 const Testimonials = () => {
   return (
     <section id="testimonials" className="testim">
-      
-      <h2 className="testim-heading reveal">Testimonials</h2>
+      <h2
+        className="testim-heading "
+        data-aos="flip-up"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="1500"
+        data-aos-delay="300"
+      >
+        Testimonials
+      </h2>
       <div className="cards">
         <TestimonialCard />
       </div>
