@@ -3,14 +3,15 @@
 .allProjects {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
-    to bottom,
-    #6ad3dd,
-    #23accd,
-    #0085ba,
-    #005da1,
-    #0e357f
-  );
+  // background-image: linear-gradient(
+  //   to bottom,
+  //   #6ad3dd,
+  //   #23accd,
+  //   #0085ba,
+  //   #005da1,
+  //   #0e357f
+  // );
+  background-color: #fff;
 
   width: 100vw;
   min-height: 100%;
@@ -26,9 +27,10 @@
     align-items: flex-start;
     justify-content: center;
     margin: 5rem 0;
-    padding: 0 1rem;
+    padding: auto;
     color: $color-text;
     padding-left: 3rem;
+    width: auto;
 
     &-heading {
       font-family: $font-primary;
@@ -43,7 +45,8 @@
       -webkit-transform: rotate(90deg);
     }
     &-text {
-      width: 30rem;
+      width: 50rem;
+      margin: auto 1rem;
       font-size: 2rem;
       font-family: $font-secondary;
     }
@@ -79,11 +82,9 @@
     background-size: cover;
     border-radius: $bord-rad;
     cursor: pointer;
-    border-radius: 5px;
-    // background: #555c77;
-    // box-shadow: 5px 5px 10px #525973, -5px -5px 10px #585f7b;
+    border-radius: 1rem;
     background: #e0e0e0;
-    box-shadow: inset 7px 7px 14px $color-primary, inset -7px -7px 14px #ffffff;
+    box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
 
     &:hover :not(:last-child) {
       transform: scale(0.99);
@@ -136,7 +137,6 @@
       opacity: 0;
       z-index: -2;
       transition: all 0.4s ease-out;
-
       justify-content: space-around;
       align-items: center;
     }
@@ -241,10 +241,10 @@
       aspect-ratio: 1/1;
       position: relative;
       margin: 1rem;
-      margin-right: -5rem;
+      margin-left: -12rem;
       z-index: 20;
-      box-shadow: 0.5rem 0.5rem 1rem $color-text;
-      border-radius: $bord-rad;
+      box-shadow: -0.5rem 0.5rem 1rem $color-text;
+      border-radius: 1rem;
     }
     .card-text {
       max-width: 50%;

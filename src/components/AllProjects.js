@@ -24,8 +24,15 @@ const AllProjects = ({ allProjects }) => {
         <a href="/" className="back-home">
           <i className="fa-solid fa-house-laptop"></i>
         </a>
-        <div className="header ">
+        {/* <div className="header ">
           <h2 className="header-heading">Projects</h2>
+          <hr className="header-bar" />
+          <p className="header-text">
+           
+          </p>
+        </div> */}
+        <div className="header ">
+          <h2 className="header-heading shine-text">Projects</h2>
           <hr className="header-bar" />
           <p className="header-text">
             Explore some of my work: Real world projects,skills, and problem
@@ -47,18 +54,21 @@ const AllProjects = ({ allProjects }) => {
               return (
                 <div
                   key={id}
-                  className={`allProjects-box allProjects-box_${id} ${reveal}`}
+                  className={`allProjects-box allProjects-box_${id} `}
+                  data-aos={reveal}
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1500"
+                  data-aos-delay="200"
                 >
-                  <div className="card-text">
-                    <h2 className="card-text_heading">{name} </h2>
-                    <p className="card-text_p">{description}</p>
-                  </div>
                   <img
                     className="allProjects-box-img"
                     src={image}
                     alt="Github"
                   />
-
+                  <div className="card-text">
+                    <h2 className="card-text_heading">{name} </h2>
+                    <p className="card-text_p">{description}</p>
+                  </div>
                   <div className="allProjects-box_after">
                     <a href={link} target="_blank" rel="noreferrer">
                       <i className="fa-brands fa-chrome"></i>
