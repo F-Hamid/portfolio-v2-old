@@ -209,7 +209,7 @@
       color: $color-primary;
       color: $color-text;
       width: 70%;
-      margin-left: 18rem;
+      margin-left: 24rem;
       @media screen and (max-width: 550px) {
         width: 60%;
       }
@@ -233,23 +233,28 @@
       }
     }
     .card-text {
-      max-width: 92%;
+      width: 92%;
       height: 100%;
-      text-align: start;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin-left: 8%;
       margin-bottom: 5rem;
-
       padding-left: 20rem;
       overflow: hidden;
       @media screen and (max-width: 2000px) {
         padding-left: 20%;
+        margin-left: 0rem;
       }
 
       &_heading {
         font-size: 3rem;
         font-family: $font-primary;
         color: $color-secondary;
+        text-align: start;
         margin-bottom: 0.3em;
         font-weight: 700;
+
         @media screen and (max-width: 550px) {
           margin: auto;
           font-size: 6rem;
@@ -263,6 +268,7 @@
         font-size: 2.2rem;
         font-family: $font-secondary;
         color: $color-text;
+        text-align: start;
         font-weight: 700;
         @media screen and (max-width: 600px) {
           width: 80%;
@@ -301,6 +307,7 @@
     background-color: transparent;
     box-shadow: none;
     width: 15vw;
+
     &:hover {
       transition: all 0.3s;
       color: $color-text;
@@ -325,7 +332,7 @@
     &-text {
       font-family: $font-secondary;
       color: $color-third;
-      text-shadow: $text-shadow;
+      color: #478697;
       font-weight: 700;
       text-transform: uppercase;
       transition: all 0.5s;

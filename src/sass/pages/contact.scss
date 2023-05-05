@@ -92,6 +92,7 @@
   padding: 2rem;
   color: #30aadd;
   font-size: 6rem !important;
+  z-index: 500;
   @media screen and (max-width: 950px) {
     padding: 1.5rem;
   }
@@ -118,7 +119,6 @@
   position: absolute;
   opacity: 0.5;
   z-index: 500;
-
   animation: contact-rotate 60s infinite running;
 
   &-1 {

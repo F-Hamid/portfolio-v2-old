@@ -1,4 +1,9 @@
-import { SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiTypescript,
+} from "react-icons/si";
 
 const html = <i className="fa-brands fa-html5"></i>;
 const css = <i className="fa-brands fa-css3-alt"></i>;
@@ -8,6 +13,7 @@ const sass = <i className="fa-brands fa-sass"></i>;
 const node = <i className="fa-brands fa-node"></i>;
 const btsrp = <i className="fa-brands fa-bootstrap"></i>;
 const wordpress = <i className="fa-brands fa-wordpress"></i>;
+const ts = <SiTypescript />;
 const tlwnd = <SiTailwindcss />;
 const express = <SiExpress />;
 const mongoDb = <SiMongodb />;
@@ -15,10 +21,21 @@ const mongoDb = <SiMongodb />;
 const gallery = {
   projects: [
     {
+      id: 2023,
+      name: "r-magazine",
+      image: require("../../images/r-magazine.png"),
+      stack: [html, css, js, ts, tlwnd, react],
+      reveal: "fade-right",
+      link: "https://r-magazine-recruit.netlify.app/‹",
+      github_url: "https://github.com/F-Hamid/",
+      description:
+        "Stylish attractive website for art magazine in Montreal. Canada, with several pages and useful functionalities for recruitment and contacts",
+    },
+    {
       id: 1,
       name: "Tattoo Artist",
       image: require("../../images/mexihenna.png"),
-      stack: [html, js, tlwnd, react],
+      stack: [html, css, js, tlwnd, react],
       reveal: "fade-right",
       link: "https://mexihenna.netlify.app/",
       github_url: "https://github.com/F-Hamid/",
