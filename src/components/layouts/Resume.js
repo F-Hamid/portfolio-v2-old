@@ -11,7 +11,7 @@ export default function Resume() {
       </Link>
       <img
         className="resume-img"
-        src={require("./../../images/resume/My-Resume.png")}
+        src={require("./../../images/resume/My-Resume.jpg")}
         alt="My-resume"
       />
       <button type="button" className="resume-btn btn btn-info ">

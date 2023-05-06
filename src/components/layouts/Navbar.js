@@ -41,6 +41,11 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
+              <a className="nav-link " aria-current="page" href="#services">
+                services
+              </a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link " aria-current="page" href="#testimonials">
                 Testimonials
               </a>

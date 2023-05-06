@@ -5,5 +5,15 @@ import Contact from "./Contact";
 import AllProjects from "./AllProjects";
 import Resume from "./layouts/Resume";
 import Testimonials from "./Testimonials";
+import Services from "./Services";
 
-export { Home, Projects, About, Contact, AllProjects, Resume, Testimonials };
+export {
+  Home,
+  Projects,
+  About,
+  Contact,
+  AllProjects,
+  Resume,
+  Testimonials,
+  Services,
+};

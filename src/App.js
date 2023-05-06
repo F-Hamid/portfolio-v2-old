@@ -17,6 +17,7 @@ const LazyTestim = lazy(() => import("../src/components/layouts/Testimonials"));
 const LazyTestim2 = lazy(() => import("./components/Testimonials.js"));
 const LazyContact = lazy(() => import("./components/Contact.js"));
 const LazyAllProjects = lazy(() => import("./components/AllProjects.js"));
+const LazyServices = lazy(() => import("./components/Services"));
 
 // App
 
@@ -41,7 +42,7 @@ function App() {
   // }
   // window.addEventListener("scroll", reveal);
   // LOADING
-  const [load, setLoad] = useState(true);
+  const [load, setLoad] = useState(false);
 
   setTimeout(() => {
     setLoad(false);
@@ -81,7 +82,8 @@ function App() {
                   <LazyProjects projects={gallery} />
                   <LazyAbout />
                   {/* <LazyTestim2 /> */}
-                  <LazyTestim />
+                  {/* <LazyTestim /> */}
+                  <LazyServices />
                   <LazyContact />
                 </Suspense>
               </>
