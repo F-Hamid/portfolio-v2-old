@@ -10,13 +10,6 @@ const About = () => {
   return (
     <>
       <section className="about" id="about">
-        <div className="me">
-          <img
-            className="me-img"
-            src={require("./../images/aboutbckg-4.jpg")}
-            alt="about "
-          />
-        </div>
         <div className="about-me">
           <div className="about-text">
             <h2 className="about-text-heading shine-text "> FATEH Hamid</h2>
@@ -39,14 +32,14 @@ const About = () => {
             </p>
           </div>
           <div className="btn-container">
+            <button type="button" className="btn btn-info">
+              <Link to="/resume">Resume</Link>
+            </button>
             <div className="container">
               <div className="chevron"></div>
               <div className="chevron"></div>
               <div className="chevron"></div>
             </div>
-            <button type="button" className="btn btn-info">
-              <Link to="/resume">Resume</Link>
-            </button>
           </div>
 
           <div className="tech">
@@ -71,6 +64,13 @@ const About = () => {
               );
             })}
           </div>
+        </div>
+        <div className="me">
+          <img
+            className="me-img"
+            src={require("./../images/aboutbckg-4.jpg")}
+            alt="about "
+          />
         </div>
       </section>
     </>

@@ -22,38 +22,10 @@
   @media screen and (max-width: 350px) {
     height: 40vh;
   }
-  // &-bar {
-  //   height: 100%;
-  //   width: 100%;
-  //   transform: rotate(90deg);
-  //   -ms-transform: rotate(90deg);
-  //   -webkit-transform: rotate(90deg);
-  //   margin: auto 1rem;
-  //   padding: 0 3rem;
-
-  //   color: $color-secondary;
-  //   @media screen and (max-width: 1500px) {
-  //     // margin-left: 4rem;
-  //     // width: 20rem !important;
-  //     // padding: 0 8rem;
-  //   }
-  //   @media screen and (max-width: 1300px) {
-  //     // margin-left: 6rem;
-  //   }
-  //   @media screen and (max-width: 1000px) {
-  //     margin-left: 8rem;
-  //   }
-  //   @media screen and (max-width: 950px) {
-  //     // margin: 5rem;
-  //     width: 35em;
-  //     margin: 2rem 5rem;
-  //     transform: rotate(180deg);
-  //   }
-  // }
 }
 .about-me {
   max-width: 60vw;
-  padding: 2rem;
+  padding: 2rem 4rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -226,15 +198,15 @@
 
 .btn {
   font-size: 2rem;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
 
-  background-color: $color-primary-light;
+  background-color: $color-primary;
   border: none;
   border-radius: 0.3rem;
   text-align: center;
-  margin-left: 4rem;
+  margin-left: 1rem;
   &:hover {
-    background-color: $color-primary;
+    background-color: #6bc3d0;
   }
   // @media screen and (max-width: 650px) {
   //   margin-top: 2rem;

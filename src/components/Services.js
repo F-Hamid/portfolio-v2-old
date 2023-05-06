@@ -4,7 +4,7 @@ import Circle from "../components/layouts/ServicesCircle";
 const Services = () => {
   return (
     <section className="services" id="services">
-      <Circle title="Design" />
+      <Circle title="Design" parallax="parallax-1" />
       <Circle title="Coding" />
       <Circle title="SEO/Analyze" />
       <Circle title="Deploy" />
