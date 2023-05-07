@@ -12,18 +12,21 @@ const Services = () => {
   return (
     <section className="services" id="services">
       <img src={shapes} alt="" className=" services-bg " />
-      <div className="header ">
-        <h2 className="header-heading shine-text">SERVICES</h2>
-        <hr className="header-bar" />
-        <p className="header-text">
-          My work reflects real life web applications, various skills and
-          problem solving. To explore even more, check out the links below.
-        </p>
-      </div>
       <div className="circles-container">
         <Circle title="Design" icon={design} color="color-design" />
         <Circle title="Coding" icon={code} color="color-code" />
         <Circle title="SEO/Analyze" icon={seo} color="color-seo" />
+      </div>
+      <div className="header ">
+        <h2 className="header-heading shine-text">SERVICES</h2>
+        <hr className="header-bar" />
+        <p className="header-text">
+          "I offer comprehensive web development services, including website
+          design, front-end and back-end development, search engine
+          optimization, and website maintenance."
+        </p>
+      </div>
+      <div className="circles-container">
         <Circle title="Deploy" icon={deploy} color="color-deploy" />
         <Circle title="Update/Maintenance" icon={update} color="color-update" />
       </div>

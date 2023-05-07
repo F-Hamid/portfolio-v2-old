@@ -121,11 +121,8 @@
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
-    // background: rgba($color: #2d3939, $alpha: 0.9);
-
-    // box-shadow: 10px 10px 31px #c9c9c9, -10px -10px 31px #ffffff;
     border-radius: 8px;
-    background: #e0e0e0;
+    background: #efefef;
     box-shadow: inset 7px 7px 14px #bebebe, inset -7px -7px 14px #ffffff;
     &:hover :not(:last-child) {
       opacity: 0.9;
@@ -224,7 +221,6 @@
       top: -4rem;
       z-index: 500;
       box-shadow: 0.5rem 0.5rem 1rem $color-text;
-      border-radius: $bord-rad;
       border-radius: 4px;
       background: #e0e0e0;
       box-shadow: inset 7px 7px 14px #bebebe, inset -7px -7px 14px #ffffff;

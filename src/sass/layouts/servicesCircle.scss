@@ -1,9 +1,9 @@
 @import "../setup/variables";
 
 .circle {
-  width: 25rem;
-  height: 25rem;
-  margin: 2rem auto;
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem 6rem;
   border-radius: 5%;
   color: #ffffff;
   text-align: center;
@@ -12,16 +12,30 @@
   justify-content: center;
   align-items: center;
   z-index: 500;
-  background: #e0e0e0;
-  box-shadow: inset 7px 7px 14px #bebebe, inset -7px -7px 14px #ffffff;
+  // background: #e0e0e0;
+  // box-shadow: inset 3px 3px 8px #bebebe, inset -3px -3px 8px #ffffff;
+  background: linear-gradient(145deg, #72d1df, #60b0bb);
+  box-shadow: 5px 5px 10px #64b5c1, -5px -5px 10px #72d1df;
+  background: #a7c6cb;
+  box-shadow: inset 7px 7px 14px #64b5c1, inset -7px -7px 14px #72d1df;
+
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    scale: 1.07;
+
+    background: linear-gradient(145deg, #60b0bb, #72d1df);
+    box-shadow: 5px 5px 10px #64b5c1, -5px -5px 10px #72d1df;
+  }
 
   &-container {
+    opacity: 0.9;
     text-align: center;
     font-family: $font-secondary;
   }
 
   &-image {
-    width: 50%;
+    width: 75%;
   }
 }
 // .color-design {
