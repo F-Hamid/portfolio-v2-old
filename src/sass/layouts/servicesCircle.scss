@@ -8,21 +8,33 @@
   color: #ffffff;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
   background: #e0e0e0;
+  box-shadow: inset 7px 7px 14px #bebebe, inset -7px -7px 14px #ffffff;
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   rgba(58, 176, 255, 0.8),
+  //   rgba(57, 181, 224, 0.7)
+  // );
+  &-container {
+    text-align: center;
+    font-family: $font-secondary;
+  }
+
+  &-image {
+    width: 50%;
+    // box-shadow: inset 7px 7px 14px #89db88, inset -7px -7px 14px #ffffff;
+    // border-radius: 50%;
+  }
 }
-.parallax-1 {
+.color-design{
   background-image: linear-gradient(
       to right bottom,
       rgba(58, 176, 255, 0.8),
       rgba(57, 181, 224, 0.7)
     ),
-    url("../../images/pedroMedia.jpg");
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: inset 7px 7px 14px #eee, inset -7px -7px 14px $color-primary;
 }
