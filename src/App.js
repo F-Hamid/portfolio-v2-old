@@ -22,27 +22,13 @@ const LazyServices = lazy(() => import("./components/Services"));
 // App
 
 function App() {
+  const [load, setLoad] = useState(false);
+
   useEffect(() => {
     AOS.init();
   }, []);
 
-  // Animation
-  // function reveal() {
-  //   let reveals = document.querySelectorAll(".reveal");
-  //   for (let i = 0; i < reveals.length; i++) {
-  //     let windowHeight = window.innerHeight;
-  //     let elementTop = reveals[i].getBoundingClientRect().top;
-  //     let elementVisible = -30;
-  //     if (elementTop < windowHeight - elementVisible) {
-  //       reveals[i].classList.add("active");
-  //     } else {
-  //       reveals[i].classList.remove("active");
-  //     }
-  //   }
-  // }
-  // window.addEventListener("scroll", reveal);
   // LOADING
-  const [load, setLoad] = useState(false);
 
   setTimeout(() => {
     setLoad(false);
@@ -58,6 +44,21 @@ function App() {
     <Loader />
   ) : (
     <>
+      <div className="mini-menu">
+        <i class="fa-solid fa-arrows-turn-to-dots mini-menu-arrow"></i>
+
+        <a className="fa-menu" href="#home">
+          <i className="fa-solid fa-house-circle-check mini-menu-item"></i>
+        </a>
+
+        <a className="fa-menu" href="#home">
+          <i class="fa-solid fa-address-book mini-menu-item"></i>
+        </a>
+
+        <a className="mini-menu-container" href="#home">
+          <i class="fa-solid fa-at mini-menu-item"></i>
+        </a>
+      </div>
       <BrowserRouter>
         <Helmet>
           <title>

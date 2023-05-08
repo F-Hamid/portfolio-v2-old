@@ -18,14 +18,15 @@
   box-shadow: 5px 5px 10px #64b5c1, -5px -5px 10px #72d1df;
   background: #a7c6cb;
   box-shadow: inset 7px 7px 14px #64b5c1, inset -7px -7px 14px #72d1df;
+  // background: linear-gradient(145deg, #60b0bb, #72d1df);
+  // box-shadow: 5px 5px 10px #64b5c1, 5px 5px 10px #72d1df;
 
   cursor: pointer;
   transition: all 0.5s;
   &:hover {
     scale: 1.07;
-
     background: linear-gradient(145deg, #60b0bb, #72d1df);
-    box-shadow: 5px 5px 10px #64b5c1, -5px -5px 10px #72d1df;
+    box-shadow: 5px 5px 10px #64b5c1, 5px 5px 10px #72d1df;
   }
 
   &-container {
@@ -36,6 +37,8 @@
 
   &-image {
     width: 75%;
+    opacity: 0.9;
+    filter: blur(0.05rem);
   }
 }
 // .color-design {
