@@ -51,7 +51,7 @@ function App() {
           <i className="fa-solid fa-house-circle-check mini-menu-item"></i>
         </a>
 
-        <a className="fa-menu" href="#home">
+        <a className="fa-menu" href="#contact">
           <i class="fa-solid fa-address-book mini-menu-item"></i>
         </a>
 

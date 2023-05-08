@@ -87,8 +87,9 @@
 
   &-item {
     opacity: 0;
+    margin: auto 1.5rem;
     font-size: 0rem;
-    color: $color-primary-light;
+    color: #efefef;
     transition: all 1s;
     cursor: pointer;
   }
@@ -97,7 +98,11 @@
   }
   &:hover .mini-menu-item {
     opacity: 1;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+  }
+  &:hover .mini-menu-arrow {
+    opacity: 0;
+    font-size: 0;
   }
 
   &-arrow {
@@ -105,6 +110,7 @@
     margin-right: 1rem;
     color: $color-text;
     opacity: 0.5;
+    transition: all 1s;
   }
 }
 
