@@ -70,7 +70,7 @@ function App() {
                   <LazyProjects projects={gallery} />
                   <LazyAbout />
                   {/* <LazyTestim2 /> */}
-                  {/* <LazyTestim /> */}
+                  <LazyTestim />
                   <LazyServices />
                   <LazyContact />
                 </Suspense>

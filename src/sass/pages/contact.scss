@@ -243,3 +243,9 @@
   background-size: cover;
   background-position: 0 60%;
 }
+
+@media screen and (max-width: 750px) {
+  .parallax {
+    background-position: 50%;
+  }
+}
