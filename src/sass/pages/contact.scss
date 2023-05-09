@@ -9,11 +9,7 @@
   height: 80vh;
   padding: 5rem;
 
-  background-color: $color-secondary;
-  background-image: url(../../images/me0-2.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
 
   @media screen and (max-width: 1050px) {
@@ -41,18 +37,19 @@
 
   &-heading {
     text-align: center;
-    color: #6ad3dd;
-    color: $color-third;
-    font-family: $font-secondary;
+
+    color: #212121;
+    // color: #000;
+    font-family: $font-primary;
     font-size: 5rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 1rem;
-    text-shadow: -0.2rem 0.2rem 0.5rem $color-secondary;
+    text-shadow: -0.1rem 0.1rem 1rem $color-third;
     span {
-      color: $color-third;
+      color: $color-secondary;
       font-size: 6rem;
-      text-shadow: -0.3rem 0.3rem 0.5rem $color-third;
+      text-shadow: -0.1rem 0.1rem 3rem $color-third;
       // font-weight: 700;
     }
     @media screen and (max-width: 800px) {
@@ -61,14 +58,14 @@
   }
 
   &-me {
-    color: $color-primary-light;
+    color: #efefef;
     text-shadow: 0.1rem 0.1rem 0.8rem $color-secondary;
     text-align: end;
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 2rem;
     &:hover {
-      color: $color-primary;
+      color: $color-primary-light;
     }
     &-link {
       cursor: pointer;
@@ -91,6 +88,9 @@
 .fa {
   padding: 2rem;
   color: #30aadd;
+  color: #efefef;
+  color: #e9d5da;
+
   font-size: 6rem !important;
   z-index: 500;
   @media screen and (max-width: 950px) {
@@ -110,7 +110,7 @@
   }
   cursor: pointer;
   &:hover {
-    color: #e9d5da;
+    color: $color-secondary;
   }
 }
 
@@ -221,10 +221,25 @@
 .footer__copyright {
   position: absolute;
   bottom: 0.5rem;
-  color: $color-primary;
+  color: $color-text;
 
   a {
     color: $color-third;
     font-size: 1.2rem;
   }
+}
+
+.parallax {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(103, 198, 210, 0.85),
+      rgba(41, 161, 177, 0.6)
+    ),
+    url("../../images//contact-img.jpg");
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 60%;
 }

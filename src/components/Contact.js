@@ -6,7 +6,7 @@ import TechImg from "./layouts/TechImg";
 const Contact = () => {
   return (
     <>
-      <section className="contact" id="contact">
+      <section className="contact parallax" id="contact">
         <div
           className="contact-heading "
           data-aos="fade-up"
