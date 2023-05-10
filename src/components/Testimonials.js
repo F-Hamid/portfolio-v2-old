@@ -3,7 +3,7 @@ import "../sass/pages/testimonials.scss";
 
 const Testimonials = () => {
   return (
-    <div id="testimonial">
+    <div id="testimonial" className="testimonial">
       <Carrousel />
     </div>
   );

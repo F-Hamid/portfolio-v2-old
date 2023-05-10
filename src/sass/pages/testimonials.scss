@@ -1,10 +1,19 @@
 @import "./../setup/variables";
 
-testimonial {
+.testimonial {
   height: 100%;
+  padding: 6rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 35rem;
-  color: $color-third;
+
+  background-image: linear-gradient(
+    to bottom,
+    #eeeeee,
+    #dadee9,
+    #bcd2e4,
+    #98c7d8,
+    #73bcc4
+  );
 }
