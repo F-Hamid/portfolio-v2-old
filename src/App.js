@@ -14,8 +14,7 @@ import MiniMenu from "../src/components/layouts/MiniMenu";
 const LazyHome = lazy(() => import("./components/Home.js"));
 const LazyProjects = lazy(() => import("./components/Projects.js"));
 const LazyAbout = lazy(() => import("./components/About.js"));
-const LazyTestim = lazy(() => import("../src/components/layouts/Testimonials"));
-const LazyTestim2 = lazy(() => import("./components/Testimonials.js"));
+const LazyTestim = lazy(() => import("./components/Testimonials.js"));
 const LazyContact = lazy(() => import("./components/Contact.js"));
 const LazyAllProjects = lazy(() => import("./components/AllProjects.js"));
 const LazyServices = lazy(() => import("./components/Services"));
@@ -69,9 +68,8 @@ function App() {
                   <LazyHome />
                   <LazyProjects projects={gallery} />
                   <LazyAbout />
-                  {/* <LazyTestim2 /> */}
-                  <LazyTestim />
                   <LazyServices />
+                  <LazyTestim />
                   <LazyContact />
                 </Suspense>
               </>

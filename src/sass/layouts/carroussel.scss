@@ -1,0 +1,113 @@
+@import "./../setup/variables";
+
+/* Swiper */
+
+.swiper {
+  width: 65rem;
+  height: 50rem;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  max-width: 2vw;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 10%;
+  width: 50px;
+  height: 50px;
+  size: 50px;
+  margin-top: -15px;
+  z-index: 0;
+  cursor: pointer;
+  fill: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  fill: #000;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+
+.swiper-button-prev {
+  left: 10px !important;
+}
+
+.swiper-button-next {
+  right: 10px !important;
+}
+
+.swiperSlide {
+  max-width: 92rem;
+}
+.slid-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100%;
+}
+.author {
+  font-size: 2rem;
+  position: absolute;
+  top: 3.5rem;
+  left: 37%;
+  z-index: 100;
+  color: $color-third;
+}
+.poste {
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+
+.text {
+  padding: 0.6rem;
+  font-size: 1.5rem;
+}
+.quote-icon {
+  scale: 0.01;
+  margin-left: 80%;
+}
+
+.slide-image-container {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-origin: 0;
+  right: 2rem;
+
+  background-size: contain;
+}

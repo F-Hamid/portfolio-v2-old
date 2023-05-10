@@ -1,27 +1,11 @@
-import React from "react";
-import "../sass/layouts/Testimonials.scss";
-import TestimonialCard from "./layouts/TestimonialCard";
+import Carrousel from "./Carrousel";
+import "../sass/pages/testimonials.scss";
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="testim">
-      <h2
-        className="testim-heading "
-        data-aos="flip-up"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="1500"
-        data-aos-delay="300"
-      >
-        Testimonials
-      </h2>
-      <div className="cards">
-        <TestimonialCard />
-      </div>
-      <a href="#contact" className="testim-arrows">
-        <h1 className="arrow-heading">contact me</h1>
-        <div className="arrows arrow-testim"></div>
-      </a>
-    </section>
+    <div id="testimonial">
+      <Carrousel />
+    </div>
   );
 };
 

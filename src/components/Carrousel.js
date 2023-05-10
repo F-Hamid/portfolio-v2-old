@@ -1,15 +1,16 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import photographer2 from "../images/anas.png";
-import graphiste from "../images/anel.png";
-import Developeuse from "../images/simosud.png";
-import study from "../images/anas.png";
+import photographer2 from "../images/logo.png";
+import graphiste from "../images/logo.png";
+import Developeuse from "../images/logo.png";
+import study from "../images/logo.png";
 import { FaQuoteLeft } from "react-icons/fa";
 import { EffectCards } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "../sass/main.scss";
-import { SwipperNavBtn } from "./SwipperNavBtn";
+import "../sass/layouts/carroussel.scss";
+// import { SwipperNavBtn } from "./SwipperNavBtn";
 
 const Carrousel = () => {
   const testimonials = [
@@ -62,9 +63,9 @@ const Carrousel = () => {
           return (
             <SwiperSlide
               key={author}
-              className={`${bgColor} shadow-2xl max-w-[92vw]`}
+              className={`swiperSlide ${bgColor} shadow-2xl max-w-[92vw]`}
             >
-              <div className="container relative flex flex-row  w-full h-full ">
+              <div className="slid-container relative flex flex-row  w-full h-full ">
                 {/* Text */}
                 <div className="slide-text center w-2/3 h-full ">
                   <h2 className="author text-5xl absolute top-[3.5rem] left-[37%] z-50 text-white font-third">
@@ -79,22 +80,22 @@ const Carrousel = () => {
                     </span>
                     {text}
                     <span>
-                      <FaQuoteLeft className="  -scale-100 ml-[80%] " />
+                      <FaQuoteLeft className=" quote-icon -scale-100 ml-[80%] " />
                     </span>
                   </p>
                 </div>
                 {/* IMAGE */}
                 <div
-                  className={`slide-image relative bg-cover rounded-l-[3.5rem] w-3/5 ${imgBg} h-full`}
+                  className={`slide-image-container relative bg-cover rounded-l-[3.5rem] w-3/5 ${imgBg} h-full`}
                 >
                   <img
                     src={img}
                     alt=""
-                    className="absolute  bg-cover h-full w-full bottom-0 right-24"
+                    className="slide-image absolute  bg-cover h-full w-full bottom-0 right-24"
                   />
                 </div>
               </div>
-              <SwipperNavBtn />
+              {/* <SwipperNavBtn /> */}
             </SwiperSlide>
           );
         })}
