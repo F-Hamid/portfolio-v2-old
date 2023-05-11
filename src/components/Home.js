@@ -17,12 +17,12 @@ const Home = () => {
           A <span className="home-span">building</span> brick in your big
           project
         </h3>
-        <h2 className="home-header  ">Your WEBSITE</h2>
+        <h2 className="shine header-heading">Your WEBSITE</h2>
         <h3 className="home-text">
-          ...My big <span className="home-span">project</span>
+          = My big <span className="home-span">project</span>
         </h3>
         <a href="#about" className="cta typewriter  ">
-          <h1 >your Professional Web Developer</h1>
+          <h1>your Professional Web Developer</h1>
           <div className="arrows"></div>
         </a>
       </main>
