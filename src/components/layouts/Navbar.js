@@ -46,7 +46,7 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link " aria-current="page" href="#testimonials">
+              <a className="nav-link " aria-current="page" href="#testimonial">
                 Testimonials
               </a>
             </li>

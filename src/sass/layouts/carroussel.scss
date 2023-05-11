@@ -58,6 +58,10 @@
 
 .swiperSlide {
   max-width: 92rem;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .slid-container {
   position: relative;
@@ -71,7 +75,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33%;
+  width: 55%;
   height: 100%;
 }
 .author {
@@ -90,6 +94,8 @@
 .text {
   padding: 0.6rem;
   font-size: 1.5rem;
+  margin: 1rem;
+  margin-top: 10rem;
 }
 .quote-icon {
   scale: 0.01;
@@ -98,16 +104,50 @@
 
 .slide-image-container {
   position: relative;
-  width: 60%;
+  width: 45%;
   height: 100%;
   background-size: cover;
+  overflow: hidden;
 }
 .slide-image {
   width: 100%;
-  height: 100%;
+  height: 101%;
   position: absolute;
+  bottom: -0.4rem;
+  left: 0rem;
   background-origin: 0;
-  right: 2rem;
 
-  background-size: contain;
+  background-size: cover;
+}
+
+.img-bg1 {
+  background-color: #21a5dc;
+}
+.img-bg2 {
+  background-color: #f87474;
+}
+.img-bg3 {
+  background-color: #9a21dc;
+}
+.img-bg4 {
+  background-color: #5cc87b;
+}
+.img-bg5 {
+  background-color: #dc5c21;
+}
+.img-bg6 {
+  background-color: #453c67;
+}
+.img-bg7 {
+  background-color: #212121;
+}
+.img-bg8 {
+  background-color: #f4b63f;
+}
+
+.testim-shadow {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
