@@ -1,4 +1,5 @@
-import React from "react";
+import Form from "../components/layouts/Form";
+
 import "./../sass/pages/contact.scss";
 import { SiUpwork } from "react-icons/si";
 import TechImg from "./layouts/TechImg";
@@ -18,14 +19,9 @@ const Contact = () => {
             Let's bring those <span className="ideas shine-text">ideas</span> to
             the light
           </h2>
-          <a
-            className="contact-me-link"
-            href="mail-to:f.hamidweb@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <h2 className="contact-me ">contact me!</h2>
-          </a>
+          <div className="form">
+            <Form />
+          </div>
         </div>
         <div className="media ">
           <div className="media-1">

@@ -6,7 +6,7 @@
   justify-content: space-between;
   flex-direction: column;
   width: 100vw;
-  height: 80vh;
+  height: 85vh;
   padding: 5rem;
 
   overflow-x: hidden;
@@ -39,7 +39,6 @@
     text-align: center;
 
     color: #212121;
-    // color: #000;
     font-family: $font-primary;
     font-size: 5rem;
     font-weight: 700;
@@ -231,21 +230,27 @@
 
 .parallax {
   background-image: linear-gradient(
-      to right bottom,
-      rgba(103, 198, 210, 0.85),
-      rgba(41, 161, 177, 0.6)
-    ),
-    url("../../images//contact-img.jpg");
+    to right bottom,
+    rgba(103, 198, 210, 0.85),
+    rgba(41, 161, 177, 0.6)
+  );
   min-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 60%;
+  background-size: contain;
+  background-position: 20% 20%;
 }
 
 @media screen and (max-width: 750px) {
   .parallax {
     background-position: 50%;
   }
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
