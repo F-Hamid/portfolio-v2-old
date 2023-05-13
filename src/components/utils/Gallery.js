@@ -58,7 +58,7 @@ const gallery = {
     {
       id: 6,
       name: "Pedromedia",
-      image: require("../../images/pedromedia.png"),
+      image: require("../../images/pedromedia-2.png"),
       stack: [html, css, sass, btsrp, js],
       reveal: "fade-right",
       link: "https://pedromedia.netlify.app",

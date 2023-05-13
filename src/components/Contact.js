@@ -19,9 +19,9 @@ const Contact = () => {
             Let's bring those <span className="ideas shine-text">ideas</span> to
             the light
           </h2>
-          <div className="form">
-            <Form />
-          </div>
+        </div>
+        <div className="form">
+          <Form />
         </div>
         <div className="media ">
           <div className="media-1">
@@ -102,6 +102,7 @@ const Contact = () => {
         </div>
 
         <TechImg />
+
         <div className="footer__copyright">
           <p className="footer__copyright-p">
             2023@ Created by

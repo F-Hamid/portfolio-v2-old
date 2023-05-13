@@ -72,6 +72,10 @@
   }
   // text-shadow: 0.1rem -0.1rem 1rem $color-text;
 }
+.iam {
+  padding-left: 0.6rem;
+  margin-top: 1.5rem;
+}
 .about-text-p {
   font-size: 2rem;
   margin: 0.5rem 1rem;
@@ -92,7 +96,6 @@
 
   @media screen and (max-width: 650px) {
     // transform: translateX(-3rem);
-
     margin-left: -3rem !important;
   }
   @media screen and (max-width: 450px) {

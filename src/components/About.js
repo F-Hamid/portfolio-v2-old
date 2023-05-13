@@ -12,7 +12,10 @@ const About = () => {
       <section className="about" id="about">
         <div className="about-me">
           <div className="about-text">
-            <h2 className="about-text-heading shine-text "> FATEH Hamid</h2>
+            <h2 className="about-text-heading shine-text ">
+              <h3 className="iam">Hello I am</h3>
+              Hamid
+            </h2>
 
             <p
               className="about-text-p"

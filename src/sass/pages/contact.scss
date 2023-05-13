@@ -6,11 +6,10 @@
   justify-content: space-between;
   flex-direction: column;
   width: 100vw;
-  height: 85vh;
+  height: 70vh;
   padding: 5rem;
-
-  overflow-x: hidden;
   position: relative;
+  overflow-x: hidden;
 
   @media screen and (max-width: 1050px) {
     height: 65vh;
@@ -218,8 +217,7 @@
 }
 
 .footer__copyright {
-  position: absolute;
-  bottom: 0.5rem;
+  padding: 2rem auto;
   color: $color-text;
 
   a {

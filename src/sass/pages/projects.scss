@@ -367,7 +367,7 @@
   width: 90%;
   height: 90%;
   filter: blur(0.1rem);
-  border-radius: 50%;
+  border-radius: 3%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -375,18 +375,15 @@
 }
 
 .window-blur {
-  width: 110%;
-  height: 110%;
+  width: 90%;
+  height: 90%;
   position: absolute;
   top: 40;
   left: 10;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(205, 239, 248, 0.9),
-    rgba(57, 181, 224, 0.75)
-  );
-  border-radius: 50%;
-  filter: blur(3rem);
+
+  border-radius: 3%;
+
+  box-shadow: 1rem 1rem 2rem rgba(57, 181, 224, 0.75);
 }
 
 .window-1 {
@@ -395,7 +392,7 @@
       rgba(58, 176, 255, 0.5),
       rgba(57, 181, 224, 0.3)
     ),
-    url("../../images/pedromedia.png");
+    url("../../images/pedromedia-2.png");
 }
 .container-1 {
   top: 45rem;
