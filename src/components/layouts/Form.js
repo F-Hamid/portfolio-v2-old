@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import "../../sass/layouts/form.scss";
 
 const Form = () => {
-  const form = useRef(null);
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -13,18 +13,18 @@ const Form = () => {
     emailjs
       .sendForm(
         "service_felonlr",
-        "template_r-magazine",
+        "template_portfolio",
         form.current,
-        "vRcfaBC9Kbh764_Nw"
+        "pinNYZDUqQIeG8diT"
       )
       .then(
         (result) => {
           console.log(result.text);
-          toast.success("Email envoyé avec succès!");
+          toast.success("EMAIL SEND SUCCESSFULLY!");
         },
         (error) => {
           console.log(error.text);
-          toast.error("Quelque chose s'est mal passé! Veuillez réessayer");
+          toast.error("SOMETHING WENT WRONG! PLEASE TRY AGAIN");
         }
       );
     e.target?.reset();
@@ -63,9 +63,6 @@ const Form = () => {
             placeholder="Email"
             required={true}
           />
-          <p className=" paragraph text-main text-xl font-light italic">
-            Please Insert an email.
-          </p>
         </div>
 
         <textarea
@@ -74,12 +71,10 @@ const Form = () => {
           className="message "
           placeholder="Message"
         />
-        <p className="text-main text-xl font-light italic">Your Message</p>
+        <p className="paragraph">Your Message</p>
 
-        <div className="flex items-center justify-evenly w-[70%] mb-8">
-          <button type="submit" value="Send" className="form-button  ">
-            SEND
-          </button>
+        <div className="button">
+          <input type="submit" value="Send" className=" form-button" />
         </div>
       </form>
       <ToastContainer />

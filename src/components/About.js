@@ -13,7 +13,7 @@ const About = () => {
         <div className="about-me">
           <div className="about-text">
             <h2 className="about-text-heading shine-text ">
-              <h3 className="iam">Hello I am</h3>
+              <p className="iam">Hello I am</p>
               Hamid
             </h2>
 
