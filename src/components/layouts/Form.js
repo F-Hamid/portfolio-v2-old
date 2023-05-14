@@ -34,7 +34,7 @@ const Form = () => {
       id="form"
       className="center relative flex-col w-screen h-full p-12 py-56 bg-gradient-to-b from-white to-[#3281ae]"
     >
-      <h2 className=" shine">contact me!</h2>
+      {/* <h2 className=" shine">contact me!</h2> */}
       <form
         onSubmit={sendEmail}
         ref={form}

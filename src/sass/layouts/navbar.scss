@@ -50,10 +50,9 @@ nav {
 .nav-link:hover {
   color: $color-text !important;
   text-shadow: none;
-
 }
 .nav-link.active {
-  background-color: $color-primary-light;
+  background-color: #7ec8d2;
   color: $color-text !important;
   text-shadow: none;
   border-radius: 0.3rem;

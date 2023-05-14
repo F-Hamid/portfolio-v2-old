@@ -57,18 +57,17 @@
   }
 
   &-text {
-    color: $color-text;
     font-size: 4.5rem;
     font-family: $font-secondary;
-    color: $color-secondary;
-    text-shadow: 0.2rem 0.2rem 2rem #efefef;
+    color: $color-text;
+    text-shadow: 0.2rem 0.2rem 2rem $color-third;
     // @media screen and (max-width: 550px) {
     //   font-size: 5rem;
     // }
   }
 
   &-span {
-    color: $color-text;
+    color: #a65628;
     text-transform: uppercase;
     font-family: $font-primary;
   }
@@ -130,11 +129,14 @@
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   padding-bottom: 6rem;
-
+  padding-top: 2rem;
+  padding-left: -2rem;
+  font-family: "Courier New", Courier, monospace;
   /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
+
   animation: typing 3.5s 1.5s steps(40, end),
     blink-caret 0.95s step-end infinite;
 
@@ -149,12 +151,15 @@
 /* The typing effect */
 @keyframes typing {
   from {
-    border-right: 0.05em solid $color-text;
+    border-right: 0.05em solid $color-third;
     width: 0;
+    height: 1rem;
   }
   to {
-    width: 100%;
-    border-right: 0.01 solid;
+    width: 120%;
+    height: 1rem;
+    border-right: 0.05rem solid;
+    border-right: 0.05em solid $color-third;
   }
 }
 
@@ -165,7 +170,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: $color-secondary;
+    border-color: $color-third;
   }
 }
 

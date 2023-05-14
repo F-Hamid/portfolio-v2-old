@@ -6,37 +6,92 @@
   justify-content: space-between;
   flex-direction: column;
   width: 100vw;
-  height: 70vh;
+  height: 100%;
   padding: 5rem;
   position: relative;
-  overflow-x: hidden;
 
-  @media screen and (max-width: 1050px) {
-    height: 65vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(#7ec8d2, 1),
+    rgba($color-secondary, 0.2)
+  );
+  // @media screen and (max-width: 1050px) {
+  //   height: 65vh;
+  // }
+
+  // @media screen and (max-width: 850px) {
+  //   height: 60vh;
+  //   padding-top: 2rem;
+  // }
+  // @media screen and (max-width: 750px) {
+  //   height: 50vh;
+  // }
+
+  // @media screen and (max-width: 650px) {
+  //   height: 35vh;
+  // }
+
+  // @media screen and (max-width: 450px) {
+  //   height: 25vh;
+  // }
+  // @media screen and (max-width: 350px) {
+  //   height: 20vh;
+  // }
+
+  &-square-1 {
+    width: 40rem;
+    height: 30rem;
+    position: absolute;
+    top: -5rem;
+    left: 6rem;
+  }
+  &-square-2 {
+    width: 40rem;
+    height: 10rem;
+    position: absolute;
+    top: auto;
+    right: 10rem;
+    z-index: 0;
+  }
+  .parallax {
+    @include center;
+    border-radius: 2%;
+    box-shadow: 1rem 1rem 2rem rgba(57, 181, 224, 0.75);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: -10% 20%;
+    h2 {
+      font-size: 4rem;
+      font-family: $font-primary;
+    }
   }
 
-  @media screen and (max-width: 850px) {
-    height: 60vh;
-    padding-top: 2rem;
-  }
   @media screen and (max-width: 750px) {
-    height: 50vh;
+    .parallax {
+      background-position: 20%;
+    }
   }
+  .parallax-1 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(58, 176, 255, 0.5),
+        rgba(57, 181, 224, 0.3)
+      ),
+      url("../../images/cube3.png");
+    background-size: 40%;
+  }
+  .parallax-2 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-third, 0.5),
+      rgba($color-primary, 0.2)
+    );
 
-  @media screen and (max-width: 650px) {
-    height: 35vh;
+    // background-position: -10% 20%;
   }
-
-  @media screen and (max-width: 450px) {
-    height: 25vh;
-  }
-  @media screen and (max-width: 350px) {
-    height: 20vh;
-  }
-
   &-heading {
     text-align: center;
-
     color: #212121;
     font-family: $font-primary;
     font-size: 5rem;
@@ -44,6 +99,7 @@
     text-transform: uppercase;
     margin-top: 1rem;
     text-shadow: -0.1rem 0.1rem 1rem $color-third;
+    z-index: 200;
     span {
       color: $color-secondary;
       font-size: 6rem;
@@ -221,28 +277,14 @@
   color: $color-text;
 
   a {
-    color: $color-third;
-    font-size: 1.2rem;
-  }
-}
-
-.parallax {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(103, 198, 210, 0.85),
-    rgba(41, 161, 177, 0.6)
-  );
-  min-height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 20% 20%;
-}
-
-@media screen and (max-width: 750px) {
-  .parallax {
-    background-position: 50%;
+    color: $color-secondary;
+    font-size: 1.3rem;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: auto 0.3rem;
+    text-decoration: none;
+    font-weight: 700;
   }
 }
 
@@ -251,4 +293,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
