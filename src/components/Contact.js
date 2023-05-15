@@ -46,7 +46,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa-solid fa-mobile-screen-button fa"></i>
+              <i class="fa-solid fa-square-phone"></i>
             </a>
 
             <a
@@ -64,7 +64,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa-brands fa-github fa"></i>
+              <i class="fa-brands fa-twitter"></i>
             </a>
             <a
               className="fa"
@@ -72,7 +72,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i className="fa fa-twitter" aria-hidden="true"></i>
+              <i className="fa-brands fa-github fa github-contact"></i>
             </a>
           </div>
           <div className="media-1">

@@ -4,19 +4,19 @@
   @include center;
   width: 40vw;
   padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 1rem #4c4c4c;
 }
 
 .form-container {
   @include center;
   font-size: 1.5rem;
   height: 75%;
-  width: 98%;
+
   margin: 2rem auto;
   padding: 2rem 1rem;
   border-radius: 0.5rem;
   background-color: rgba($color-third, 0.2);
-}
-.form-container {
   width: 90%;
   margin-bottom: 1.5rem;
 }
@@ -52,6 +52,7 @@
 .form-button {
   width: 20rem;
   height: 6rem;
+  margin: 2rem auto;
   font-size: 3rem;
   color: $color-third;
   background-color: $color-primary;
@@ -60,12 +61,15 @@
   border-radius: 5%;
   border: none;
   box-shadow: 0 0.125rem 0.25rem rgba($color-text, 0.5);
-  transition: all 0.1s ease-out;
+  box-shadow: 0.3rem 0.5rem 0.7rem #4c4c4c;
+  font-family: $font-secondary;
+  transition: all 0.2s linear;
 }
 
 .form-button:hover {
   box-shadow: 0 0.125rem 0.25rem rgba($color-text, 0.1);
   background-color: $color-primary-light;
+  color: $color-text;
 }
 
 .form-button:active {

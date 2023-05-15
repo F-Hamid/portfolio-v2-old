@@ -71,7 +71,6 @@ const Form = () => {
           className="message "
           placeholder="Message"
         />
-        <p className="paragraph">Your Message</p>
 
         <div className="button">
           <input type="submit" value="Send" className=" form-button" />

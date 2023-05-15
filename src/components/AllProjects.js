@@ -1,36 +1,32 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import "./../sass/pages/all-projects.scss";
 import Contact from "./Contact";
+import Navbar from "./layouts/Navbar";
 
 const AllProjects = ({ allProjects }) => {
   let store = [...allProjects.projects, ...allProjects.allProjects];
-  console.log(allProjects);
   return (
     <>
       <section className="allProjects ">
-        <Helmet>
-          <title> Hamid-Web | My Projects </title>
-          <meta
-            name="description"
-            content="Projects: Professional Web Developer  and Designer."
-          />
-          <meta
-            name="keywords"
-            content="Website, Fateh Hamid,Website Designer, Website Developer, Website ideas, Full stuck web developer, Front end developer , Back end developer, User Interface, User experience"
-          />
-        </Helmet>
+        <HelmetProvider>
+          <Helmet>
+            <title> Hamid-Web | My Projects </title>
+            <meta
+              name="description"
+              content="Projects: Professional Web Developer  and Designer."
+            />
+            <meta
+              name="keywords"
+              content="Website, Fateh Hamid,Website Designer, Website Developer, Website ideas, Full stuck web developer, Front end developer , Back end developer, User Interface, User experience"
+            />
+          </Helmet>
+        </HelmetProvider>
 
-        <a href="/" className="back-home">
+        {/* <a href="/" className="back-home">
           <i className="fa-solid fa-house-laptop"></i>
-        </a>
-        {/* <div className="header ">
-          <h2 className="header-heading">Projects</h2>
-          <hr className="header-bar" />
-          <p className="header-text">
-           
-          </p>
-        </div> */}
+        </a> */}
+        <nav className="home-nav"></nav>
         <div className="header ">
           <h2 className="header-heading shine-text">Projects</h2>
           <hr className="header-bar" />

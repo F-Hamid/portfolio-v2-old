@@ -16,7 +16,7 @@ const Services = () => {
       <div className="circles-container">
         <Circle title="Design" icon={design} color="color-design" />
         <Circle title="Coding" icon={code} color="color-code" />
-        <Circle title="Deploy" icon={deploy} color="color-deploy" />
+        <Circle title="deployment" icon={deploy} color="color-deploy" />
       </div>
       <div className="header ">
         <h2 className="header-heading shine-text">SERVICES</h2>

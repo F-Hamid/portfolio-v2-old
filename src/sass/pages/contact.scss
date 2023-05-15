@@ -136,14 +136,13 @@
   padding: 2rem;
   margin-bottom: -1rem;
   color: #e9d5da;
-  text-shadow: 0.2rem -0.2rem 2rem $color-secondary;
+
+  text-shadow: 0.3rem 0.5rem 0.7rem #4c4c4c;
 }
 
 .fa {
   padding: 2rem;
-  color: #30aadd;
-  color: #efefef;
-  color: #e9d5da;
+  color: $color-secondary;
 
   font-size: 6rem !important;
   z-index: 500;
@@ -165,7 +164,13 @@
   cursor: pointer;
   &:hover {
     color: $color-secondary;
+    text-shadow: 0.3rem 0.5rem 0.7rem $color-primary;
   }
+}
+
+.github-contact {
+  border-radius: 0;
+  background-color: transparent;
 }
 
 .tech-img-contact {
