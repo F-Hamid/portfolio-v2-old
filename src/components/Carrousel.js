@@ -18,14 +18,14 @@ const Carrousel = () => {
       author: "Anel Anaya",
       text: " Hamid is full of ideas, he is a perfectionist and his attention to detail is immaculate. The complexity of my website is beyond my expectations. I am excited to share my website with all my.",
       bgColor: "img-bg2",
-      poste: "- Tattoo Artist",
+      poste: "- Tattoo Artist / USA",
       img: anel,
       imgBg: "img-bg1",
     },
     {
       author: "Anas Tallou ",
       text: "   As scientific researcher, I was looking for a creative and professional website that resume my career and contributions in an innovative way. Hamid made me what I was looking for in short time, high quality work and disposability.",
-      poste: "- PhD. Chemistry",
+      poste: "- PhD. Chemistry / Italy",
       bgColor: "img-bg6",
       img: anas,
       imgBg: "img-bg3",
@@ -34,15 +34,15 @@ const Carrousel = () => {
       author: "Pedro Zouhir",
       text: " Exactly what and who i needed: a programmer with artistic skills.On top of that professional communication.",
       bgColor: "img-bg7",
-      poste: "- Photographer",
+      poste: "- Photographer / Morocco",
       img: photographer,
       imgBg: "img-bg8",
     },
     {
-      author: "SimoSUd",
-      text: "  Hamid est un perfectionniste et ses suggestions et observations sont remarquables. Je suis ravi d'avoir' mon site Web conçu et créé par un professionnel!",
+      author: "R Magazine",
+      text: "Dynamique et avec un grand sens du détail,  Il possède un excellent relationnel. Durant tout le temps qu’il a passé chez nous, il a su faire preuve d’initiative, d'enthousiasme et d’adaptabilité afin de répondre au mieux aux tâches demandées. En outre, son travail s’est avéré très satisfaisant. Il a toujours été une personne fiable et responsable, tant dans son travail que dans ses rapports avec les membres de nos équipes",
       bgColor: "img-bg1",
-      poste: "- Rental Agency ",
+      poste: "- Art Magazine / Montreal",
       img: angelique,
       imgBg: "img-bg3",
     },
@@ -70,12 +70,12 @@ const Carrousel = () => {
                     <span className="poste ">{poste}</span>
                   </h2>
                   <p className="text ">
-                    <span>
+                    <span className="quote-icon quote-icon-up  ">
                       <FaQuoteLeft />
                     </span>
                     {text}
-                    <span>
-                      <FaQuoteLeft className=" quote-icon  " />
+                    <span className="quote-icon quote-icon-down  ">
+                      <FaQuoteLeft className="closing-quote" />
                     </span>
                   </p>
                 </div>
