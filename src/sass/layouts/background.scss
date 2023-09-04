@@ -1,0 +1,82 @@
+@import "./../main.scss";
+
+.home::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 102%;
+  left: 0%;
+  z-index: -10;
+  background-color: $color-text;
+  background: url(./../../../src/images/bckg-img19.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  overflow: hidden;
+  animation: backgroundZoom 12s ease-out;
+  @media screen and (max-width: 1050px) {
+    background-size: 105%;
+  }
+  @media screen and (max-width: 850px) {
+    height: 129%;
+  }
+}
+.logo {
+  width: 4rem;
+}
+.custom-shape-divider-bottom-1650151152 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1650151152 svg {
+  position: relative;
+  display: block;
+  width: calc(145% + 1.3px);
+  height: 400px;
+}
+
+.custom-shape-divider-bottom-1650151152 .shape-fill {
+  // fill: #ffffffc2; //transparent
+  fill: #eeeeee;
+}
+
+/** For tablet devices **/
+@media screen and (max-width: 1250px) {
+  .custom-shape-divider-bottom-1650151152 svg {
+    width: calc(195% + 1.3px);
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1650151152 svg {
+    width: calc(185% + 1.3px);
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .custom-shape-divider-bottom-1650151152 svg {
+    width: calc(185% + 1.3px);
+    height: 450px;
+  }
+
+  @media screen and (max-width: 550px) {
+    .custom-shape-divider-bottom-1650151152 svg {
+      width: calc(200% + 1.3px);
+      height: 350px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .custom-shape-divider-bottom-1650151152 svg {
+      width: calc(200% + 1.3px);
+      height: 150px;
+    }
+  }
+}

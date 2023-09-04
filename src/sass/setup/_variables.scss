@@ -1,0 +1,32 @@
+// Colors
+$color-primary: #5f9df7;
+$color-primary-light: #ff731d;
+$color-secondary: #1746a2;
+$color-third: #fff7e9;
+// $color-text: #030F28;
+$color-text: #010003;
+
+// #5C86AE
+// Fonts
+$font-primary: "Cinzel", serif;
+$font-secondary: "Montserrat", sans-serif;
+$font-terciary: "Ubuntu Mono", monospace;
+$bord-rad: 0.2rem;
+$text-shadow: 0.1rem 0.1rem 0.2rem $color-text;
+
+// Spinner
+
+.spinner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-border {
+  width: 15rem;
+  height: 15rem;
+  margin: 5rem;
+  text-align: center;
+}

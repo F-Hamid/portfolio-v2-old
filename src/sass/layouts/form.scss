@@ -1,0 +1,81 @@
+@import "../main.scss";
+
+#form {
+  @include center;
+  width: 40vw;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 1rem #4c4c4c;
+  z-index: 500;
+  @media screen and (max-width: 1250px) {
+    width: 70vw;
+  }
+}
+
+.form-container {
+  @include center;
+  font-size: 1.5rem;
+  height: 75%;
+
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba($color-third, 0.2);
+  width: 90%;
+  margin-bottom: 1.5rem;
+}
+
+.input,
+.message {
+  width: 100%;
+  height: 6rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem /* 12px */;
+  border: 1px solid #ddd;
+  color: $color-text; /* Replace with your desired color */
+  border-radius: 0.5rem /* 4px */;
+  line-height: 3rem;
+  font-size: 2rem;
+  text-align: start;
+  font-family: $font-primary;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.input:focus,
+.message:focus {
+  background-color: rgba($color-primary, 0.7);
+}
+
+.message {
+  width: 90%;
+  height: 20rem;
+  font-family: $font-secondary;
+}
+
+.form-button {
+  width: 20rem;
+  height: 6rem;
+  margin: 2rem auto;
+  font-size: 3rem;
+  color: $color-third;
+  background-color: $color-primary;
+  cursor: pointer;
+  z-index: 50;
+  border-radius: 5%;
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba($color-text, 0.5);
+  box-shadow: 0.3rem 0.5rem 0.7rem #4c4c4c;
+  font-family: $font-secondary;
+  transition: all 0.2s linear;
+}
+
+.form-button:hover {
+  box-shadow: 0 0.125rem 0.25rem rgba($color-text, 0.1);
+  background-color: $color-primary-light;
+  color: $color-text;
+}
+
+.form-button:active {
+  box-shadow: 0 0.5rem 1rem rgba($color-text, 0.15);
+}

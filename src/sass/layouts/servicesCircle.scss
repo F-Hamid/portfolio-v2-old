@@ -1,0 +1,73 @@
+@import "../setup/variables";
+
+.circle {
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem 6rem;
+  border-radius: 5%;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+  // background: #e0e0e0;
+  // box-shadow: inset 3px 3px 8px #bebebe, inset -3px -3px 8px #ffffff;
+  background: linear-gradient(145deg, #72d1df, #60b0bb);
+  box-shadow: 5px 5px 10px #64b5c1, -5px -5px 10px #72d1df;
+  background: #a7c6cb;
+  box-shadow: inset 7px 7px 14px #64b5c1, inset -7px -7px 14px #72d1df;
+  // background: linear-gradient(145deg, #60b0bb, #72d1df);
+  // box-shadow: 5px 5px 10px #64b5c1, 5px 5px 10px #72d1df;
+  background: linear-gradient(145deg, #60b0bb, #72d1df);
+  box-shadow: 5px 5px 10px #64b5c1, 5px 5px 10px #72d1df;
+
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    scale: 1.07;
+    background: linear-gradient(145deg, #60b0bb, #72d1df);
+    box-shadow: 5px 5px 10px #64b5c1, 5px 5px 10px #72d1df;
+  }
+
+  &-container {
+    opacity: 0.9;
+    text-align: center;
+    font-family: $font-secondary;
+  }
+
+  &-image {
+    width: 105%;
+    opacity: 0.9;
+    filter: blur(0.05rem);
+  }
+  &-icon {
+    font-size: 10rem;
+    opacity: 0.9;
+    filter: blur(0.05rem);
+    color: $color-secondary;
+    color: #efefef;
+  }
+}
+// .color-design {
+//   background-color: #fd8a8a;
+// }
+// .color-code {
+//   background-color: #9ea1d4;
+// }
+// .color-deploy {
+//   background-color: #f1f7b5;
+// }
+// .color-seo {
+//   background-color: #a8d1d1;
+// }
+// .color-update {
+//   background-color: #efefef;
+// }
+
+.title {
+  font-family: $font-primary;
+  font-size: 2.5rem;
+  color: $color-secondary;
+}

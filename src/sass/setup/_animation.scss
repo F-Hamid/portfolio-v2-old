@@ -1,0 +1,110 @@
+@keyframes backgroundZoom {
+  0% {
+    opacity: 0.9;
+    background-size: 120%;
+  }
+  100% {
+    background-size: 100%;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  @keyframes backgroundZoom {
+    0% {
+      opacity: 0.9;
+      background-size: 125%;
+    }
+    100% {
+      background-size: 105%;
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes home-header {
+  0% {
+    opacity: 0;
+    transform: translateX(-25rem);
+    z-index: -20;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes contact-rotate {
+  0% {
+    transform: rotate(0);
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotate(360deg) translate(-20rem);
+    opacity: 0.5;
+  }
+}
+@keyframes contact-rotate-reverse {
+  0% {
+    transform: rotate(0);
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotate(-360deg) translate(20rem);
+    opacity: 0.5;
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+// .card-anim
+
+/* Base */
+
+.shine-text {
+  // padding: 64px;
+  background: linear-gradient(
+    to right,
+    $color-primary-light 0,
+    hsl(0, 0%, 100%) 10%,
+    $color-primary-light 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 6s infinite linear;
+  @media screen and (max-width: 650px) {
+    animation: shine 20s infinite linear;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+
+@keyframes home {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

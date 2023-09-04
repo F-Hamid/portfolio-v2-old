@@ -1,0 +1,166 @@
+@import "./../setup/variables";
+
+/* Swiper */
+
+.swiper {
+  width: 75rem;
+  height: 60rem;
+  margin: 15rem auto 2rem;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  max-width: 2vw;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 10%;
+  width: 50px;
+  height: 50px;
+  size: 50px;
+  margin-top: -15px;
+  z-index: 0;
+  cursor: pointer;
+  fill: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  fill: $color-secondary;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+
+.swiper-button-prev {
+  left: 10px !important;
+}
+
+.swiper-button-next {
+  right: 10px !important;
+}
+
+.swiperSlide {
+  max-width: 92rem;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.slid-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  height: 100%;
+}
+.author {
+  font-size: 2rem;
+  position: absolute;
+  top: 3.5rem;
+  left: 37%;
+  z-index: 100;
+  color: $color-third;
+  color: $color-text;
+}
+.poste {
+  font-size: 1rem;
+  padding: 0.2rem;
+  color: $color-third;
+}
+
+.text {
+  padding: 0.6rem;
+  font-size: 2.5rem;
+  margin: 1rem;
+  margin-top: 10rem;
+  font-family: $font-secondary;
+  line-height: 2.7rem;
+  font-weight: 100;
+}
+
+.quote-icon {
+  color: $color-secondary;
+  &-up {
+    margin-left: 2%;
+  }
+}
+.closing-quote {
+  margin-left: 80%;
+  transform: scaleX(-1);
+}
+.slide-image-container {
+  position: relative;
+  width: 45%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+.slide-image {
+  width: 100%;
+  height: 101%;
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0rem;
+  background-origin: 0;
+
+  background-size: cover;
+}
+
+.img-bg1 {
+  background-color: #21a5dc;
+}
+.img-bg2 {
+  background-color: #f87474;
+}
+.img-bg3 {
+  background-color: #9a21dc;
+}
+.img-bg4 {
+  background-color: #5cc87b;
+}
+.img-bg5 {
+  background-color: #dc5c21;
+}
+.img-bg6 {
+  background-color: #453c67;
+}
+.img-bg7 {
+  background-color: #212121;
+}
+.img-bg8 {
+  background-color: #f4b63f;
+}
+
+.testim-shadow {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}

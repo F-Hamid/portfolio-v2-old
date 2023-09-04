@@ -1,0 +1,310 @@
+@import "./../main.scss";
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  padding: 5rem;
+  position: relative;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(#7ec8d2, 1),
+    rgba($color-secondary, 0.2)
+  );
+  // @media screen and (max-width: 1050px) {
+  //   height: 65vh;
+  // }
+
+  // @media screen and (max-width: 850px) {
+  //   height: 60vh;
+  //   padding-top: 2rem;
+  // }
+  // @media screen and (max-width: 750px) {
+  //   height: 50vh;
+  // }
+
+  // @media screen and (max-width: 650px) {
+  //   height: 35vh;
+  // }
+
+  // @media screen and (max-width: 450px) {
+  //   height: 25vh;
+  // }
+  // @media screen and (max-width: 350px) {
+  //   height: 20vh;
+  // }
+
+  &-square-1 {
+    width: 40rem;
+    height: 30rem;
+    position: absolute;
+    top: -5rem;
+    left: 6rem;
+    @media screen and (max-width: 1550px) {
+      top: -15rem;
+      left: 6rem;
+    }
+    @media screen and (max-width: 1050px) {
+      top: -20rem;
+      left: 6rem;
+    }
+  }
+  &-square-2 {
+    width: 40rem;
+    height: 10rem;
+    position: absolute;
+    top: auto;
+    right: 10rem;
+    z-index: 0;
+  }
+  .parallax {
+    @include center;
+    border-radius: 2%;
+    box-shadow: 1rem 1rem 2rem rgba(57, 181, 224, 0.75);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: -10% 20%;
+    h2 {
+      font-size: 4rem;
+      font-family: $font-primary;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .parallax {
+      background-position: 20%;
+    }
+  }
+  .parallax-1 {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(58, 176, 255, 0.5),
+        rgba(57, 181, 224, 0.3)
+      ),
+      url("../../images/cube3.png");
+    background-size: 40%;
+  }
+  .parallax-2 {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-third, 0.5),
+      rgba($color-primary, 0.2)
+    );
+
+    // background-position: -10% 20%;
+  }
+  &-heading {
+    text-align: center;
+    color: #212121;
+    font-family: $font-primary;
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    text-shadow: -0.1rem 0.1rem 1rem $color-third;
+    z-index: 200;
+    span {
+      color: $color-secondary;
+      font-size: 6rem;
+      text-shadow: -0.1rem 0.1rem 3rem $color-third;
+      // font-weight: 700;
+    }
+    @media screen and (max-width: 800px) {
+      font-size: 4rem;
+    }
+  }
+
+  &-me {
+    color: #efefef;
+    text-shadow: 0.1rem 0.1rem 0.8rem $color-secondary;
+    text-align: end;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 2rem;
+    &:hover {
+      color: $color-primary-light;
+    }
+    &-link {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+
+.media {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 5rem;
+  padding: 2rem;
+  margin-bottom: -1rem;
+  color: #e9d5da;
+
+  text-shadow: 0.3rem 0.5rem 0.7rem #4c4c4c;
+}
+
+.fa {
+  padding: 2rem;
+  color: $color-secondary;
+
+  font-size: 6rem !important;
+  z-index: 500;
+  @media screen and (max-width: 950px) {
+    padding: 1.5rem;
+  }
+  @media screen and (max-width: 750px) {
+    padding: 1rem;
+  }
+  @media screen and (max-width: 670px) {
+    padding: 0.5rem;
+  }
+  @media screen and (max-width: 550px) {
+    padding: 1.5rem;
+  }
+  @media screen and (max-width: 350px) {
+    padding: 1rem;
+  }
+  cursor: pointer;
+  &:hover {
+    color: $color-secondary;
+    text-shadow: 0.3rem 0.5rem 0.7rem $color-primary;
+  }
+}
+
+.github-contact {
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.tech-img-contact {
+  width: 7rem;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 500;
+  animation: contact-rotate 60s infinite running;
+
+  &-1 {
+    top: 5rem;
+    right: 10rem;
+    transform: rotate(50deg);
+  }
+
+  &-4 {
+    top: 15rem;
+    left: 10rem;
+    transform: rotate(50deg);
+  }
+  &-5 {
+    top: 50rem;
+    left: 25rem;
+    transform: rotate(-50deg);
+  }
+  &-6 {
+    top: 25rem;
+    right: 10rem;
+    transform: rotate(-50deg);
+  }
+  &-7 {
+    top: 45rem;
+    right: 45rem;
+    transform: rotate(-50deg);
+  }
+  &-8 {
+    top: 55rem;
+    left: 10rem;
+    transform: rotate(-50deg);
+  }
+  &-9 {
+    top: 55rem;
+    right: 15rem;
+    width: 2rem;
+    transform: rotate(-50deg);
+  }
+  &-11 {
+    top: 15rem;
+    left: 15rem;
+    transform: rotate(-50deg);
+  }
+  &-12 {
+    top: 2rem;
+    left: 30rem;
+    transform: rotate(-50deg);
+  }
+  &-19 {
+    bottom: 45rem;
+    right: 20rem;
+    transform: rotate(-50deg);
+  }
+  &-14 {
+    top: 0rem;
+    right: 20rem;
+    transform: rotate(-50deg);
+  }
+  &-13 {
+    top: 0rem;
+    right: 60rem;
+    transform: rotate(-50deg);
+  }
+  &-15 {
+    top: 7rem;
+    left: 60rem;
+    transform: rotate(-50deg);
+  }
+  &-16 {
+    top: 20rem;
+    right: 20rem;
+    transform: rotate(-50deg);
+  }
+  &-17 {
+    top: 50rem;
+    right: 5rem;
+    transform: rotate(-50deg);
+  }
+  &-27 {
+    top: 30rem;
+    right: 55rem;
+    transform: rotate(-50deg);
+  }
+  &-28 {
+    top: 30rem;
+    left: 55rem;
+    transform: rotate(-50deg);
+  }
+}
+
+.reverse {
+  animation: contact-rotate-reverse 60s infinite running;
+}
+
+.ideas {
+  text-shadow: 0.2rem -0.2rem 0.5rem $color-secondary;
+}
+
+.footer__copyright {
+  padding: 2rem auto;
+  color: $color-text;
+
+  a {
+    color: $color-secondary;
+    font-size: 1.3rem;
+    font-family: $font-primary;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: auto 0.3rem;
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}

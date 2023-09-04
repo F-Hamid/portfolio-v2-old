@@ -1,0 +1,18 @@
+@import "./../main.scss";
+
+.testimonial {
+  @include center;
+  width: 100vw;
+  height: 100%;
+  padding: 6rem 2rem;
+  display: flex;
+  padding-bottom: 35rem;
+  background-image: linear-gradient(
+    to bottom,
+    #eeeeee,
+    #dde1ed,
+    #c2d8ea,
+    #a1d0e2,
+    #7ec8d2
+  );
+}
